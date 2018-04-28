@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[12]:
+# In[17]:
 
 
 import torch
@@ -10,30 +10,26 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.optim import lr_scheduler
+from torch.utils.data import ConcatDataset
+from torch.utils.data import DataLoader
+from torch.utils.data.dataset import random_split
+import torchvision
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
-import torchvision
-import tqdm
+from tqdm import trange
 import os
 import shutil
 from tensorboardX import SummaryWriter
-from torch.utils.data.dataset import random_split
 
 
-# In[13]:
+# In[2]:
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 data_dir = 'data/'
 
 
-# In[14]:
-
-
-binary_classes = ['healthy', 'non_healthy']
-
-
-# In[15]:
+# In[3]:
 
 
 batch_size = 16
@@ -64,7 +60,7 @@ for i in range(num_folds):
     image_datasets[splits[i]] = random_splits[i]
 
 
-# In[16]:
+# In[4]:
 
 
 class Model(nn.Module):
@@ -99,7 +95,7 @@ class Model(nn.Module):
         return num_features
 
 
-# In[18]:
+# In[5]:
 
 
 def build_dataloaders(validation_set):
@@ -108,7 +104,7 @@ def build_dataloaders(validation_set):
     for split in range(num_folds):
         k = 'split' + str(split)
         if split != validation_set:
-            datasets['train'] = torch.utils.data.ConcatDataset([datasets['train'], image_datasets[k]])
+            datasets['train'] = ConcatDataset([datasets['train'], image_datasets[k]])
         else:
             #validation set
             datasets['val'] = image_datasets[k]
@@ -116,22 +112,22 @@ def build_dataloaders(validation_set):
     dataset_sizes = {x: len(datasets[x]) for x in ['train', 'val']}
     
     # creating dataloaders
-    dataloaders = {x: torch.utils.data.DataLoader(datasets[x], batch_size=batch_size,
+    dataloaders = {x: DataLoader(datasets[x], batch_size=batch_size,
                         shuffle=True, num_workers=4) for x in ['train', 'val']}
     return dataloaders, dataset_sizes
 
 
-# In[19]:
+# In[18]:
 
 
-num_epochs = 10
+num_epochs = 2
 
 log_dir = 'log/'
 if os.path.exists(log_dir):
     shutil.rmtree(log_dir)
 
 folds_performances = {}
-for validation_set in range(num_folds):
+for validation_set in trange(num_folds, desc='Folds iterations: '):
     
     writer = SummaryWriter(log_dir + 'Fold #' + str(validation_set))
     dataloaders, dataset_sizes = build_dataloaders(validation_set)
@@ -142,11 +138,12 @@ for validation_set in range(num_folds):
     exp_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
     
     folds_performances[validation_set] = []
-    for epoch in tqdm.tqdm(list(range(num_epochs))):  # loop over the dataset multiple epochs
-        
+    epoch_progress = trange(num_epochs, desc='Fold #{}, epoch #0 - val loss: ? acc: ?'.format(validation_set))
+    for epoch in epoch_progress:  # loop over the dataset multiple epochs
+
         #training and validation part
         for phase in ['train', 'val']:
-
+            
             if phase == 'train':
                 exp_lr_scheduler.step()
                 model.train()  # Set to training mode
@@ -181,27 +178,24 @@ for validation_set in range(num_folds):
                 
             epoch_loss = running_loss / dataset_sizes[phase]
             epoch_acc = running_corrects.data.item() / dataset_sizes[phase]
-            print('Validation fold #{} - {} Loss: {:.4f} Acc: {:.4f}'.format(validation_set, phase, epoch_loss, epoch_acc))
+            #print('\n\nFold #{}, epoch #{} - {} loss: {:.4f} acc: {:.4f}'.format(
+                #validation_set, epoch, phase, epoch_loss, epoch_acc))
 
         folds_performances[validation_set].append(epoch_acc)
-        
+        epoch_progress.set_description('Fold #{}, epoch #{} - val loss: {:.4f} acc: {:.4f}'.format(
+                validation_set, epoch, epoch_loss, epoch_acc), refresh=False)
+
         # tensorboard statistics
         writer.add_scalar('/loss', epoch_loss, epoch)
         writer.add_scalar('/accuracy', epoch_acc, epoch)
             
-print('Training is over.')
-
-
-# In[20]:
-
+print('K-fold cross-validation is over.')
 
 def save_to_file(filename, to_file):
     f = open(filename + '.txt', 'w+')
     f.write(str(to_file))
     f.close()
-
-
-# In[21]:
+# In[ ]:
 
 
 for i in range(0, num_folds):
