@@ -3,7 +3,7 @@ import random
 import shutil
 
 DEBUG = True
-data_dir = 'data/'
+data_dir = 'augmented_data/'
 test_size = 20
 
 classes = ['healthy', 'Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot',
