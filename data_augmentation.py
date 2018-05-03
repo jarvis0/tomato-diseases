@@ -11,7 +11,6 @@ import math
 import os
 import shutil
 
-get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[6]:

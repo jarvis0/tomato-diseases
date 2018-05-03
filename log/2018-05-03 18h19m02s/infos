@@ -1,1 +1,0 @@
-num_epochs=20, batch_size=24, lr=0.001, wd=0
