@@ -11,7 +11,6 @@ import math
 import os
 import shutil
 
-get_ipython().run_line_magic('matplotlib', 'inline')
 
 
 # In[2]:
@@ -39,8 +38,8 @@ if os.path.exists(data_dir):
 os.mkdir(data_dir)
 
 shutil.copytree('data/test', data_dir + 'test/')
+os.mkdir(data_dir + 'train/')
 for clss in classes:
-    os.mkdir(data_dir + 'train/')
     os.mkdir(data_dir + 'train/' + clss)
     src = 'data/train/' + clss + '/'
     dst = data_dir + 'train/' + clss + '/'
