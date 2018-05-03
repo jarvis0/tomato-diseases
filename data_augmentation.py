@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[5]:
 
 
 from PIL import Image
@@ -11,16 +11,17 @@ import math
 import os
 import shutil
 
+get_ipython().run_line_magic('matplotlib', 'inline')
 
 
-# In[2]:
+# In[6]:
 
 
 def DisplayImage(image):
     imshow(np.asarray(image))
 
 
-# In[ ]:
+# In[7]:
 
 
 binary_classification = True
@@ -46,28 +47,28 @@ for clss in classes:
     counter = 0
     for image in os.listdir(src):
         im = Image.open(src + image)
-        im.save(dst + str(counter) + '_ORIGINAL', 'JPEG')
+        im.save(dst + str(counter) + '_ORIGINAL.jpg', 'JPEG')
         
         out = im.transpose(Image.FLIP_TOP_BOTTOM)
-        out.save(dst + str(counter) + '_FLIP_TOP_BOTTOM', 'JPEG')
+        out.save(dst + str(counter) + '_FLIP_TOP_BOTTOM.jpg', 'JPEG')
         
         out = im.transpose(Image.FLIP_LEFT_RIGHT)
-        out.save(dst + str(counter) + '_FLIP_LEFT_RIGHT', 'JPEG')
+        out.save(dst + str(counter) + '_FLIP_LEFT_RIGHT.jpg', 'JPEG')
         
         out = im.transpose(Image.ROTATE_180)
-        out.save(dst + str(counter) + '_ROTATE_180', 'JPEG')
+        out.save(dst + str(counter) + '_ROTATE_180.jpg', 'JPEG')
         
         out = im.transpose(Image.ROTATE_90)
-        out.save(dst + str(counter) + '_ROTATE_90', 'JPEG')
+        out.save(dst + str(counter) + '_ROTATE_90.jpg', 'JPEG')
         
         out = out.transpose(Image.FLIP_TOP_BOTTOM)
-        out.save(dst + str(counter) + '_ROTATE_90_TOP_BOTTOM', 'JPEG')
+        out.save(dst + str(counter) + '_ROTATE_90_TOP_BOTTOM.jpg', 'JPEG')
         
         out = im.transpose(Image.ROTATE_270)
-        out.save(dst + str(counter) + '_ROTATE_270', 'JPEG')
+        out.save(dst + str(counter) + '_ROTATE_270.jpg', 'JPEG')
         
         out = out.transpose(Image.FLIP_TOP_BOTTOM)
-        out.save(dst + str(counter) + '_ROTATE_270_TOP_BOTTOM', 'JPEG')
+        out.save(dst + str(counter) + '_ROTATE_270_TOP_BOTTOM.jpg', 'JPEG')
         
         counter += 1
         #print(im.format, im.size, im.mode)
