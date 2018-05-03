@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[5]:
+# In[ ]:
 
 
 from PIL import Image
@@ -10,17 +10,19 @@ import numpy as np
 import math
 import os
 import shutil
+import random
+
+#%matplotlib inline
 
 
-
-# In[6]:
+# In[ ]:
 
 
 def DisplayImage(image):
     imshow(np.asarray(image))
 
 
-# In[7]:
+# In[ ]:
 
 
 binary_classification = True
@@ -37,6 +39,7 @@ if os.path.exists(data_dir):
     shutil.rmtree(data_dir)
 os.mkdir(data_dir)
 
+random.seed(a=1234)
 shutil.copytree('data/test', data_dir + 'test/')
 os.mkdir(data_dir + 'train/')
 for clss in classes:
@@ -48,26 +51,38 @@ for clss in classes:
         im = Image.open(src + image)
         im.save(dst + str(counter) + '_ORIGINAL.jpg', 'JPEG')
         
-        out = im.transpose(Image.FLIP_TOP_BOTTOM)
-        out.save(dst + str(counter) + '_FLIP_TOP_BOTTOM.jpg', 'JPEG')
+        transf = random.randint(1, 4)
         
-        out = im.transpose(Image.FLIP_LEFT_RIGHT)
-        out.save(dst + str(counter) + '_FLIP_LEFT_RIGHT.jpg', 'JPEG')
+        if transf == 1:
+            out = im.transpose(Image.FLIP_TOP_BOTTOM)
+            out.save(dst + str(counter) + '_FLIP_TOP_BOTTOM.jpg', 'JPEG')
         
-        out = im.transpose(Image.ROTATE_180)
-        out.save(dst + str(counter) + '_ROTATE_180.jpg', 'JPEG')
+            out = im.transpose(Image.ROTATE_90)
+            out.save(dst + str(counter) + '_ROTATE_90.jpg', 'JPEG')
         
-        out = im.transpose(Image.ROTATE_90)
-        out.save(dst + str(counter) + '_ROTATE_90.jpg', 'JPEG')
+        if transf == 2:
+            out = im.transpose(Image.FLIP_LEFT_RIGHT)
+            out.save(dst + str(counter) + '_FLIP_LEFT_RIGHT.jpg', 'JPEG')
+            
+            out = im.transpose(Image.ROTATE_180)
+            out.save(dst + str(counter) + '_ROTATE_180.jpg', 'JPEG')
+
+        if transf == 3:
+            out = im.transpose(Image.ROTATE_90)
+            out = out.transpose(Image.FLIP_TOP_BOTTOM)
+            out.save(dst + str(counter) + '_ROTATE_90_TOP_BOTTOM.jpg', 'JPEG')
+            
+            out = im.transpose(Image.ROTATE_270)
+            out = out.transpose(Image.FLIP_TOP_BOTTOM)
+            out.save(dst + str(counter) + '_ROTATE_270_TOP_BOTTOM.jpg', 'JPEG')
         
-        out = out.transpose(Image.FLIP_TOP_BOTTOM)
-        out.save(dst + str(counter) + '_ROTATE_90_TOP_BOTTOM.jpg', 'JPEG')
+        if transf == 4:
+            out = im.transpose(Image.ROTATE_270)
+            out.save(dst + str(counter) + '_ROTATE_270.jpg', 'JPEG')
         
-        out = im.transpose(Image.ROTATE_270)
-        out.save(dst + str(counter) + '_ROTATE_270.jpg', 'JPEG')
-        
-        out = out.transpose(Image.FLIP_TOP_BOTTOM)
-        out.save(dst + str(counter) + '_ROTATE_270_TOP_BOTTOM.jpg', 'JPEG')
+            out = im.transpose(Image.FLIP_LEFT_RIGHT)
+            out.save(dst + str(counter) + '_FLIP_LEFT_RIGHT.jpg', 'JPEG')
+
         
         counter += 1
         #print(im.format, im.size, im.mode)
@@ -90,4 +105,29 @@ for clss in classes:
         
         DisplayImage(out)
         break"""
+
+"""im = Image.open(src + image)
+        im.save(dst + str(counter) + '_ORIGINAL.jpg', 'JPEG')
+        
+        out = im.transpose(Image.FLIP_TOP_BOTTOM)
+        out.save(dst + str(counter) + '_FLIP_TOP_BOTTOM.jpg', 'JPEG')
+        
+        out = im.transpose(Image.FLIP_LEFT_RIGHT)
+        out.save(dst + str(counter) + '_FLIP_LEFT_RIGHT.jpg', 'JPEG')
+        
+        out = im.transpose(Image.ROTATE_180)
+        out.save(dst + str(counter) + '_ROTATE_180.jpg', 'JPEG')
+        
+        out = im.transpose(Image.ROTATE_90)
+        out.save(dst + str(counter) + '_ROTATE_90.jpg', 'JPEG')
+        
+        out = out.transpose(Image.FLIP_TOP_BOTTOM)
+        out.save(dst + str(counter) + '_ROTATE_90_TOP_BOTTOM.jpg', 'JPEG')
+        
+        out = im.transpose(Image.ROTATE_270)
+        out.save(dst + str(counter) + '_ROTATE_270.jpg', 'JPEG')
+        
+        out = out.transpose(Image.FLIP_TOP_BOTTOM)
+        out.save(dst + str(counter) + '_ROTATE_270_TOP_BOTTOM.jpg', 'JPEG')
+"""
 

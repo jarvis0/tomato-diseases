@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[2]:
+# In[1]:
 
 
 import torch
@@ -35,7 +35,7 @@ def save_to_file(filename, to_file):
 
 
 ts = time.time()
-timestamp = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %Hh%Mm%Ss')
+timestamp = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d h%Hm%Ms%S')
 
 if not os.path.exists('log/'):
     os.mkdir('log/')
@@ -44,7 +44,7 @@ log_dir = 'log/' + timestamp + '/'
 os.mkdir(log_dir)
 
 
-# In[4]:
+# In[8]:
 
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
@@ -62,14 +62,14 @@ wd = args.wd
 save_to_file('infos', 'num_epochs={}, batch_size={}, lr={}, wd={}'.format(num_epochs, batch_size, lr, wd))
 
 
-# In[5]:
+# In[9]:
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 data_dir = 'augmented_data/'
 
 
-# In[6]:
+# In[10]:
 
 
 mean = [0.44947562, 0.46524084, 0.40037745]
