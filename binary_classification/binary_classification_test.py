@@ -31,7 +31,7 @@ else:
            'Spider_mites Two-spotted_spider_mite', 'Target_Spot', 'Tomato_mosaic_virus', 'Tomato_Yellow_Leaf_Curl_Virus']
 
 
-# In[4]:
+# In[3]:
 
 
 def save_to_file(filename, to_file):
@@ -40,11 +40,11 @@ def save_to_file(filename, to_file):
     f.close()
 
 
-# In[5]:
+# In[4]:
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-data_dir = '../augmented_data/'
+data_dir = '../data/'
 
 
 # In[5]:
@@ -108,7 +108,7 @@ class Model(nn.Module):
         return num_features
 
 
-# In[ ]:
+# In[9]:
 
 
 model = Model()
@@ -118,7 +118,7 @@ optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=wd)
     
 epoch_progress = trange(num_epochs, bar_format='{desc}{r_bar}')
 for epoch in epoch_progress:  # loop over the dataset multiple epochs
-
+    break
     # iterate over the data
     for inputs, labels in dataloaders['train']:
 
@@ -135,7 +135,8 @@ for epoch in epoch_progress:  # loop over the dataset multiple epochs
         loss.backward()
         optimizer.step() # does the update
 
-print('K-fold cross-validation is over.')
+torch.save(model.state_dict(), 'model')
+print('Training is over.')
 
 
 # In[15]:
