@@ -1,0 +1,3 @@
+Accuracy of the network on the test images: 99 %%
+Accuracy of healthy: 100.0 %
+Accuracy of non_healthy: 100.0 %

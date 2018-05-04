@@ -44,7 +44,7 @@ def save_to_file(filename, to_file):
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-data_dir = '../data/'
+data_dir = '../augmented_data/'
 
 
 # In[5]:
@@ -118,7 +118,7 @@ optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=wd)
     
 epoch_progress = trange(num_epochs, bar_format='{desc}{r_bar}')
 for epoch in epoch_progress:  # loop over the dataset multiple epochs
-    break
+    
     # iterate over the data
     for inputs, labels in dataloaders['train']:
 
