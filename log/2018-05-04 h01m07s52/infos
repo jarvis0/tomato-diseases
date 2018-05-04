@@ -1,0 +1,3 @@
+num_epochs=15, batch_size=24, lr=0.001, wd=0
+Statistical best number of epochs: 10
+Mitchell average best number of epochs: 8.9

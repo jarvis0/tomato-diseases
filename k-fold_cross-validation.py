@@ -48,7 +48,7 @@ os.mkdir(log_dir)
 
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
-parser.add_argument('--num_epochs', dest='num_epochs', default=20, type=int, required=False)
+parser.add_argument('--num_epochs', dest='num_epochs', default=15, type=int, required=False)
 parser.add_argument('--batch_size', dest='batch_size', default=16, type=int, required=False)
 parser.add_argument('--lr', dest='lr', default=0.001, type=float, required=False)
 parser.add_argument('--wd', dest='wd', default=0, type=float, required=False)
