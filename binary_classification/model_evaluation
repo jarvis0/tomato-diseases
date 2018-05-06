@@ -1,0 +1,17 @@
+Accuracy of class "healthy" = 0.9966777408637874
+Accuracy of class "non_healthy" = 0.9994077583654131
+
+Positive class = "healthy"
+Negative class = "non_healthy"
+
+Confusion matrix: 
+TP = 300  ||  FN = 1
+FP = 2  ||  TN = 3375
+
+Accuracy = 0.9991843393148451
+Precision = 0.9933774834437086
+Recall = 0.9966777408637874
+F1 - measure = 0.9950248756218906
+
+True Positive Rate = 0.9966777408637874
+False Positive Rate = 0.0005922416345869114
