@@ -1,17 +1,17 @@
 Experiment: 2018-05-04 h01m07s52
-Infos: {'num_epochs': 15, 'batch_size': 24, 'lr': 0.001, 'wd': 0}: 
+Infos: {'num_epochs': 15, 'batch_size': 24, 'lr': 0.001, 'wd': 0}
 Best epoch: 10
 Average accuracy @ best epoch: 0.9947974217311236
 Standard Deviation: 0.0018835298185931044
 
 Experiment: 2018-05-04 h06m11s23
-Infos: {'num_epochs': 15, 'batch_size': 16, 'lr': 0.001, 'wd': 0}: 
+Infos: {'num_epochs': 15, 'batch_size': 16, 'lr': 0.001, 'wd': 0}
 Best epoch: 14
 Average accuracy @ best epoch: 0.9952888888888888
 Standard Deviation: 0.0015630331544709093
 
 Experiment: 2018-05-03 h20m42s17
-Infos: {'num_epochs': 15, 'batch_size': 32, 'lr': 0.001, 'wd': 0}: 
+Infos: {'num_epochs': 15, 'batch_size': 32, 'lr': 0.001, 'wd': 0}
 Best epoch: 14
 Average accuracy @ best epoch: 0.9961556169429097
 Standard Deviation: 0.0011777736247012274
