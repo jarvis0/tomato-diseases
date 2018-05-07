@@ -25,7 +25,7 @@ def DisplayImage(image):
 # In[ ]:
 
 
-binary_classification = True
+binary_classification = False
 
 if binary_classification:
     classes = ['healthy', 'non_healthy']

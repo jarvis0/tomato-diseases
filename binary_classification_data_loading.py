@@ -21,7 +21,7 @@ os.mkdir(data_dir + 'test/non_healthy')
 
 random.seed(a=1234)
 for image in os.listdir('original_dataset/healthy/'):
-    if random.randint(1, 100) <= test_size:
+    if random.randint(0, 100) <= test_size:
         shutil.copyfile('original_dataset/healthy/' + image, data_dir + 'test/healthy/' + image)
     else:
         shutil.copyfile('original_dataset/healthy/' + image, data_dir + 'train/healthy/' + image)
@@ -29,7 +29,7 @@ for image in os.listdir('original_dataset/healthy/'):
 if not DEBUG:
     for cls in list(classes[1:]):
         for image in os.listdir('original_dataset/' + cls + '/'):
-            if random.randint(1, 100) <= test_size:
+            if random.randint(0, 100) <= test_size:
                 shutil.copyfile('original_dataset/' + cls + '/' + image, data_dir + 'test/non_healthy/' + image)
             else:
                 shutil.copyfile('original_dataset/' + cls + '/' + image, data_dir + 'train/non_healthy/' + image)
