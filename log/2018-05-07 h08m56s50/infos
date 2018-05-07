@@ -1,0 +1,1 @@
+{'num_epochs': 25, 'batch_size': 24, 'lr': 0.001, 'wd': 0}
