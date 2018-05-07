@@ -2,7 +2,7 @@ import os
 import random
 import shutil
 
-DEBUG = True
+DEBUG = False
 data_dir = 'data/'
 test_size = 30
 
