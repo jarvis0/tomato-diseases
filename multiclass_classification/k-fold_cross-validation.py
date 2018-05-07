@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[25]:
+# In[17]:
 
 
 import torch
@@ -19,9 +19,10 @@ import argparse
 from tensorboardX import SummaryWriter
 import time
 import datetime
+from models import AlexNet
 
 
-# In[26]:
+# In[18]:
 
 
 def save_to_file(filename, to_file):
@@ -30,7 +31,7 @@ def save_to_file(filename, to_file):
     f.close()
 
 
-# In[27]:
+# In[19]:
 
 
 ts = time.time()
@@ -43,13 +44,12 @@ log_dir = 'log/' + timestamp + '/'
 os.mkdir(log_dir)
 
 
-# In[28]:
-
+# In[20]:
 
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
 parser.add_argument('--num_epochs', dest='num_epochs', default=25, type=int, required=False)
-parser.add_argument('--batch_size', dest='batch_size', default=16, type=int, required=False)
+parser.add_argument('--batch_size', dest='batch_size', default=32, type=int, required=False)
 parser.add_argument('--lr', dest='lr', default=0.001, type=float, required=False)
 parser.add_argument('--wd', dest='wd', default=0, type=float, required=False)
 
@@ -59,7 +59,7 @@ batch_size = args.batch_size
 lr = args.lr
 wd = args.wd
 """
-num_epochs = 1
+num_epochs = 2
 batch_size = 32
 lr = 0.001
 wd = 0
@@ -72,14 +72,14 @@ infos['wd'] = wd
 save_to_file('infos', infos)
 
 
-# In[29]:
+# In[21]:
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 data_dir = '../augmented_data/'
 
 
-# In[30]:
+# In[22]:
 
 
 mean = [0.44947562, 0.46524084, 0.40037745]
@@ -112,48 +112,7 @@ for k in range(num_folds):
     image_datasets[splits[k]] = random_splits[k]
 
 
-# In[31]:
-
-
-class Model(nn.Module):
-    def __init__(self):
-        super(Model, self).__init__()
-        # 3 input image channel,
-        # 6 output channel,
-        # 5x5 square convolution kernel
-        self.conv1 = nn.Conv2d(3, 6, 5)
-        self.pool = nn.MaxPool2d(2)
-        self.conv2 = nn.Conv2d(6, 16, 5)
-        # an affine operation
-        self.fc1 = nn.Linear(16 * 61 * 61, 120)
-        self.fc2 = nn.Linear(120, 84)
-        self.fc3 = nn.Linear(84, 10)
-        
-        nn.init.xavier_normal_(self.conv1.weight)
-        nn.init.xavier_normal_(self.conv2.weight)
-        nn.init.xavier_normal_(self.fc1.weight)
-        nn.init.xavier_normal_(self.fc2.weight)
-        nn.init.xavier_normal_(self.fc3.weight)
-        
-    def forward(self, x):
-        # max pooling over a (2, 2) windows
-        x = self.pool(F.relu(self.conv1(x)))
-        x = self.pool(F.relu(self.conv2(x)))
-        x = x.view(-1, self.num_flat_features(x))
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = self.fc3(x)
-        return x
-    
-    def num_flat_features(self, x):
-        size = x.size()[1:]
-        num_features = 1
-        for s in size:
-            num_features *= s
-        return num_features
-
-
-# In[32]:
+# In[23]:
 
 
 def build_dataloaders(validation_set):
@@ -176,7 +135,7 @@ def build_dataloaders(validation_set):
     return dataloaders, dataset_sizes
 
 
-# In[33]:
+# In[30]:
 
 
 folds_performances = {}
@@ -187,7 +146,7 @@ for validation_set in trange(num_folds, desc='Folds iterations: ', bar_format='{
     conf_matrices[validation_set] = {}
     dataloaders, dataset_sizes = build_dataloaders(validation_set)
     
-    model = Model()
+    model = AlexNet()
     model.to(device)
     optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=wd)
     
@@ -252,19 +211,19 @@ for validation_set in trange(num_folds, desc='Folds iterations: ', bar_format='{
         folds_performances[validation_set].append(epoch_acc)
         epoch_progress.set_description('Fold {}, epoch {} - val loss: {:.4f} acc: {:.4f}'.format(
                 validation_set, epoch, epoch_loss, epoch_acc), refresh=False)
-
+    break
 print('K-fold cross-validation is over.')
 
 
-# In[34]:
+# In[32]:
 
 
-for k in range(num_folds):
+for k in range(0,1):#num_folds):
     folds_performances[str(k)] = folds_performances[k]
     del folds_performances[k]
 save_to_file('folds_performances', folds_performances)
 
-for k in range(num_folds):
+for k in range(0,1):#num_folds):
     conf_matrices[str(k)] = {}
     for epoch in range(num_epochs):
         conf_matrices[str(k)][str(epoch)] = conf_matrices[k][epoch]
