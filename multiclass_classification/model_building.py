@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[15]:
+# In[7]:
 
 
 import torch
@@ -12,10 +12,11 @@ from torch.utils.data import DataLoader
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 from models import LeNet
+import os
 from tqdm import trange
 
 
-# In[16]:
+# In[8]:
 
 
 num_epochs = 7
@@ -24,14 +25,14 @@ lr = 0.001
 wd = 0
 
 
-# In[13]:
+# In[9]:
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 data_dir = '../augmented_data/'
 
 
-# In[ ]:
+# In[10]:
 
 
 mean = [0.44947562, 0.46524084, 0.40037745]
@@ -70,7 +71,7 @@ for epoch in epoch_progress:  # loop over the dataset multiple epochs
 
         # forward + loss
         outputs = model(inputs)
-        loss = nn.BCEWithLogitsLoss()(outputs.view(-1), labels.float())
+        loss = nn.CrossEntropyLoss()(outputs, labels)
                 
         # backward + optimize
         loss.backward()
