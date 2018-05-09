@@ -1,0 +1,9 @@
+Experiment: 2018-05-07 h13m35s10
+Infos: {'num_epochs': 25, 'batch_size': 32, 'lr': 0.001, 'wd': 0}
+Statistical best epoch: 6
+Mitchell best epoch: 7.2
+Accuracy: 0.8670542797205713 +-0.015190886881374061
+Macro precision: 0.3815422417543767 +-0.2455326069243756
+Macro recall: 0.37937311542075874 +-0.24318637643290908
+Macro F1: 0.3782876229135892 +-0.24211691635502988
+
