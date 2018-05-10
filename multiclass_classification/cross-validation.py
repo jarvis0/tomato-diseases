@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[17]:
+# In[24]:
 
 
 import torch
@@ -22,7 +22,7 @@ import datetime
 from models import AlexNet
 
 
-# In[18]:
+# In[25]:
 
 
 def save_to_file(filename, to_file):
@@ -31,7 +31,7 @@ def save_to_file(filename, to_file):
     f.close()
 
 
-# In[19]:
+# In[26]:
 
 
 ts = time.time()
@@ -44,7 +44,7 @@ log_dir = 'log/' + timestamp + '/'
 os.mkdir(log_dir)
 
 
-# In[20]:
+# In[35]:
 
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
@@ -72,14 +72,14 @@ infos['wd'] = wd
 save_to_file('infos', infos)
 
 
-# In[21]:
+# In[29]:
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 data_dir = '../augmented_data/'
 
 
-# In[22]:
+# In[30]:
 
 
 mean = [0.44947562, 0.46524084, 0.40037745]
@@ -112,7 +112,7 @@ for k in range(num_folds):
     image_datasets[splits[k]] = random_splits[k]
 
 
-# In[23]:
+# In[31]:
 
 
 def build_dataloaders(validation_set):
@@ -135,100 +135,94 @@ def build_dataloaders(validation_set):
     return dataloaders, dataset_sizes
 
 
-# In[30]:
-
-
-folds_performances = {}
-conf_matrices = {}
-for validation_set in trange(num_folds, desc='Folds iterations: ', bar_format='{desc}{r_bar}'):
-    
-    writer = SummaryWriter(log_dir + 'Fold ' + str(validation_set))
-    conf_matrices[validation_set] = {}
-    dataloaders, dataset_sizes = build_dataloaders(validation_set)
-    
-    model = AlexNet()
-    model.to(device)
-    optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=wd, eps=0.1)
-    
-    folds_performances[validation_set] = []
-    epoch_progress = trange(num_epochs, desc='Fold {}, epoch 0 - val loss: ? acc: ?'.format(validation_set),
-                            bar_format='{desc}{r_bar}')
-    for epoch in epoch_progress:  # loop over the dataset multiple epochs
-        
-        conf_matrices[validation_set][epoch] = {}
-        # training and validation part
-        for phase in ['train', 'val']:
-            
-            if phase == 'train':
-                model.train()  # Set to training mode
-            else:
-                model.eval()  # Set model to evaluate mode
-                
-            running_loss = 0.0
-            running_corrects = 0
-            conf_matrices[validation_set][epoch] = [0] * 10
-            for i in range(10):
-                conf_matrices[validation_set][epoch][i] = [0] * 10 
-
-            # iterate over the data
-            for inputs, labels in dataloaders[phase]:
-                
-                # get the inputs
-                inputs, labels = inputs.to(device), labels.to(device)
-
-                optimizer.zero_grad() # zero the gradient buffers
-
-                # forward + loss
-                outputs = model(inputs)
-                loss = nn.CrossEntropyLoss()(outputs, labels)
-                
-                if phase == 'train':
-                    # backward + optimize
-                    loss.backward()
-                    optimizer.step() # does the update
-
-                # statistics
-                running_loss += loss.data.item() * inputs.size(0)
-                
-                _, preds = torch.max(outputs, 1)
-                running_corrects += torch.sum(preds == labels.data)
-                
-                if phase == 'val':
-                    for predicted in range(len(preds)):
-                        conf_matrices[validation_set][epoch][labels.data[predicted]][preds[predicted]] += 1
-                
-            epoch_loss = running_loss / dataset_sizes[phase]
-            epoch_acc = running_corrects.data.item() / dataset_sizes[phase]
-            
-            # tensorboard statistics
-            if phase == 'train':
-                writer.add_scalar('/train_loss', epoch_loss, epoch)
-                writer.add_scalar('/train_accuracy', epoch_acc, epoch)
-            else:
-                writer.add_scalar('/val_loss', epoch_loss, epoch)
-                writer.add_scalar('/val_accuracy', epoch_acc, epoch)
-
-        folds_performances[validation_set].append(epoch_acc)
-        epoch_progress.set_description('Fold {}, epoch {} - val loss: {:.4f} acc: {:.4f}'.format(
-                validation_set, epoch, epoch_loss, epoch_acc), refresh=False)
-    break
-print('K-fold cross-validation is over.')
-
-
 # In[32]:
 
 
-for k in range(0,1):#num_folds):
-    folds_performances[str(k)] = folds_performances[k]
-    del folds_performances[k]
-save_to_file('folds_performances', folds_performances)
+validation_set = 0
+dataloaders, dataset_sizes = build_dataloaders(validation_set)
 
-for k in range(0,1):#num_folds):
-    conf_matrices[str(k)] = {}
-    for epoch in range(num_epochs):
-        conf_matrices[str(k)][str(epoch)] = conf_matrices[k][epoch]
-        del conf_matrices[k][epoch]
-    del conf_matrices[k]
+conf_matrices = {}
+performances = []
+writer = SummaryWriter(log_dir)
+
+
+# In[33]:
+
+
+model = AlexNet()
+model.to(device)
+optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=wd)
+    
+epoch_progress = trange(num_epochs, desc='Epoch 0 - val loss: ? acc: ?', bar_format='{desc}{r_bar}')
+for epoch in epoch_progress:  # loop over the dataset multiple epochs
+        
+    conf_matrices[epoch] = {}
+    # training and validation part
+    for phase in ['train', 'val']:
+            
+        if phase == 'train':
+            model.train()  # Set to training mode
+        else:
+            model.eval()  # Set model to evaluate mode
+                
+        running_loss = 0.0
+        running_corrects = 0
+        conf_matrices[epoch] = [0] * 10
+        for i in range(10):
+            conf_matrices[epoch][i] = [0] * 10
+
+        # iterate over the data
+        for inputs, labels in dataloaders[phase]:
+                
+            # get the inputs
+            inputs, labels = inputs.to(device), labels.to(device)
+
+            optimizer.zero_grad() # zero the gradient buffers
+
+            # forward + loss
+            outputs = model(inputs)
+            loss = nn.CrossEntropyLoss()(outputs, labels)
+                
+            if phase == 'train':
+                # backward + optimize
+                loss.backward()
+                optimizer.step() # does the update
+
+            # statistics
+            running_loss += loss.data.item() * inputs.size(0)
+                
+            _, preds = torch.max(outputs, 1)
+            running_corrects += torch.sum(preds == labels.data)
+                
+            if phase == 'val':
+                for predicted in range(len(preds)):
+                    conf_matrices[epoch][labels.data[predicted]][preds[predicted]] += 1
+                
+        epoch_loss = running_loss / dataset_sizes[phase]
+        epoch_acc = running_corrects.data.item() / dataset_sizes[phase]
+            
+        # tensorboard statistics
+        if phase == 'train':
+            writer.add_scalar('/train_loss', epoch_loss, epoch)
+            writer.add_scalar('/train_accuracy', epoch_acc, epoch)
+        else:
+            writer.add_scalar('/val_loss', epoch_loss, epoch)
+            writer.add_scalar('/val_accuracy', epoch_acc, epoch)
+
+    performances.append(epoch_acc)
+    epoch_progress.set_description('Epoch {} - val loss: {:.4f} acc: {:.4f}'.format(epoch, epoch_loss, epoch_acc), refresh=False)
+    
+print('Training is over.')
+
+
+# In[34]:
+
+
+save_to_file('performances', performances)
+
+for epoch in range(num_epochs):
+    conf_matrices[str(epoch)] = conf_matrices[epoch]
+    del conf_matrices[epoch]
 save_to_file('confusion_matrices', conf_matrices)
 
 print('Statistics saved to file.')
