@@ -148,7 +148,7 @@ for validation_set in trange(num_folds, desc='Folds iterations: ', bar_format='{
     
     model = AlexNet()
     model.to(device)
-    optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=wd, eps=0.1)
+    optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=wd, eps=1)
     
     folds_performances[validation_set] = []
     epoch_progress = trange(num_epochs, desc='Fold {}, epoch 0 - val loss: ? acc: ?'.format(validation_set),
