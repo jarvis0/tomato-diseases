@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[ ]:
+# In[8]:
 
 
 from PIL import Image
@@ -15,24 +15,17 @@ import random
 #%matplotlib inline
 
 
-# In[ ]:
+# In[9]:
 
 
 def DisplayImage(image):
     imshow(np.asarray(image))
 
 
-# In[ ]:
+# In[10]:
 
 
-binary_classification = False
-
-if binary_classification:
-    classes = ['healthy', 'non_healthy']
-else:  
-    classes = ['healthy', 'Bacterial_spot', 'Early_blight', 'Late_blight', 'Leaf_Mold', 'Septoria_leaf_spot',
-           'Spider_mites Two-spotted_spider_mite', 'Target_Spot', 'Tomato_mosaic_virus', 'Tomato_Yellow_Leaf_Curl_Virus']
-
+classes = os.listdir('data/train/')
 data_dir = 'augmented_data/'
 
 if os.path.exists(data_dir):
@@ -40,7 +33,6 @@ if os.path.exists(data_dir):
 os.mkdir(data_dir)
 
 random.seed(a=1234)
-shutil.copytree('data/test', data_dir + 'test/')
 os.mkdir(data_dir + 'train/')
 for clss in classes:
     os.mkdir(data_dir + 'train/' + clss)
