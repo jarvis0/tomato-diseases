@@ -113,4 +113,8 @@ class AlexNet(nn.Module):
     def get_features(self):
         return self.features
     
+    @property
+    def get_classifier(self):
+        return self.classifier
+    
 

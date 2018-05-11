@@ -1,3 +1,4 @@
 data/*
 augmented_data/*
 .ipynb_checkpoints/*
+multiclass_classification/alexnet_model
