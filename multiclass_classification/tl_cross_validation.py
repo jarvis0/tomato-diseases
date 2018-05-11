@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[24]:
+# In[1]:
 
 
 import torch
@@ -11,6 +11,7 @@ import torch.optim as optim
 from torch.utils.data import ConcatDataset
 from torch.utils.data import DataLoader
 from torch.utils.data.dataset import random_split
+from torchvision import models
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 from tqdm import trange
@@ -19,10 +20,9 @@ import argparse
 from tensorboardX import SummaryWriter
 import time
 import datetime
-from models import AlexNet
 
 
-# In[25]:
+# In[2]:
 
 
 def save_to_file(filename, to_file):
@@ -31,7 +31,7 @@ def save_to_file(filename, to_file):
     f.close()
 
 
-# In[26]:
+# In[3]:
 
 
 ts = time.time()
@@ -44,27 +44,30 @@ log_dir = 'log/' + timestamp + '/'
 os.mkdir(log_dir)
 
 
-# In[35]:
+# In[4]:
 
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
+parser.add_argument('--arc', dest='arc', default='AlexNet_pretrained', type=str, required=False)
 parser.add_argument('--num_epochs', dest='num_epochs', default=57, type=int, required=False)
 parser.add_argument('--batch_size', dest='batch_size', default=64, type=int, required=False)
-parser.add_argument('--lr', dest='lr', default=0.0005, type=float, required=False)
+parser.add_argument('--lr', dest='lr', default=0.001, type=float, required=False)
 parser.add_argument('--wd', dest='wd', default=0, type=float, required=False)
 
 args = parser.parse_args()
+arc = args.arc
 num_epochs = args.num_epochs
 batch_size = args.batch_size
 lr = args.lr
 wd = args.wd
 """
 num_epochs = 2
-batch_size = 32
+batch_size = 64
 lr = 0.001
 wd = 0
 """
 infos = {}
+infos['architecture'] = arc
 infos['num_epochs'] = num_epochs
 infos['batch_size'] = batch_size
 infos['lr'] = lr
@@ -72,14 +75,14 @@ infos['wd'] = wd
 save_to_file('infos', infos)
 
 
-# In[29]:
+# In[5]:
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 data_dir = '../augmented_data/'
 
 
-# In[30]:
+# In[6]:
 
 
 mean = [0.44947562, 0.46524084, 0.40037745]
@@ -87,6 +90,7 @@ std = [0.18456618, 0.16353698, 0.20014246]
 
 data_transforms = {
         'train': transforms.Compose([
+        transforms.Resize(224),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)])}
 
@@ -112,7 +116,7 @@ for k in range(num_folds):
     image_datasets[splits[k]] = random_splits[k]
 
 
-# In[31]:
+# In[7]:
 
 
 def build_dataloaders(validation_set):
@@ -135,7 +139,7 @@ def build_dataloaders(validation_set):
     return dataloaders, dataset_sizes
 
 
-# In[32]:
+# In[8]:
 
 
 validation_set = 0
@@ -146,12 +150,35 @@ performances = []
 writer = SummaryWriter(log_dir)
 
 
-# In[33]:
+# In[10]:
 
 
-model = AlexNet()
+model = models.alexnet(pretrained=True)
+
+
+# In[11]:
+
+
+for param in model.features:
+    param.requires_grad = False
+
+model.classifier[6] = nn.Linear(4096, 10)
+nn.init.kaiming_normal_(model.classifier[1].weight, nonlinearity='relu')
+nn.init.kaiming_normal_(model.classifier[4].weight, nonlinearity='relu')
+nn.init.kaiming_normal_(model.classifier[6].weight, nonlinearity='relu')
+
+for name, child in model.named_children():
+    if name == 'classifier':
+        for params in child.parameters():
+            params.requires_grad = True
+
 model.to(device)
-optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=wd, eps=0.1)
+
+
+# In[12]:
+
+
+optimizer = optim.Adam(model.classifier.parameters(), lr=lr, weight_decay=wd, eps=0.1)
     
 epoch_progress = trange(num_epochs, desc='Epoch 0 - val loss: ? acc: ?', bar_format='{desc}{r_bar}')
 for epoch in epoch_progress:  # loop over the dataset multiple epochs
@@ -214,11 +241,8 @@ for epoch in epoch_progress:  # loop over the dataset multiple epochs
     
 print('Training is over.')
 
-torch.save(model.state_dict(), 'alexnet_model')
-print('Model saved to file.')
 
-
-# In[34]:
+# In[13]:
 
 
 save_to_file('performances', performances)

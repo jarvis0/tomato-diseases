@@ -1,17 +1,50 @@
-Experiment: 2018-05-07 h13m35s10
-Infos: {'num_epochs': 25, 'batch_size': 32, 'lr': 0.001, 'wd': 0}
-Statistical best epoch: 6
-Mitchell best epoch: 7
-Statistics for 6 epochs
-Accuracy: 0.8670542797205713 +-0.015190886881374061
-Macro precision: 0.8348306046815417 +-0.016958040878309384
-Macro recall (Trues rate): 0.8262252201748845 +-0.02228009872302642
-Falses Rate: 0.1737747798251154 +-0.022280098723026436
-Macro F1: 0.8256260705731975 +-0.01964823480407214
-Statistics for 7 epochs
-Accuracy: 0.8572950267214612 +-0.013534509619189252
-Macro precision: 0.8276215022404558 +-0.018944779056882806
-Macro recall (Trues rate): 0.8086453318247002 +-0.018882751212684852
-Falses Rate: 0.1913546681752996 +-0.018882751212684862
-Macro F1: 0.8140179416133293 +-0.020665538939139985
+Experiment: 2018-05-07 h20m41s47
+Infos: {'architecture': 'AlexNet', 'num_epochs': 30, 'batch_size': 32, 'lr': 0.001, 'wd': 0}
+Exit error: 'eps=1e-08'
+Statistical best epoch: 26
+Accuracy: 0.9325575244644274
+Macro precision: 0.9113406506506135
+Macro recall: 0.9057926289619195
+Macro F1: 0.9069822009195778
+
+Experiment: 2018-05-09 h15m36s45
+Infos: {'architecure': 'AlexNet', 'num_epochs': 56, 'batch_size': 64, 'lr': 0.001, 'wd': 0}
+Statistical best epoch: 50
+Accuracy: 0.9849246231155779
+Macro precision: 0.977595700770447
+Macro recall: 0.9798960951156075
+Macro F1: 0.9785856865771927
+
+Experiment: 2018-05-09 h19m59s18
+Infos: {'architecture': 'AlexNet', 'num_epochs': 57, 'batch_size': 64, 'lr': 0.001, 'wd': 0}
+Exit error: 'eps=1'
+Statistical best epoch: 54
+Accuracy: 0.9510711451996826
+Macro precision: 0.9372467526712607
+Macro recall: 0.9315312606166365
+Macro F1: 0.9325702874894053
+
+Experiment: 2018-05-10 h07m37s34
+Infos: {'architecture': 'AlexNet', 'num_epochs': 57, 'batch_size': 96, 'lr': 0.001, 'wd': 0}
+Statistical best epoch: 53
+Accuracy: 0.9777836551176937
+Macro precision: 0.9659095210409977
+Macro recall: 0.9708311681988211
+Macro F1: 0.9679995276796022
+
+Experiment: 2018-05-10 h15m36s03
+Infos: {'architecture': 'AlexNet', 'num_epochs': 57, 'batch_size': 64, 'lr': 0.0005, 'wd': 0}
+Statistical best epoch: 52
+Accuracy: 0.9744776514149696
+Macro precision: 0.9639677611790693
+Macro recall: 0.9676157775618266
+Macro F1: 0.965684374791226
+
+Experiment: 2018-05-10 h20m07s34
+Infos: {'architecture': 'AlexNet', 'num_epochs': 57, 'batch_size': 64, 'lr': 0.001, 'wd': 1e-05}
+Statistical best epoch: 54
+Accuracy: 0.9813541391166358
+Macro precision: 0.975633194908524
+Macro recall: 0.9740737222131879
+Macro F1: 0.9746220538796576
 

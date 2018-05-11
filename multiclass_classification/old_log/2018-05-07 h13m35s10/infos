@@ -1,0 +1,1 @@
+{'architecture': 'LeNet', 'num_epochs': 25, 'batch_size': 32, 'lr': 0.001, 'wd': 0}

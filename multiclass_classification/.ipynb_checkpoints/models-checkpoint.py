@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[3]:
+# In[6]:
 
 
 import torch
@@ -9,7 +9,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-# In[4]:
+# In[7]:
 
 
 class LeNet(nn.Module):
@@ -32,7 +32,7 @@ class LeNet(nn.Module):
             nn.Linear(84, 10)
         )
         nn.init.kaiming_normal_(self.features[0].weight, nonlinearity='relu')
-        nn.init.kaiming_normal_(self.features[2].weight, nonlinearity='relu')
+        nn.init.kaiming_normal_(self.features[3].weight, nonlinearity='relu')
         nn.init.kaiming_normal_(self.classifier[0].weight, nonlinearity='relu')
         nn.init.kaiming_normal_(self.classifier[2].weight, nonlinearity='relu')
         nn.init.kaiming_normal_(self.classifier[4].weight, nonlinearity='relu')
@@ -50,9 +50,13 @@ class LeNet(nn.Module):
             num_features *= s
         return num_features
     
+    @property
+    def get_features(self):
+        return self.features
+    
 
 
-# In[5]:
+# In[8]:
 
 
 class AlexNet(nn.Module):
@@ -104,5 +108,13 @@ class AlexNet(nn.Module):
         for s in size:
             num_features *= s
         return num_features
+        
+    @property
+    def get_features(self):
+        return self.features
+    
+    @property
+    def get_classifier(self):
+        return self.classifier
     
 

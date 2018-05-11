@@ -1,0 +1,1 @@
+{'architecture': 'AlexNet', 'num_epochs': 57, 'batch_size': 64, 'lr': 0.0005, 'wd': 0}
