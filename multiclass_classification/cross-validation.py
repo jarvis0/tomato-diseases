@@ -212,11 +212,7 @@ for epoch in epoch_progress:  # loop over the dataset multiple epochs
     performances.append(epoch_acc)
     epoch_progress.set_description('Epoch {} - val loss: {:.4f} acc: {:.4f}'.format(epoch, epoch_loss, epoch_acc), refresh=False)
     
-print('Training is over.')
-
-torch.save(model.state_dict(), 'alexnet_model')
-print('Model saved to file.')
-
+print('Training is over')
 
 # In[34]:
 
