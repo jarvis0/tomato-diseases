@@ -1,7 +1,0 @@
-Experiment: 2018-05-09 h15m36s45
-Infos: {'architecure': 'AlexNet', 'num_epochs': 56, 'batch_size': 64, 'lr': 0.001, 'wd': 0}
-Statistical best epoch: 50Experiment: 2018-05-10 h07m37s34
-Infos: {'architecture': 'AlexNet', 'num_epochs': 57, 'batch_size': 96, 'lr': 0.001, 'wd': 0}
-Statistical best epoch: 53Experiment: 2018-05-10 h20m07s34
-Infos: {'architecture': 'AlexNet', 'num_epochs': 57, 'batch_size': 64, 'lr': 0.001, 'wd': 1e-05}
-Statistical best epoch: 54
