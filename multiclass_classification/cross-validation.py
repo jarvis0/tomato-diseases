@@ -48,11 +48,10 @@ os.mkdir(log_dir)
 
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
-
 parser.add_argument('--num_epochs', dest='num_epochs', default=57, type=int, required=False)
 parser.add_argument('--batch_size', dest='batch_size', default=64, type=int, required=False)
-parser.add_argument('--lr', dest='lr', default=0.001, type=float, required=False)
-parser.add_argument('--wd', dest='wd', default=0.00001, type=float, required=False)
+parser.add_argument('--lr', dest='lr', default=0.0005, type=float, required=False)
+parser.add_argument('--wd', dest='wd', default=0, type=float, required=False)
 
 args = parser.parse_args()
 num_epochs = args.num_epochs
@@ -213,11 +212,8 @@ for epoch in epoch_progress:  # loop over the dataset multiple epochs
     performances.append(epoch_acc)
     epoch_progress.set_description('Epoch {} - val loss: {:.4f} acc: {:.4f}'.format(epoch, epoch_loss, epoch_acc), refresh=False)
     
-print('Training is over.')
-"""
-torch.save(model.state_dict(),'alexnet_model')
-print('Model saved to file.')
-"""
+print('Training is over')
+
 # In[34]:
 
 
