@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[2]:
+# In[6]:
 
 
 import torch
@@ -9,38 +9,38 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-# In[50]:
+# In[7]:
 
 
 class LeNet(nn.Module):
     
     def __init__(self):
         super(LeNet, self).__init__()
-        # 3 input image channel,
-        # 6 output channel,
-        # 5x5 square convolution kernel
-        self.conv1 = nn.Conv2d(3, 6, 5)
-        self.pool = nn.MaxPool2d(2)
-        self.conv2 = nn.Conv2d(6, 16, 5)
-        # an affine operation
-        self.fc1 = nn.Linear(16 * 61 * 61, 120)
-        self.fc2 = nn.Linear(120, 84)
-        self.fc3 = nn.Linear(84, 10)
-        
-        nn.init.kaiming_normal_(self.conv1.weight, nonlinearity='relu')
-        nn.init.kaiming_normal_(self.conv2.weight, nonlinearity='relu')
-        nn.init.kaiming_normal_(self.fc1.weight, nonlinearity='relu')
-        nn.init.kaiming_normal_(self.fc2.weight, nonlinearity='relu')
-        nn.init.kaiming_normal_(self.fc3.weight, nonlinearity='relu')
+        self.features = nn.Sequential(
+            nn.Conv2d(3, 6, kernel_size=5),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(kernel_size=2),
+            nn.Conv2d(6, 16, kernel_size=5),
+            nn.ReLU(inplace=True),
+            nn.MaxPool2d(kernel_size=2)
+        )
+        self.classifier = nn.Sequential(
+            nn.Linear(16 * 61 * 61, 120),
+            nn.ReLU(inplace=True),
+            nn.Linear(120, 84),
+            nn.ReLU(inplace=True),
+            nn.Linear(84, 10)
+        )
+        nn.init.kaiming_normal_(self.features[0].weight, nonlinearity='relu')
+        nn.init.kaiming_normal_(self.features[3].weight, nonlinearity='relu')
+        nn.init.kaiming_normal_(self.classifier[0].weight, nonlinearity='relu')
+        nn.init.kaiming_normal_(self.classifier[2].weight, nonlinearity='relu')
+        nn.init.kaiming_normal_(self.classifier[4].weight, nonlinearity='relu')
         
     def forward(self, x):
-        # max pooling over a (2, 2) windows
-        x = self.pool(F.relu(self.conv1(x)))
-        x = self.pool(F.relu(self.conv2(x)))
-        x = x.view(-1, self.num_flat_features(x))
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
-        x = self.fc3(x)
+        x = self.features(x)
+        x = x.view(x.size(0), self.num_flat_features(x))
+        x = self.classifier(x)
         return x
     
     def num_flat_features(self, x):
@@ -50,9 +50,13 @@ class LeNet(nn.Module):
             num_features *= s
         return num_features
     
+    @property
+    def get_features(self):
+        return self.features
+    
 
 
-# In[52]:
+# In[8]:
 
 
 class AlexNet(nn.Module):
@@ -76,7 +80,7 @@ class AlexNet(nn.Module):
         )
         self.classifier = nn.Sequential(
             nn.Dropout(),
-            nn.Linear(7 * 7 * 256, 4096),
+            nn.Linear(256 * 7 * 7, 4096),
             nn.ReLU(inplace=True),
             nn.Dropout(),
             nn.Linear(4096, 4096),
@@ -97,11 +101,16 @@ class AlexNet(nn.Module):
         x = x.view(x.size(0), self.num_flat_features(x))
         x = self.classifier(x)
         return x
-
+    
     def num_flat_features(self, x):
         size = x.size()[1:]
         num_features = 1
         for s in size:
             num_features *= s
         return num_features
+        
+    @property
+    def get_features(self):
+        return self.features
     
+
