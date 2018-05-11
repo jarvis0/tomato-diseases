@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[1]:
+# In[39]:
 
 
 import torch
@@ -22,7 +22,7 @@ import time
 import datetime
 
 
-# In[2]:
+# In[40]:
 
 
 def save_to_file(filename, to_file):
@@ -31,7 +31,7 @@ def save_to_file(filename, to_file):
     f.close()
 
 
-# In[3]:
+# In[41]:
 
 
 ts = time.time()
@@ -44,7 +44,8 @@ log_dir = 'log/' + timestamp + '/'
 os.mkdir(log_dir)
 
 
-# In[4]:
+# In[42]:
+
 
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
@@ -75,14 +76,14 @@ infos['wd'] = wd
 save_to_file('infos', infos)
 
 
-# In[5]:
+# In[43]:
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 data_dir = '../augmented_data/'
 
 
-# In[6]:
+# In[44]:
 
 
 mean = [0.44947562, 0.46524084, 0.40037745]
@@ -116,7 +117,7 @@ for k in range(num_folds):
     image_datasets[splits[k]] = random_splits[k]
 
 
-# In[7]:
+# In[45]:
 
 
 def build_dataloaders(validation_set):
@@ -139,7 +140,7 @@ def build_dataloaders(validation_set):
     return dataloaders, dataset_sizes
 
 
-# In[8]:
+# In[46]:
 
 
 validation_set = 0
@@ -150,32 +151,37 @@ performances = []
 writer = SummaryWriter(log_dir)
 
 
-# In[10]:
+# In[47]:
 
 
 model = models.alexnet(pretrained=True)
 
 
-# In[11]:
+# In[48]:
 
 
 for param in model.features:
-    param.requires_grad = False
+    param.requires_grad = True
 
 model.classifier[6] = nn.Linear(4096, 10)
+
 nn.init.kaiming_normal_(model.classifier[1].weight, nonlinearity='relu')
 nn.init.kaiming_normal_(model.classifier[4].weight, nonlinearity='relu')
 nn.init.kaiming_normal_(model.classifier[6].weight, nonlinearity='relu')
-
+"""
 for name, child in model.named_children():
     if name == 'classifier':
         for params in child.parameters():
             params.requires_grad = True
 
+for name, child in model.named_children():
+    for name2, params in child.named_parameters():
+        print(params.requires_grad)
+"""
 model.to(device)
 
 
-# In[12]:
+# In[49]:
 
 
 optimizer = optim.Adam(model.classifier.parameters(), lr=lr, weight_decay=wd, eps=0.1)
