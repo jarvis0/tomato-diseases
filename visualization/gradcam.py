@@ -7,9 +7,6 @@ import cv2
 import numpy as np
 import torch
 
-from misc_functions import get_params, save_class_activation_on_image
-
-
 class CamExtractor():
     """
         Extracts cam features from the model
@@ -57,32 +54,51 @@ class GradCam():
         self.extractor = CamExtractor(self.model, target_layer)
 
     def generate_cam(self, input_image, target_class=None):
+
         # Full forward pass
         # conv_output is the output of convolutions at specified layer
         # model_output is the final output of the model (1, 1000)
+	
+	# forward completo, viene salvato il gradiente del target layer,
+	# conv_out è l'uscita dal convolution target layer
+	# model_output è l'uscita dall'ultimo layer della rete
         conv_output, model_output = self.extractor.forward_pass(input_image)
         if target_class is None:
             target_class = np.argmax(model_output.data.numpy())
+
         # Target for backprop
+	
+	# Inizializzazione di one_hot_output come tensore tutto di 0 e in posizione [0][target_class]
+	# assegna 1
         one_hot_output = torch.FloatTensor(1, model_output.size()[-1]).zero_()
         one_hot_output[0][target_class] = 1
+
         # Zero grads
+
+	# reinizializzazione del gradiente
+	# quando si fa backprogation il gradiente va reinizializzato se no le modifiche che verranno
+	# apportate nella backpropagation andrebbero a sommarsi al gradiente calcolato precedentemente durante
+	# il forward
         self.model.features.zero_grad()
         self.model.classifier.zero_grad()
-        # Backward pass with specified target
+
+        # Backward pass with specified target	
         model_output.backward(gradient=one_hot_output, retain_graph=True)
         # Get hooked gradients
         guided_gradients = self.extractor.gradients.data.numpy()[0]
         # Get convolution outputs
         target = conv_output.data.numpy()[0]
+
         # Get weights from gradients
+	
+	# I gradienti sono 1 x ogni neurone quindi viene eseguita una media
         weights = np.mean(guided_gradients, axis=(1, 2))  # Take averages for each gradient
         # Create empty numpy array for cam
         cam = np.ones(target.shape[1:], dtype=np.float32)
         # Multiply each weight with its conv output and then, sum
         for i, w in enumerate(weights):
             cam += w * target[i, :, :]
-        cam = cv2.resize(cam, (224, 224))
+        cam = cv2.resize(cam, (256, 256))
         cam = np.maximum(cam, 0)
         cam = (cam - np.min(cam)) / (np.max(cam) - np.min(cam))  # Normalize between 0-1
         cam = np.uint8(cam * 255)  # Scale between 0-255 to visualize

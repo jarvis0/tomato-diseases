@@ -7,6 +7,7 @@ import os
 import copy
 import cv2
 import numpy as np
+import matplotlib.pyplot as plt
 
 import torch
 from torch.autograd import Variable
@@ -65,16 +66,31 @@ def save_class_activation_on_image(org_img, activation_map, file_name):
     path_to_file = os.path.join('../results', file_name+'_Cam_Grayscale.jpg')
     cv2.imwrite(path_to_file, activation_map)
     # Heatmap of activation map
-    activation_heatmap = cv2.applyColorMap(activation_map, cv2.COLORMAP_HSV)
+    activation_heatmap = cv2.applyColorMap(activation_map, cv2.COLORMAP_JET)
     path_to_file = os.path.join('../results', file_name+'_Cam_Heatmap.jpg')
     cv2.imwrite(path_to_file, activation_heatmap)
     # Heatmap on picture
-    org_img = cv2.resize(org_img, (224, 224))
+    #org_img = cv2.resize(org_img, (224, 224))
     img_with_heatmap = np.float32(activation_heatmap) + np.float32(org_img)
     img_with_heatmap = img_with_heatmap / np.max(img_with_heatmap)
     path_to_file = os.path.join('../results', file_name+'_Cam_On_Image.jpg')
     cv2.imwrite(path_to_file, np.uint8(255 * img_with_heatmap))
 
+def show_class_activation_on_image(org_img, activation_map):
+    #plt.imshow(activation_map, cmap="gray")
+    #plt.show()
+    activation_heatmap = cv2.applyColorMap(activation_map, cv2.COLORMAP_JET)
+    image_show(activation_heatmap)
+    img_with_heatmap = np.float32(activation_heatmap) + np.float32(org_img)
+    img_with_heatmap = img_with_heatmap / np.max(img_with_heatmap)
+    image_show(np.uint8(255 * img_with_heatmap))
+
+def image_show(image):
+    b,g,r = cv2.split(image)
+    frame_rgb = cv2.merge((r,g,b))
+    plt.imshow(frame_rgb)
+    plt.show()
+    
 
 def preprocess_image(cv2im, resize_im=True):
     """
@@ -87,8 +103,8 @@ def preprocess_image(cv2im, resize_im=True):
         im_as_var (Pytorch variable): Variable that contains processed float tensor
     """
     # mean and std list for channels (Imagenet)
-    mean = [0.485, 0.456, 0.406]
-    std = [0.229, 0.224, 0.225]
+    mean = [0.44947562, 0.46524084, 0.40037745]
+    std = [0.18456618, 0.16353698, 0.20014246]
     # Resize image
     if resize_im:
         cv2im = cv2.resize(cv2im, (224, 224))
@@ -164,9 +180,7 @@ def get_params(example_index):
         pretrained_model(Pytorch model): Model to use for the operations
     """
     # Pick one of the examples
-    example_list = [['../input_images/snake.jpg', 56],
-                    ['../input_images/cat_dog.png', 243],
-                    ['../input_images/spider.png', 72]]
+    example_list = [['../data/train/Bacterial_spot/1f96aa30-b5fd-4730-a758-ca586cbcf59f___GCREC_Bact.Sp 3688.JPG', 0]]
     selected_example = example_index
     img_path = example_list[selected_example][0]
     target_class = example_list[selected_example][1]
@@ -174,11 +188,8 @@ def get_params(example_index):
     # Read image
     original_image = cv2.imread(img_path, 1)
     # Process image
-    prep_img = preprocess_image(original_image)
-    # Define model
-    pretrained_model = models.alexnet(pretrained=True)
+    prep_img = preprocess_image(original_image, resize_im=False)
     return (original_image,
             prep_img,
             target_class,
-            file_name_to_export,
-            pretrained_model)
+            file_name_to_export)
