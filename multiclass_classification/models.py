@@ -49,11 +49,6 @@ class LeNet(nn.Module):
         for s in size:
             num_features *= s
         return num_features
-    
-    @property
-    def get_features(self):
-        return self.features
-    
 
 
 # In[8]:
@@ -108,13 +103,3 @@ class AlexNet(nn.Module):
         for s in size:
             num_features *= s
         return num_features
-        
-    @property
-    def get_features(self):
-        return self.features
-    
-    @property
-    def get_classifier(self):
-        return self.classifier
-    
-
