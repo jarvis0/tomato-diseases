@@ -1,5 +1,7 @@
 data/*
 augmented_data/*
-*/.ipynb_checkpoints/*
-multiclass_classification/*.model
-*/__python__/*
+.ipynb_checkpoints/*
+**/.ipynb_checkpoints/*
+**/*.model
+__python__/*
+**/__python__/*
