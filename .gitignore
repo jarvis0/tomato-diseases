@@ -1,6 +1,6 @@
 data/*
 augmented_data/*
 .ipynb_checkpoints/*
-multiclass_classification/alexnet_model
+multiclass_classification/*.model
 collage/segmented_dataset/*
 collage/original_segmented_dataset/*
