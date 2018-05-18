@@ -1,6 +1,5 @@
 data/*
 augmented_data/*
-.ipynb_checkpoints/*
+*/.ipynb_checkpoints/*
 multiclass_classification/*.model
-collage/segmented_dataset/*
-collage/original_segmented_dataset/*
+*/__python__/*

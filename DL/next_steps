@@ -1,0 +1,10 @@
+training su segmented -> normale test + segmented test
+training su sfondo di tavolo del tavolo del nostro dataset -> normale test
+training su sfondo random noise -> normale test
+training su sfondo casuale (terreno, piante, pomodori, piantagioni) -> test normale
+====================================================================================
+occlusion method + grad cam su tutti i test set finora
+
+
+
+alexnet pretrained
