@@ -184,7 +184,7 @@ model.to(device)
 # In[49]:
 
 
-optimizer = optim.Adam(model.classifier.parameters(), lr=lr, weight_decay=wd, eps=0.1)
+optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=wd, eps=0.1)
     
 epoch_progress = trange(num_epochs, desc='Epoch 0 - val loss: ? acc: ?', bar_format='{desc}{r_bar}')
 for epoch in epoch_progress:  # loop over the dataset multiple epochs
