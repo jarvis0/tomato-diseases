@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[6]:
+# In[7]:
 
 
 import torch
@@ -11,12 +11,12 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
-from torchvision import models
+from models import LeNet
 import os
 from tqdm import trange
 
 
-# In[2]:
+# In[8]:
 
 
 num_epochs = 57
@@ -27,14 +27,14 @@ wd = 0
 model_format = ".model"
 
 
-# In[3]:
+# In[9]:
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 data_dir = '../augmented_data/'
 
 
-# In[4]:
+# In[10]:
 
 
 mean = [0.44947562, 0.46524084, 0.40037745]
@@ -42,7 +42,6 @@ std = [0.18456618, 0.16353698, 0.20014246]
 
 data_transforms = {
         'train': transforms.Compose([
-        transforms.Resize(224),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)])}
 
@@ -52,7 +51,7 @@ train_images = datasets.ImageFolder(os.path.join(data_dir, 'train'),
 train_dataloader = DataLoader(train_images, batch_size=batch_size, shuffle=True, num_workers=4)
 
 
-# In[5]:
+# In[ ]:
 
 
 model = models.alexnet(pretrained=True)
