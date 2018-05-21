@@ -1,2 +1,2 @@
-python multiclass_classification_data_loading.py
-python data_augmentation.py
+python b_data_loading.py
+python b_data_augmentation.py
