@@ -4,4 +4,4 @@ augmented_data/*
 **/.ipynb_checkpoints/*
 **/*.model
 __python__/*
-**/__python__/*
+**/__pycache__/*
