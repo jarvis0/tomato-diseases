@@ -1,1 +1,0 @@
-{'architecture': 'AlexNet_pretrained', 'dataset': 'random_noise', 'num_epochs': 60, 'batch_size': 64, 'lr': 0.001, 'wd': 0}
