@@ -46,12 +46,12 @@ def f(folder, clss):
         image.save(data_dir + folder + '/' + clss + '/' + img.replace('.jpg', '.png'), "PNG")
 
 workers = len(classes)
-with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
-    for folder in folders:
-        if os.path.exists(data_dir+ '/' + folder):
-            shutil.rmtree(data_dir+ '/' + folder)
-        os.mkdir(data_dir+ '/' + folder)
-        for clss in classes:
-            executor.submit(f, folder, clss)
+#with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
+for folder in folders:
+   if os.path.exists(data_dir+ '/' + folder):
+          shutil.rmtree(data_dir+ '/' + folder)
+   os.mkdir(data_dir+ '/' + folder)
+   for clss in classes:
+      f(folder, clss)
         
 

@@ -16,7 +16,7 @@ import shutil
 alpha_folder = "../alpha_data"
 folders = ['train', 'val']
 augmented_folder = "../augmented_data"
-classes = sorted(os.listdir(folders[0]))
+classes = sorted(os.listdir(alpha_folder + '/' + folders[0]))
 background_folder = 'backgrounds'
 
 if os.path.exists(augmented_folder):
