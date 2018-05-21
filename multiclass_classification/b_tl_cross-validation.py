@@ -49,7 +49,7 @@ os.mkdir(log_dir)
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
 parser.add_argument('--arc', dest='arc', default='AlexNet_pretrained', type=str, required=False)
-parser.add_argument('--data', dest='data', default='segmented', type=str, required=False)
+parser.add_argument('--data', dest='data', default='random_noise', type=str, required=False)
 parser.add_argument('--num_epochs', dest='num_epochs', default=60, type=int, required=False)
 parser.add_argument('--batch_size', dest='batch_size', default=64, type=int, required=False)
 parser.add_argument('--lr', dest='lr', default=0.001, type=float, required=False)
@@ -89,8 +89,8 @@ model_format = ".model"
 # In[ ]:
 
 
-mean = [0.14318287, 0.19182085, 0.10939839]
-std = [0.20657195, 0.25984347, 0.1585114]
+mean = [0.14304061, 0.19164301, 0.10920697]
+std = [0.20639636, 0.25961578, 0.15823205]
 
 data_transforms = {
         'train': transforms.Compose([

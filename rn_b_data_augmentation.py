@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[5]:
+# In[1]:
 
 
 from PIL import Image
@@ -13,10 +13,26 @@ import shutil
 import random
 
 
-# In[6]:
+# In[2]:
 
 
-classes = os.listdir('data/train/')
+def add_rn_background(path):
+    img = Image.open(path)
+    datas = img.getdata()
+    new_data = []
+    for item in datas:
+        if item[0] < 15 and item[1] < 10 and item[2] < 15:
+            new_data.append((random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
+        else:
+            new_data.append(item)
+    img.putdata(new_data)
+    return img
+
+
+# In[ ]:
+
+
+classes = sorted(os.listdir('data/train/'))
 destination = 'augmented_data/'
 
 if os.path.exists(destination):
@@ -32,8 +48,10 @@ for s in ['train', 'val']:
         src = 'data/' + s + '/' + clss + '/'
         dst = destination + s + '/' + clss + '/'
         counter = 0
-        for image in os.listdir(src):
-            im = Image.open(src + image)
+        
+        for image in sorted(os.listdir(src)):
+            
+            im = add_rn_background(src + image)
             im.save(dst + str(counter) + '_ORIGINAL.jpg', 'JPEG')
 
             transf = random.randint(1, 4)
