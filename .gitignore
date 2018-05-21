@@ -1,5 +1,6 @@
 data/*
 augmented_data/*
+alpha_data/*
 .ipynb_checkpoints/*
 **/.ipynb_checkpoints/*
 **/*.model
