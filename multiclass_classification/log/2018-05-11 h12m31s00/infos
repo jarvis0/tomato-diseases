@@ -1,1 +1,1 @@
-{'architecture': 'AlexNet_pretrained', 'num_epochs': 57, 'batch_size': 64, 'lr': 0.001, 'wd': 0}
+{'architecture': 'AlexNet_pretrained_only_classifier', 'num_epochs': 57, 'batch_size': 64, 'lr': 0.001, 'wd': 0}

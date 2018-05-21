@@ -47,6 +47,13 @@ os.mkdir(log_dir)
 # In[ ]:
 
 
+mean = [0.44471332 0.49318075 0.41099098]
+std = [0.22085857 0.20895584 0.22916482]
+
+
+# In[ ]:
+
+
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
 parser.add_argument('--arc', dest='arc', default='AlexNet_pretrained', type=str, required=False)
 parser.add_argument('--data', dest='data', default='random_noise', type=str, required=False)
@@ -75,6 +82,8 @@ infos['num_epochs'] = num_epochs
 infos['batch_size'] = batch_size
 infos['lr'] = lr
 infos['wd'] = wd
+infos['mean'] = mean
+infos['std'] = std
 save_to_file('infos', infos)
 
 
@@ -82,15 +91,15 @@ save_to_file('infos', infos)
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-data_dir = '../augmented_data/'
+data_dir = '../random_noise_augmented/'
 model_format = ".model"
 
 
 # In[ ]:
 
 
-mean = [0.14304061, 0.19164301, 0.10920697]
-std = [0.20639636, 0.25961578, 0.15823205]
+#mean = [0.14304061, 0.19164301, 0.10920697]
+#std = [0.20639636, 0.25961578, 0.15823205]
 
 data_transforms = {
         'train': transforms.Compose([
