@@ -9,8 +9,9 @@ from PIL import Image
 import matplotlib.pyplot as plt
 import numpy as np
 import random
+import shutil
 
-get_ipython().magic('matplotlib inline')
+#get_ipython().magic('matplotlib inline')
 
 
 # In[2]:
@@ -58,22 +59,35 @@ def background_calculator():
 # In[ ]:
 
 
-def apply_background(src):
+def apply_background(src, dest):
     for img in os.listdir(src):
-        background = background_calculator()
+        background =  background_calculator()
         image = Image.open(src + img)
         background.paste(image, (0,0), image)
-        background.save(src + img, "PNG")
-
-
+        background = background.convert('RGB')
+        background.save(dest + img, "PNG")
 # In[ ]:
 
 
+
+alpha_folder = "../alpha_data"
+augmented_folder = "../augmented_data"
 folders = ['val', 'train']
-classes = sorted(os.listdir(folders[0]))
+classes = sorted(os.listdir(alpha_folder + '/' +folders[0]))
+
+if os.path.exists(augmented_folder):
+    shutil.rmtree(augmented_folder)
+os.mkdir(augmented_folder)
 
 for folder in folders:
+    if os.path.exists(augmented_folder + '/' + folder):
+        shutil.rmtree(augmented_folder + '/' + folder)
+    os.mkdir(augmented_folder + '/' + folder)
     for clss in classes:
-        src = folder + '/' + clss + '/'
-        apply_background(src)
-
+        if os.path.exists(augmented_folder+ '/' + folder + '/' + clss):
+            shutil.rmtree(augmented_folder+ '/' + folder + '/' + clss)
+        dest = augmented_folder+ '/' + folder + '/' + clss + '/'
+        os.mkdir(dest)
+        src = alpha_folder + '/' + folder + '/' + clss + '/'
+        print(src)
+        apply_background(src, dest)
