@@ -1,1 +1,0 @@
-{'architecture': 'AlexNet_pretrained', 'dataset': 'random_noise_right_normalization', 'num_epochs': 60, 'batch_size': 64, 'lr': 0.001, 'wd': 0, 'mean': [0.44471332, 0.49318075, 0.41099098], 'std': [0.22085857, 0.20895584, 0.22916482]}
