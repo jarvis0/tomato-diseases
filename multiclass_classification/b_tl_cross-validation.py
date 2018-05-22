@@ -47,8 +47,8 @@ os.mkdir(log_dir)
 # In[ ]:
 
 
-mean = [0.44471332 0.49318075 0.41099098]
-std = [0.22085857 0.20895584 0.22916482]
+mean = [0.44471332, 0.49318075, 0.41099098]
+std = [0.22085857, 0.20895584, 0.22916482]
 
 
 # In[ ]:
@@ -56,7 +56,7 @@ std = [0.22085857 0.20895584 0.22916482]
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
 parser.add_argument('--arc', dest='arc', default='AlexNet_pretrained', type=str, required=False)
-parser.add_argument('--data', dest='data', default='random_noise', type=str, required=False)
+parser.add_argument('--data', dest='data', default='random_noise_right_normalization', type=str, required=False)
 parser.add_argument('--num_epochs', dest='num_epochs', default=60, type=int, required=False)
 parser.add_argument('--batch_size', dest='batch_size', default=64, type=int, required=False)
 parser.add_argument('--lr', dest='lr', default=0.001, type=float, required=False)
