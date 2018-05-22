@@ -1,8 +1,9 @@
+random_backgrounds_augmented/*
+random_noise_augmented/*
 data/*
 alpha_data/*
-random_noise_augmented/*
-random_backgrounds_augmented/*
 augmented_data/*
+alpha_data/*
 .ipynb_checkpoints/*
 **/.ipynb_checkpoints/*
 **/*.model
