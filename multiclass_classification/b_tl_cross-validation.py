@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[ ]:
+# In[21]:
 
 
 import torch
@@ -22,7 +22,7 @@ import time
 import datetime
 
 
-# In[ ]:
+# In[22]:
 
 
 def save_to_file(filename, to_file):
@@ -31,7 +31,7 @@ def save_to_file(filename, to_file):
     f.close()
 
 
-# In[ ]:
+# In[23]:
 
 
 ts = time.time()
@@ -44,11 +44,11 @@ log_dir = 'log/' + timestamp + '/'
 os.mkdir(log_dir)
 
 
-# In[ ]:
+# In[1]:
 
 
-mean = [0.44947562, 0.46524084, 0.40037745]
-std = [0.18456618, 0.16353698, 0.20014246]
+mean = [0.4645744, 0.49843076, 0.42391795]
+std = [0.16663301, 0.1441624, 0.17573561]
 
 
 # In[ ]:
@@ -56,7 +56,7 @@ std = [0.18456618, 0.16353698, 0.20014246]
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
 parser.add_argument('--arc', dest='arc', default='AlexNet_pretrained', type=str, required=False)
-parser.add_argument('--data', dest='data', default='segmented_normal_norm', type=str, required=False)
+parser.add_argument('--data', dest='data', default='segmented_crop_normalization', type=str, required=False)
 parser.add_argument('--num_epochs', dest='num_epochs', default=60, type=int, required=False)
 parser.add_argument('--batch_size', dest='batch_size', default=64, type=int, required=False)
 parser.add_argument('--lr', dest='lr', default=0.001, type=float, required=False)
@@ -87,7 +87,7 @@ infos['std'] = std
 save_to_file('infos', infos)
 
 
-# In[ ]:
+# In[25]:
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -95,7 +95,7 @@ data_dir = '../augmented_data/'
 model_format = ".model"
 
 
-# In[ ]:
+# In[28]:
 
 
 #mean = [0.14304061, 0.19164301, 0.10920697]
@@ -103,11 +103,11 @@ model_format = ".model"
 
 data_transforms = {
         'train': transforms.Compose([
-        transforms.Resize(224),
+        transforms.Resize((224,224)),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)]),
         'val': transforms.Compose([
-        transforms.Resize(224),
+        transforms.Resize((224,224)),
         transforms.ToTensor(),
         transforms.Normalize(mean, std)])}
 
@@ -115,7 +115,7 @@ image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                     data_transforms[x]) for x in ['train', 'val']}
 
 
-# In[ ]:
+# In[29]:
 
 
 def build_dataloaders(datasets):
@@ -135,13 +135,13 @@ performances = []
 writer = SummaryWriter(log_dir)
 
 
-# In[ ]:
+# In[30]:
 
 
 model = models.alexnet(pretrained=True)
 
 
-# In[ ]:
+# In[31]:
 
 
 for param in model.features:
@@ -156,7 +156,7 @@ nn.init.kaiming_normal_(model.classifier[6].weight, nonlinearity='relu')
 model.to(device)
 
 
-# In[ ]:
+# In[32]:
 
 
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=wd, eps=0.1)
