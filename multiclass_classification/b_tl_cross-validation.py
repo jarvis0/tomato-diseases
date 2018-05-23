@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[16]:
+# In[1]:
 
 
 import torch
@@ -25,7 +25,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-# In[3]:
+# In[2]:
 
 
 def save_to_file(filename, to_file):
@@ -34,7 +34,7 @@ def save_to_file(filename, to_file):
     f.close()
 
 
-# In[4]:
+# In[3]:
 
 
 ts = time.time()
@@ -47,14 +47,14 @@ log_dir = 'log/' + timestamp + '/'
 os.mkdir(log_dir)
 
 
-# In[5]:
+# In[4]:
 
 
 mean = "image_wise_normalization"
 std = "image_wise_normalization"
 
 
-# In[6]:
+# In[5]:
 
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
@@ -146,7 +146,7 @@ def image_show(img):
     plt.pause(0.001)
 
 
-# In[17]:
+# In[11]:
 
 
 pop_mean = []
@@ -171,7 +171,7 @@ for phase in ['train', 'val']:
     
 
 
-# In[19]:
+# In[12]:
 
 
 datasets = {}
@@ -181,20 +181,20 @@ for phase in ['train', 'val']:
         datasets[phase]=ConcatDataset([datasets[phase], d])
 
 
-# In[20]:
+# In[13]:
 
 
 dataloaders = {x: DataLoader(datasets[x], batch_size=batch_size,
-                        shuffle=False, num_workers=4) for x in ['train', 'val']}
+                        shuffle=True, num_workers=4) for x in ['train', 'val']}
 
 
-# In[30]:
+# In[14]:
 
 
 model = models.alexnet(pretrained=True)
 
 
-# In[31]:
+# In[15]:
 
 
 for param in model.features:
@@ -209,7 +209,7 @@ nn.init.kaiming_normal_(model.classifier[6].weight, nonlinearity='relu')
 model.to(device)
 
 
-# In[32]:
+# In[16]:
 
 
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=wd, eps=0.1)
