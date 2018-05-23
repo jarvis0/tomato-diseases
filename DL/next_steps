@@ -1,6 +1,6 @@
 training su segmented -> normale test + segmented test
-training su sfondo random di tavolo del tavolo del nostro dataset -> normale test
-training su sfondo random noise -> normale test
+training su sfondo random di tavolo del tavolo del nostro dataset -> normale test [+ segmented test]
+training su sfondo random noise -> normale test [+ segmented test]
 training su sfondo casuale (terreno, piante, pomodori, piantagioni) -> normale test
 ====================================================================================
 occlusion method + grad cam su tutti i test set finora
@@ -8,9 +8,3 @@ occlusion method + grad cam su tutti i test set finora
 
 
 alexnet pretrained
-
-
-{train - validation]<--augmented // test} in cartelle
-70 30
-70 -> 20 in validation
-56 14 30
