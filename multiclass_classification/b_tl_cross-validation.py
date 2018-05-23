@@ -107,7 +107,7 @@ data_transforms = {
         transforms.ToTensor()]),
         'val': transforms.Compose([
         transforms.Resize((224,224)),
-        transforms.ToTensor()]}
+        transforms.ToTensor()])}
 
 image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                     data_transforms[x]) for x in ['train', 'val']}
