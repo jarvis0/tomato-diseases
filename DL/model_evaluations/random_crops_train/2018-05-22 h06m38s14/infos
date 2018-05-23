@@ -1,0 +1,1 @@
+{'architecture': 'AlexNet_pretrained', 'dataset': 'random_background_crop', 'num_epochs': 60, 'batch_size': 64, 'lr': 0.001, 'wd': 0, 'mean': [0.4645744, 0.49843076, 0.42391795], 'std': [0.16663301, 0.1441624, 0.17573561]}
