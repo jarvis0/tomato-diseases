@@ -3,7 +3,7 @@ import random
 import shutil
 
 DEBUG = False
-source = 'original_segmented_dataset/'
+source = 'original_dataset/'
 destination = 'data/'
 test_size = 30
 validation_size = 14
@@ -40,6 +40,10 @@ if not DEBUG:
 else:
     count = 0
     for cls in list(classes):
+        os.mkdir(destination + 'train/' + cls)
+        os.mkdir(destination + 'val/' + cls)
+        os.mkdir(destination + 'segmented_test/' + cls)
+        os.mkdir(destination + 'normal_test/' + cls)
         for image in sorted(os.listdir(source + cls + '/')):
             if count == 100:
                 count = 0
