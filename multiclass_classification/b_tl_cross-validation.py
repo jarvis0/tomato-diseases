@@ -64,7 +64,7 @@ parser.add_argument('--num_epochs', dest='num_epochs', default=60, type=int, req
 parser.add_argument('--batch_size', dest='batch_size', default=64, type=int, required=False)
 parser.add_argument('--lr', dest='lr', default=0.001, type=float, required=False)
 parser.add_argument('--wd', dest='wd', default=0, type=float, required=False)
-"""
+
 args = parser.parse_args()
 arc = args.arc
 d = args.data
@@ -88,14 +88,13 @@ infos['wd'] = wd
 infos['mean'] = mean
 infos['std'] = std
 save_to_file('infos', infos)
-"""
 
 
 # In[7]:
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-data_dir = '../data/'
+data_dir = '../augmented_data/'
 model_format = ".model"
 
 
