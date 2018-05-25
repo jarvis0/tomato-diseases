@@ -8,6 +8,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
+from torch.utils.data import TensorDataset
 from torch.utils.data import ConcatDataset
 from torch.utils.data import DataLoader
 from torch.utils.data.dataset import random_split
@@ -20,6 +21,8 @@ import argparse
 from tensorboardX import SummaryWriter
 import time
 import datetime
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 # In[2]:
@@ -51,7 +54,7 @@ mean = "image_wise_normalization"
 std = "image_wise_normalization"
 
 
-# In[ ]:
+# In[5]:
 
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
@@ -87,7 +90,7 @@ infos['std'] = std
 save_to_file('infos', infos)
 
 
-# In[25]:
+# In[7]:
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -95,7 +98,7 @@ data_dir = '../augmented_data/'
 model_format = ".model"
 
 
-# In[28]:
+# In[8]:
 
 
 #mean = [0.14304061, 0.19164301, 0.10920697]
@@ -113,7 +116,7 @@ image_datasets = {x: datasets.ImageFolder(os.path.join(data_dir, x),
                     data_transforms[x]) for x in ['train', 'val']}
 
 
-# In[29]:
+# In[9]:
 
 
 def build_dataloaders(datasets):
@@ -122,7 +125,7 @@ def build_dataloaders(datasets):
     
     # creating dataloaders
     dataloaders = {x: DataLoader(datasets[x], batch_size=batch_size,
-                        shuffle=True, num_workers=4) for x in ['train', 'val']}
+                        shuffle=False, num_workers=4) for x in ['train', 'val']}
     
     return dataloaders, dataset_sizes
 
@@ -133,13 +136,65 @@ performances = []
 writer = SummaryWriter(log_dir)
 
 
-# In[30]:
+# In[10]:
+
+
+def image_show(img):
+    img = np.transpose(img.cpu().numpy(), (1, 2, 0))
+    img = np.clip(img, 0, 1)
+    plt.imshow(img)
+    plt.pause(0.001)
+
+
+# In[11]:
+
+
+pop_mean = []
+pop_std0 = []
+data = {}
+for phase in ['train', 'val']:
+    data[phase] = []
+    for images, labels in dataloaders[phase]:
+        for i in range(len(images)):
+            #shape (batch_size, 3, height, width
+            numpy_image = images[i].numpy()
+            # shape (3,)
+            image_mean = np.mean(numpy_image, axis=(1,2))
+            std = np.std(numpy_image, axis=(1,2))
+            adjusted_stddev = np.float32(np.maximum(std, [1.0/224.0, 1.0/224.0, 1.0/224.0]))
+            image_mean_matrix = np.asarray([np.full((224,224), image_mean[0]), np.full((224,224), image_mean[1]), np.full((224,224), image_mean[2])])
+            adjusted_stddev_matrix = np.asarray([np.full((224,224), adjusted_stddev[0]), np.full((224,224), adjusted_stddev[1]), np.full((224,224), adjusted_stddev[2])])
+            images[i] = images[i].sub_(torch.from_numpy(image_mean_matrix))
+            images[i] = images[i].div_(torch.from_numpy(adjusted_stddev_matrix))
+            
+        data[phase].append(TensorDataset(images, labels))
+    
+
+
+# In[12]:
+
+
+datasets = {}
+for phase in ['train', 'val']:
+    datasets[phase] = []
+    for d in data[phase]:
+        datasets[phase]=ConcatDataset([datasets[phase], d])
+
+
+# In[13]:
+
+
+dataloaders = {x: DataLoader(datasets[x], batch_size=batch_size,
+                        shuffle=True, num_workers=4) for x in ['train', 'val']}
+
+
+# In[14]:
 
 
 model = models.alexnet(pretrained=True)
 
 
-# In[31]:
+# In[15]:
 
 
 for param in model.features:
@@ -154,7 +209,7 @@ nn.init.kaiming_normal_(model.classifier[6].weight, nonlinearity='relu')
 model.to(device)
 
 
-# In[32]:
+# In[16]:
 
 
 optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=wd, eps=0.1)
