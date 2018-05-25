@@ -1,0 +1,1 @@
+{'architecture': 'AlexNet_pretrained', 'dataset': 'segmented_normal_normalization', 'num_epochs': 60, 'batch_size': 64, 'lr': 0.001, 'wd': 0, 'mean': 'image_wise_normalization', 'std': 'image_wise_normalization'}

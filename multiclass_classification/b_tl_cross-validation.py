@@ -23,7 +23,9 @@ import time
 import datetime
 import numpy as np
 import matplotlib.pyplot as plt
+import sys
 
+sys.setrecursionlimit(1500)
 
 # In[2]:
 
@@ -125,7 +127,7 @@ def build_dataloaders(datasets):
     
     # creating dataloaders
     dataloaders = {x: DataLoader(datasets[x], batch_size=batch_size,
-                        shuffle=False, num_workers=4) for x in ['train', 'val']}
+                        shuffle=False, num_workers=0) for x in ['train', 'val']}
     
     return dataloaders, dataset_sizes
 
@@ -185,7 +187,7 @@ for phase in ['train', 'val']:
 
 
 dataloaders = {x: DataLoader(datasets[x], batch_size=batch_size,
-                        shuffle=True, num_workers=4) for x in ['train', 'val']}
+                        shuffle=True, num_workers=0) for x in ['train', 'val']}
 
 
 # In[14]:
