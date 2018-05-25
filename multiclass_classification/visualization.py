@@ -12,6 +12,8 @@ import torchvision.datasets as datasets
 from torch.utils.data import DataLoader
 from torch.utils.data import ConcatDataset
 from torch.utils.data import TensorDataset
+import matplotlib
+matplotlib.use('agg')
 import matplotlib.pyplot as plt
 import numpy as np
 from torchvision import models
@@ -225,7 +227,7 @@ class GradCam():
         
         # Inizializzazione di one_hot_output come tensore tutto di 0 e in posizione [0][target_class]
         # assegna 1
-        one_hot_output = torch.FloatTensor(1, model_output.size()[-1]).zero_()
+        one_hot_output = torch.cuda.FloatTensor(1, model_output.size()[-1]).zero_()
         one_hot_output[0][target_class] = 1
 
         # Zero grads
@@ -240,9 +242,9 @@ class GradCam():
         # Backward pass with specified target	
         model_output.backward(gradient=one_hot_output, retain_graph=True)
         # Get hooked gradients
-        guided_gradients = self.extractor.gradients.data.numpy()[0]
+        guided_gradients = self.extractor.gradients.cpu().data.numpy()[0]
         # Get convolution outputs
-        target = conv_output.data.numpy()[0]
+        target = conv_output.cpu().data.numpy()[0]
 
         # Get weights from gradients
 
