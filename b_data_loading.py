@@ -3,7 +3,7 @@ import random
 import shutil
 
 DEBUG = False
-source = 'original_dataset/'
+source = 'original_segmented_dataset/'
 destination = 'data/'
 test_size = 30
 validation_size = 14
