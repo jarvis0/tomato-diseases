@@ -13,7 +13,7 @@ import shutil
 
 
 folders = ['segmented_test']#['train', 'val']
-classes = os.listdir('../augmented_data/val')
+classes = os.listdir('../data/val')
 data_dir = '../alpha_data/'
 
 
