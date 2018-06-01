@@ -21,8 +21,8 @@ import os
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-data_dir = '../data/'
-test_dir = '../augmented_data/segmented_test/'
+data_dir = '../augmented_data/'
+test_dir = 'segmented_test'
 classes = sorted(os.listdir(data_dir + test_dir))
 batch_size = 64
 
