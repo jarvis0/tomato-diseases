@@ -1,0 +1,25 @@
+URL,Actual Label,Predicted Label
+https://bugwoodcloud.org/images/768x512/1234099.jpg,Tomato___Bacterial_spot,Strawberry___Leaf_scorch
+https://bugwoodcloud.org/images/768x512/1234100.jpg,Tomato___Bacterial_spot,Strawberry___Leaf_scorch
+https://bugwoodcloud.org/images/768x512/5260022.jpg,Tomato___Bacterial_spot,Tomato___Early_blight
+https://bugwoodcloud.org/images/768x512/5260027.jpg,Tomato___Bacterial_spot,Strawberry___Leaf_scorch
+https://bugwoodcloud.org/images/768x512/5260029.jpg,Tomato___Bacterial_spot,Tomato___Septoria_leaf_spot
+https://bugwoodcloud.org/images/768x512/1573852.jpg,Tomato___Early_blight,Tomato___Early_blight
+https://bugwoodcloud.org/images/768x512/1576391.jpg,Tomato___Early_blight,Tomato___Early_blight
+https://bugwoodcloud.org/images/768x512/5369148.jpg,Tomato___Early_blight,Tomato___Late_blight
+https://bugwoodcloud.org/images/768x512/1233052.jpg,Tomato___Early_blight,Tomato___Early_blight
+https://bugwoodcloud.org/images/768x512/1234080.jpg,Tomato___Early_blight,Tomato___Late_blight
+https://bugwoodcloud.org/images/768x512/1234124.jpg,Tomato___Early_blight,Tomato___Late_blight
+https://bugwoodcloud.org/images/768x512/1436104.jpg,Tomato___Early_blight,Tomato___Late_blight
+https://bugwoodcloud.org/images/768x512/5470380.jpg,Tomato___Late_blight,Tomato___Late_blight
+https://bugwoodcloud.org/images/768x512/5470381.jpg,Tomato___Late_blight,Squash___Powdery_mildew
+https://bugwoodcloud.org/images/768x512/5484090.jpg,Tomato___Late_blight,Tomato___Late_blight
+https://bugwoodcloud.org/images/768x512/1577904.jpg,Tomato___Late_blight,Tomato___Late_blight
+https://bugwoodcloud.org/images/768x512/5505700.jpg,Tomato___Leaf_Mold,Tomato___Late_blight
+https://bugwoodcloud.org/images/768x512/5487925.jpg,Tomato___Leaf_Mold,Tomato___Early_blight
+https://bugwoodcloud.org/images/768x512/5487927.jpg,Tomato___Leaf_Mold,Strawberry___Leaf_scorch
+https://bugwoodcloud.org/images/768x512/5505707.jpg,Tomato___Leaf_Mold,Tomato___Tomato_Yellow_Leaf_Curl_Virus
+https://bugwoodcloud.org/images/768x512/5356801.jpg,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot
+https://bugwoodcloud.org/images/768x512/5357038.jpg,Tomato___Septoria_leaf_spot,Tomato___Septoria_leaf_spot
+https://bugwoodcloud.org/images/768x512/5507223.jpg,Tomato___Septoria_leaf_spot,Tomato___Early_blight
+https://bugwoodcloud.org/images/768x512/5373690.jpg,Tomato___Septoria_leaf_spot,Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
