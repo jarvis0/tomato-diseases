@@ -1,1 +1,0 @@
-{'architecture': 'VGG16_pretrained', 'dataset': 'backgrounds_leaf_norm', 'num_epochs': 60, 'batch_size': 64, 'lr': 0.001, 'wd': 0, 'mean': [0.360007843, 0.482983922, 0.274050667], 'std': [0.177985098, 0.180084239, 0.141458866]}
