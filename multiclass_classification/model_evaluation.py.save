@@ -21,8 +21,8 @@ import os
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-data_dir = '../data/'
-test_dir = 'segmented_test'
+data_dir = '../from_internet_dataset/'
+test_dir = ''
 classes = sorted(os.listdir(data_dir + test_dir))
 batch_size = 64
 
@@ -36,9 +36,8 @@ batch_size = 64
 
 # normal_test normalization
 #mean = [0.44947562, 0.46524084, 0.40037745]
-#std = [0.18456618, 0.16353698, 0.20014246]
+#std = [0.18456618, 0.16353698, 0.200142380787, 0.140906292]
 
-# leaf normalization
 mean = [0.360007843, 0.482983922, 0.274050667]
 std = [0.177985098, 0.180084239, 0.141458866]
 
@@ -88,9 +87,9 @@ test_dataloader = DataLoader(datasets, batch_size=batch_size, shuffle=False, num
 # In[32]:
 
 
-model = models.vgg11()
+model = models.alexnet()
 model.classifier[6] = nn.Linear(4096, 10)
-model.load_state_dict(torch.load('vgg11_pretrained.model', map_location=str(device)))
+model.load_state_dict(torch.load('alexnet_pretrained.model', map_location=str(device)))
 model.eval()
 model.to(device)
 
