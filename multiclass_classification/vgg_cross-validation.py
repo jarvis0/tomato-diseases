@@ -55,10 +55,10 @@ std = [0.177985098, 0.180084239, 0.141458866]
 
 
 parser = argparse.ArgumentParser(description='CNN hyperparameters.')
-parser.add_argument('--arc', dest='arc', default='VGG16_pretrained', type=str, required=False)
+parser.add_argument('--arc', dest='arc', default='VGG11_pretrained', type=str, required=False)
 parser.add_argument('--data', dest='data', default='backgrounds_leaf_norm', type=str, required=False)
-parser.add_argument('--num_epochs', dest='num_epochs', default=60, type=int, required=False)
-parser.add_argument('--batch_size', dest='batch_size', default=64, type=int, required=False)
+parser.add_argument('--num_epochs', dest='num_epochs', default=10, type=int, required=False)
+parser.add_argument('--batch_size', dest='batch_size', default=32, type=int, required=False)
 parser.add_argument('--lr', dest='lr', default=0.001, type=float, required=False)
 parser.add_argument('--wd', dest='wd', default=0, type=float, required=False)
 
@@ -91,7 +91,7 @@ save_to_file('infos', infos)
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-data_dir = '../data/'
+data_dir = '../augmented_data/'
 model_format = ".model"
 
 
@@ -120,7 +120,7 @@ def build_dataloaders(datasets):
     dataset_sizes = {x: len(datasets[x]) for x in ['train', 'val']}
     
     dataloaders = {x: DataLoader(datasets[x], batch_size=batch_size,
-                        shuffle=False, num_workers=4) for x in ['train', 'val']}
+                        shuffle=True, num_workers=4) for x in ['train', 'val']}
     
     return dataloaders, dataset_sizes
 
@@ -134,7 +134,7 @@ writer = SummaryWriter(log_dir)
 # In[27]:
 
 
-model = models.vgg16(pretrained=True)
+model = models.vgg11(pretrained=True)
 for param in model.features:
     param.requires_grad = True
 
@@ -217,7 +217,7 @@ print('Training is over.')
 # In[ ]:
 
 
-torch.save(model.state_dict(), log_dir + 'vgg16_pretrained' + model_format)
+torch.save(model.state_dict(), log_dir + 'vgg11_pretrained' + model_format)
 print('Model saved to file.')
 
 
