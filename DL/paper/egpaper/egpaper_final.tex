@@ -24,24 +24,25 @@
 \begin{document}
 
 %%%%%%%%% TITLE
-\title{Template for Technical Reports \\ DL-IC 2018 Project} 
+\title{Template for Technical Reports \\ DL-IC 2018 Project}
 
-\author{Marco Ciccone\\
+\author{
+Alessandro Erba\\
 Politecnico di Milano\\
-{\tt\small marco.ciccone@polimi.it}
+{\tt\small alessandro2.erba@mail.polimi.it}
 % For a paper whose authors are all at the same institution,
 % omit the following lines up until the closing ``}''.
 % Additional authors and addresses can be added with ``\and'',
 % just like the second author.
 % To save space, use either the email address or home page, not both
 \and
-Giacomo Boracchi\\
+Mirco Manzoni\\
 Politecnico di Milano\\
-{\tt\small giacomo.boracchi@polimi.it}
+{\tt\small mirco.manzoni@mail.polimi.it}
 \and
-Matteo Matteucci\\
+Giuseppe Mascellaro\\
 Politecnico di Milano\\
-{\tt\small matteo.matteucci@polimi.it}
+{\tt\small giuseppe.mascellaro@mail.polimi.it}
 }
 
 \maketitle
@@ -55,19 +56,19 @@ Politecnico di Milano\\
 %%%%%%%%% BODY TEXT
 %------------------------------------------------------------------------
 \section{Introduction}
-This is the first section of your paper and you should contextualize the problem you are working on, why it is important, and give an overview of your results. It is useful to list all the contributions of your work very clearly, so that the reviewer can easily understand the value of your paper. This is helpful to guide the reader through the paper. If your project consists in replicating and/or extending another paper, then you should be very clear about it explaining what you did and how you proceeded.
-For instance, the main contribution of this paper are: 
+The problem of efficient plant disease protection is closely related to the problems
+of sustainable agriculture and climate change. \cite{Authors1}
 \begin{itemize}
     \item A brief tutorial on how to write a paper/technical report.
     \item Specific good/bad examples of writing.
     \item An example of structure that is suggested to follow for a technical report and can be reorganized as you need.
 \end{itemize}
-Each researcher has its own style and preferences when it comes to write a paper, so feel free to modify the structure as it pleases you. 
+Each researcher has its own style and preferences when it comes to write a paper, so feel free to modify the structure as it pleases you.
 This tutorial is especially directed to master students who might need more help to organize their reports.
 
 \subsection{Language}
 
-All manuscripts must be in English. Do not use contraction forms, \eg \emph{doesn't} $\xrightarrow{}$ \emph{does not}, \emph{isn't} $\xrightarrow{}$ \emph{is not}. 
+All manuscripts must be in English. Do not use contraction forms, \eg \emph{doesn't} $\xrightarrow{}$ \emph{does not}, \emph{isn't} $\xrightarrow{}$ \emph{is not}.
 
 \subsection{Paper length}
 Papers, excluding the references section, must be between \textbf{4-6} pages, bust must be no longer than \textbf{six pages}. The maximum number of pages is strict. Overlength papers will simply not be graded or graded negatively. Note that this \LaTeX\ guide already sets figure captions and references in a smaller font.
@@ -80,7 +81,7 @@ The references section will not be included in the page count, and there is no l
 In this section you should discuss published work that relates to your project. This is expected to be full of references, meaning that you have read the existing literature and you know what you are working on very well. This is not just a list or works, but you are not supposed to cluster papers that use similar approaches and compare them each other using very short sentences. I strongly suggest to check \cite{steinhardt, lipton} blog posts for some good practices in writing a paper. A quote that I like very much is \emph{``Research is spending 6 hours reading 35 papers, so you can write one sentence containing 2 references''} \cite{twit:ref}. Keep it in mind while you are writing!
 %------------------------------------------------------------------------
 \section{Proposed approach}
-This is the core of your paper, where you describe the details of the proposed method for solving the problem that you set up in the introduction. This is the most important section. It has to be clear why the chosen approach is the right thing to do with respect to the possible alternatives. The explanation of the method has to be readable and understandable and it should not raise obvious questions from the reader. 
+This is the core of your paper, where you describe the details of the proposed method for solving the problem that you set up in the introduction. This is the most important section. It has to be clear why the chosen approach is the right thing to do with respect to the possible alternatives. The explanation of the method has to be readable and understandable and it should not raise obvious questions from the reader.
 
 You can divide the section in paragraphs or subsections that can be useful for the presentation of your method. Usually at this point you may want to place equations, figures and tables to clarify what you are explaining.
 %-------------------------------------------------------------------------
@@ -90,7 +91,7 @@ important for readers to be able to refer to any particular equation.  Just
 because you didn't refer to it in the text does not mean some future reader
 might not need to refer to it.  It is cumbersome to have to use
 circumlocutions like ``the equation second from the top of page 3 column
-1''. 
+1''.
 %-------------------------------------------------------------------------
 \subsection{Footnotes}
 Please use footnotes\footnote {This is what a footnote looks like.  It
@@ -105,7 +106,7 @@ which it is referenced. Use Times 8-point type, single-spaced.
 List and number all bibliographical references in 9-point Times,
 single-spaced, at the end of your paper. When referenced in the text,
 enclose the citation number in square brackets, for
-example~\cite{Authors14}.  Where appropriate, include the name(s) of
+example~\cite{Alpher04}.  Where appropriate, include the name(s) of
 editors of referenced books.
 %-------------------------------------------------------------------------
 \subsection{Illustrations, graphs, and photographs}
@@ -132,15 +133,15 @@ the line width as in the example below
 In this section you validate your method showing the experiments that you performed. The experiments will vary depending on the project, but you might compare with previously published methods, perform an ablation study to determine the impact of various components of your system, experiment with different hyperparameters or architectural choices, use visualization techniques to gain insight into how your model works, discuss common failure modes of your model, etc. You should include graphs, tables, or other figures to illustrate your experimental results. Divide in subsections or paragraphs to help the reader navigate in your paper.
 
 \paragraph{Datasets.}
-Describe the data you are working with for your project. Usually you need to explain what type of data is it, how much data are you working with and if you applied any pre-processing, filtering, or other special treatment to use it. Remember that you have to cite each dataset you used in your project if it has been published from someone else. Instead, if you collected it by yourself you have to describe accurately how you gathered (and labeled) your data. 
+Describe the data you are working with for your project. Usually you need to explain what type of data is it, how much data are you working with and if you applied any pre-processing, filtering, or other special treatment to use it. Remember that you have to cite each dataset you used in your project if it has been published from someone else. Instead, if you collected it by yourself you have to describe accurately how you gathered (and labeled) your data.
 
 \paragraph{Experiments setup.}
-Here you describe all the architectural choices of your model, the hyper-parameters of your model, \eg optimizer, learning rate, momentum, batch size and if you cross-validate on them. 
+Here you describe all the architectural choices of your model, the hyper-parameters of your model, \eg optimizer, learning rate, momentum, batch size and if you cross-validate on them.
 
 \paragraph{Results and discussion.}
 Discuss your results and compare with other methods. You can also perform an \emph{ablation study} on your model switching on and off some components to understand their contributions.
 
-\section{Conclusion} 
+\section{Conclusion}
 Summarize your key results. What have you learned from the project and suggest future extensions or new applications of your ideas.
 
 
@@ -167,11 +168,11 @@ Summarize your key results. What have you learned from the project and suggest f
 
 %-------------------------------------------------------------------------
 \section*{Acknowledgements}
-Here you can thank all the people that have been helpful during the project, but are not coauthors. It is important to add this section only in the final version that you send to the professors and \textbf{NOT in the review version} in order to not compromise the double blind review process. We thank Andrea Romanoni for the insightful comments during the review of the manuscript, and all the old and new Gods who stand beside us when the deadline is dark and full of terrors. 
+Here you can thank all the people that have been helpful during the project, but are not coauthors. It is important to add this section only in the final version that you send to the professors and \textbf{NOT in the review version} in order to not compromise the double blind review process. We thank Andrea Romanoni for the insightful comments during the review of the manuscript, and all the old and new Gods who stand beside us when the deadline is dark and full of terrors.
 
 %-------------------------------------------------------------------------
 \appendix
-\section{Supplementary Material} 
+\section{Supplementary Material}
 Supplementary material is not counted toward your 4-6 page limit and should be submitted as a separate zip file. Your supplementary material might include:
 \begin{itemize}
     \item Source code (if your project proposed an algorithm, or code that is relevant and important for your project.).
@@ -206,9 +207,19 @@ Ours & Makes one's heart Frob\\
 
 
 
-{\small
-\bibliographystyle{ieee}
+{
+\small
 \bibliography{egbib}
+\bibliographystyle{ieee}
 }
+%\begin{thebibliography}{9}
+%  \bibitem{Authors1}
+%  \textit{Deep Neural Networks Based Recognition of Plant Diseases by Leaf Image Classification}.
+%  Srdjan Sladojevic, Marko Arsenovic, Andras Anderla, Dubravko Culibrk, and Darko Stefanovic, 2016.
+%  \bibitem{Authors2}
+%  \textit{Deep Neural Networks Based Recognition of Plant Diseases by Leaf Image Classification}.
+%  Srdjan Sladojevic, Marko Arsenovic, Andras Anderla, Dubravko Culibrk, and Darko Stefanovic, 2016.
+%\end{thebibliography}
+
 
 \end{document}

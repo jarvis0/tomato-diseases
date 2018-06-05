@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.4)  4 JUN 2018 09:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.5)  5 JUN 2018 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**egpaper_final.tex
-(./egpaper_final.tex
+**tomato_diseases_paper.tex
+(./tomato_diseases_paper.tex
 LaTeX2e <2017-04-15>
-Babel <3.12> and hyphenation patterns for 3 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 3 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -72,7 +72,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
@@ -81,7 +81,7 @@ File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 \epsfysize=\dimen109
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
@@ -149,7 +149,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -173,7 +173,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -209,27 +209,27 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 \Hy@pagecounter=\count105
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count106
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 4374.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4383.
 
 
 Package hyperref Warning: Option `letterpaper' is no longer used.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 4374.
-Package hyperref Info: Option `bookmarks' set `false' on input line 4374.
-Package hyperref Info: Hyper figures OFF on input line 4498.
-Package hyperref Info: Link nesting OFF on input line 4503.
-Package hyperref Info: Hyper index ON on input line 4506.
-Package hyperref Info: Plain pages OFF on input line 4513.
-Package hyperref Info: Backreferencing ON on input line 4516.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
+Package hyperref Info: Option `bookmarks' set `false' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing ON on input line 4527.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks OFF on input line 4757.
+Package hyperref Info: Bookmarks OFF on input line 4768.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/backref.sty
 Package: backref 2016/05/21 v1.39 Bibliographical back referencing
 
@@ -244,35 +244,34 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5104.
+LaTeX Info: Redefining \url on input line 5115.
 \XeTeXLinkMargin=\dimen120
 \Fld@menulength=\count108
 \Field@Width=\dimen121
 \Fld@charsize=\dimen122
-Package hyperref Info: Hyper figures OFF on input line 6358.
-Package hyperref Info: Link nesting OFF on input line 6363.
-Package hyperref Info: Hyper index ON on input line 6366.
-Package hyperref Info: backreferencing ON on input line 6371.
-Package hyperref Info: Link coloring ON on input line 6376.
-Package hyperref Info: Link coloring with OCG OFF on input line 6383.
-Package hyperref Info: PDF/A mode OFF on input line 6388.
-LaTeX Info: Redefining \ref on input line 6428.
-LaTeX Info: Redefining \pageref on input line 6432.
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing ON on input line 6382.
+Package hyperref Info: Link coloring ON on input line 6387.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
 \Hy@abspage=\count109
 \c@Item=\count110
 \c@Hfootnote=\count111
 )
-
-Package hyperref Message: Driver (autodetected): hpdftex.
+Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \Fld@listcount=\count112
 \c@bookmark@seq@number=\count113
 \Hy@SectionHShift=\skip48
 )
-(./egpaper_final.aux)
-\openout1 = `egpaper_final.aux'.
+(./tomato_diseases_paper.aux)
+\openout1 = `tomato_diseases_paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
@@ -289,9 +288,11 @@ LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-) ABD: EveryShipout initializing macros
+)
+ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
@@ -346,85 +347,73 @@ LaTeX Info: Redefining \ref on input line 24.
 LaTeX Info: Redefining \pageref on input line 24.
 LaTeX Info: Redefining \nameref on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
-LaTeX Font Info:    Try loading font information for U+msa on input line 49.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+LaTeX Font Info:    Try loading font information for U+msa on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 49.
+LaTeX Font Info:    Try loading font information for U+msb on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 49.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 50.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
+(./sections/abstract.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 61.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+) (./sections/introduction.tex)
+(./sections/related_work.tex) (./sections/proposed_approach.tex)
+(./sections/experiments.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+) (./sections/conclusion.tex)
+(./sections/acknowledgements.tex) (./sections/supplementary_material.tex)
+(./tomato_diseases_paper.bbl (./tomato_diseases_paper.brf)
+\tf@brf=\write3
+\openout3 = `tomato_diseases_paper.brf'.
 
 
-LaTeX Warning: Citation `steinhardt' on page 1 undefined on input line 80.
+Underfull \hbox (badness 4608) in paragraph at lines 9--9
+[]\OT1/ptm/m/n/9 Srdjan Slado-je-vic, Marko Ar-sen-ovic, An-dras An-derla,
+ []
 
-
-LaTeX Warning: Citation `lipton' on page 1 undefined on input line 80.
-
-
-LaTeX Warning: Citation `twit:ref' on page 1 undefined on input line 80.
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
 
-LaTeX Warning: Citation `Authors14' on page 2 undefined on input line 108.
-
-[2]
-No file egpaper_final.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
-[3
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
- (./egpaper_final.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 214.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
+(./tomato_diseases_paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package rerunfilecheck Info: File `tomato_diseases_paper.brf' has not changed.
+(rerunfilecheck)             Checksum: 922B718C2095D94480EE9A8CF2B4C20B;40.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
  ) 
 Here is how much of TeX's memory you used:
- 6450 strings out of 494931
- 92718 string characters out of 6180852
- 177722 words of memory out of 5000000
- 9637 multiletter control sequences out of 15000+600000
- 31659 words of font info for 75 fonts, out of 8000000 for 9000
+ 6419 strings out of 494923
+ 92773 string characters out of 6180743
+ 173871 words of memory out of 5000000
+ 9610 multiletter control sequences out of 15000+600000
+ 22038 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 32i,12n,26p,729b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,9n,26p,547b,324s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
-/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on egpaper_final.pdf (3 pages, 93834 bytes).
+e/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on tomato_diseases_paper.pdf (1 page, 54713 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
- 25 named destinations out of 1000 (max. 500000)
+ 47 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
