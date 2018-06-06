@@ -1,0 +1,4 @@
+pdflatex tomato_diseases_paper.tex
+bibtex tomato_diseases_paper.aux
+pdflatex tomato_diseases_paper.tex
+pdflatex tomato_diseases_paper.tex
