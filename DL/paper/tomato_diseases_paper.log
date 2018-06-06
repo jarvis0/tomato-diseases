@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  6 JUN 2018 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  7 JUN 2018 01:28
 entering extended mode
 **./tomato_diseases_paper.tex
 (tomato_diseases_paper.tex
@@ -343,98 +343,148 @@ LaTeX Info: Redefining \ref on input line 24.
 LaTeX Info: Redefining \pageref on input line 24.
 LaTeX Info: Redefining \nameref on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
-LaTeX Font Info:    Try loading font information for U+msa on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
+LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+LaTeX Font Info:    Try loading font information for U+msb on input line 43.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 50.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 43.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 43.
+
+(/home/masch/.miktex/texmfs/install/tex/latex/psnfss/omspcr.fd
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+
 (sections/abstract.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-) (sections/introduction.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-
-
-LaTeX Warning: Citation `AuthorsMasnzonis' on page 1 undefined on input line 2.
-
-
-
-Underfull \hbox (badness 1067) in paragraph at lines 2--6
+) (sections/introduction.tex) (sections/related_work.tex
+Underfull \hbox (badness 1067) in paragraph at lines 2--1
 \OT1/ptm/m/n/10 given the possibility to produce enough food to meet
  []
 
 
-Underfull \hbox (badness 1715) in paragraph at lines 2--6
-\OT1/ptm/m/n/10 Science-PolicyPlatform on Biodiversity Ecosystem and
+Underfull \hbox (badness 1024) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 such as climate change [[]][], the decline in pollinators
  []
 
 
-Underfull \hbox (badness 2469) in paragraph at lines 2--6
-\OT1/ptm/m/n/10 of that data which has been used in state-of-the-art
+Underfull \hbox (badness 2096) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 2013), and reports of yield loss of more than 50%
  []
 
-) (sections/related_work.tex) (sections/proposed_approach.tex)
-(sections/experiments.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1{/home/masch/.miktex/texmfs/data/pdftex/config/pdftex.map}
+Underfull \hbox (badness 1616) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 PlantVillage dataset [[]][] and secondly on the targeted
+ []
+
+) (sections/proposed_approach.tex) (sections/experiments.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
+)
+(sections/conclusion.tex [1{/home/masch/.miktex/texmfs/data/pdftex/config/pdfte
+x.map}
 
 
-]) (sections/conclusion.tex)
-(sections/acknowledgements.tex) (sections/supplementary_material.tex)
+]) (sections/acknowledgements.tex) (sections/supplementary_material.tex)
 (tomato_diseases_paper.bbl (tomato_diseases_paper.brf)
 \tf@brf=\write3
 \openout3 = `tomato_diseases_paper.brf'.
 
 
+Underfull \hbox (badness 5008) in paragraph at lines 11--11
+\OT1/ptm/m/it/9 discussion paper\OT1/ptm/m/n/9 .  World Bank Group, Washington,
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+ []
+
+
+Underfull \hbox (badness 7030) in paragraph at lines 11--11
+\OT1/ptm/m/n/9 DC, 2014.  http://documents.worldbank.org/curated/en/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+\OT1/ptm/m/n/9 486511468167944431/Reducing-climate-sensitive-disease-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+\OT1/ptm/m/n/9 and Ecosystem Services Fourth session".  \OT1/ptm/m/it/9 Report
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--19
+\OT1/ptm/m/it/9 of the Plenary of the Intergovernmental Science-
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 19--19
+\OT1/ptm/m/it/9 PolicyPlatform on Biodiversity and Ecosystem Services
+ []
+
+
+Underfull \hbox (badness 3068) in paragraph at lines 26--26
+[]\OT1/ptm/m/n/9 R. N. Strange and P. R. Scott.  Plant Disease: A
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+\OT1/ptm/m/n/9 Threat to Global Food Security.  \OT1/ptm/m/it/9 Annual Review
+ []
+
+
+Underfull \hbox (badness 6575) in paragraph at lines 26--26
+\OT1/ptm/m/it/9 of Phytopathology\OT1/ptm/m/n/9 , 43(1):83{116, Sep. 2005.  doi
+:
+ []
+
+
+Overfull \hbox (4.23732pt too wide) in paragraph at lines 30--30
+[]\OT1/ptm/m/n/9 Sharada Mohanty.  https://github.com/spMohanty/PlantVillage-
+ []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
  [2
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
  (tomato_diseases_paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `tomato_diseases_paper.brf' has not changed.
-(rerunfilecheck)             Checksum: 66A2D2372FEA4141DC547282202D8F04;48.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
+(rerunfilecheck)             Checksum: B5AE1DF10017260F7AB75ACB41E15155;188.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 6369 strings out of 494892
- 92828 string characters out of 3178689
- 180443 words of memory out of 3000000
- 9870 multiletter control sequences out of 15000+200000
- 20960 words of font info for 51 fonts, out of 3000000 for 9000
+ 6416 strings out of 494892
+ 93412 string characters out of 3178689
+ 181581 words of memory out of 3000000
+ 9906 multiletter control sequences out of 15000+200000
+ 23977 words of font info for 55 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 32i,9n,27p,1364b,324s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,9n,27p,1192b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/masch/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/masch/
-.miktex/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></home/masch/.miktex/
-texmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/masch/.miktex/texmfs/ins
-tall/fonts/type1/urw/times/utmr8a.pfb></home/masch/.miktex/texmfs/install/fonts
-/type1/urw/times/utmri8a.pfb>
-Output written on tomato_diseases_paper.pdf (2 pages, 64931 bytes).
+.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/masch/.m
+iktex/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></home/masch/.miktex/te
+xmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/masch/.miktex/texmfs/insta
+ll/fonts/type1/urw/times/utmr8a.pfb></home/masch/.miktex/texmfs/install/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on tomato_diseases_paper.pdf (2 pages, 77883 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 14 named destinations out of 1000 (max. 500000)
+ 66 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
