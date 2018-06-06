@@ -1,0 +1,25 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{Alpher04}
+A.~Alpher, J.~P.~N. Fotheringham-Smythe, and G.~Gamow.
+\newblock Can a machine frobnicate?
+\newblock {\em Journal of Foo}, 14(1):234--778, 2004.
+
+\bibitem{twit:ref}
+{Bryan Gaensler}.
+\newblock {Tweet}, 2018.
+\newblock https://twitter.com/SciBry/status/989623027393531905.
+
+\bibitem{steinhardt}
+{Jacob Steinhardt}.
+\newblock {Advice for Authors}, 2018.
+\newblock https://jsteinhardt.wordpress.com/2017/02/28/advice-for-authors/.
+
+\bibitem{lipton}
+{Zachary C. Lipton}.
+\newblock {Heuristics for Scientific Writing (a Machine Learning Perspective)},
+  2018.
+\newblock
+  http://approximatelycorrect.com/2018/01/29/heuristics-technical-scientific-writing-machine-learning-perspective/.
+
+\end{thebibliography}
