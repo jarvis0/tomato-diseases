@@ -1,38 +1,119 @@
-\begin{thebibliography}{1}\itemsep=-1pt
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{ref1}
+{A. P. Tai, M. V. Martin, and C. L. Heald}.
+\newblock {Threat to future global food security from climate change and ozone
+  air pollution}.
+\newblock {\em {Nat. Clim. Change}}, {4}({9}):{817--821}, {2014}.
+\newblock {https://doi.org/10.1038/nclimate2317}.
+
+\bibitem{ref11}
+M.~Brahimi, B.~Kamel, and A.~Moussaoui.
+\newblock {Deep Learning for Tomato Diseases: Classification and Symptoms
+  Visualization}.
+\newblock {\em {Applied Artificial Intelligence}}, {31}({4}):{299--315}, {Apr.}
+  {2017}.
+\newblock {https://doi.org/10.1080/08839514.2017.1315516}.
+
+\bibitem{ref6}
+{C. A. Harvey et al.}
+\newblock {Extreme vulnerability of smallholder farmers to agricultural risks
+  and climate change in Madagascar}.
+\newblock {\em {Philosophical Transactions of the Royal Society B: Biological
+  Sciences}}, {369}({1639}):{20130089--20130089}, {Feb.} {2014}.
+\newblock {https://doi.org/10.1098/rstb.2013.0089}.
+
+\bibitem{ref24}
+C.~Cortes and V.~Vapnik.
+\newblock {Support-vector networks}.
+\newblock {\em {Machine Learning}}, {20}({3}):{273--297}, {Sep.} {1995}.
+\newblock {https://doi.org/10.1007/BF00994018}.
+
+\bibitem{ref2}
+{Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem
+  Services Fourth session}.
+\newblock {\em {Report of the Plenary of the Intergovernmental
+  Science-PolicyPlatform on Biodiversity and Ecosystem Services on the work of
+  its fourth session}}, {Kuala Lampur}, {2016}.
+\newblock {https://www.ipbes.net/event/ipbes-4-plenary}.
+
+\bibitem{ref9}
+{International Telecommunication Union (ITU)}.
+\newblock {\em {ICT Facts and Figures – the World in 2015}}, {Geneva},
+  {2015}.
+\newblock
+  {https://www.itu.int/en/ITU-D/Statistics/Documents/facts/ICTFactsFigures2015.pdf}.
+
+\bibitem{ref8}
+{L. E. Ehler}.
+\newblock {Integrated pest management (IPM): definition, historical development
+  and implementation, and the other IPM}.
+\newblock {\em {Pest Management Science}}, {62}({9}):{787--789}, {2006}.
+\newblock {https://doi.org/10.1002/ps.1247}.
+
+\bibitem{ref29}
+Y.~LeCun, Y.~Bengio, and G.~Hinton.
+\newblock {Deep Learning}.
+\newblock {\em {Nature}}, {521}:{436–444}, {2015}.
+\newblock {https://doi.org/10.1038/nature14539}.
+
+\bibitem{ref7}
+{P. A. Sanchez and M. S. Swaminathan}.
+\newblock {Cutting World Hunger in Half}.
+\newblock {\em {Science}}, {307}({5708}):{357--359}, {Jan.} {2005}.
+\newblock {https://doi.org/10.1126/science.1109057}.
+
+\bibitem{PlantVillage}
+{PlantVillage}.
+\newblock {PlantVillage Dataset}.
+\newblock {https://github.com/spMohanty/PlantVillage-Dataset}.
+
+\bibitem{ref3}
+{R. N. Strange and P. R. Scott}.
+\newblock {Plant Disease: A Threat to Global Food Security}.
+\newblock {\em {Annual Review of Phytopathology}}, {43}({1}):{83--116}, {Sep.}
+  {2005}.
+\newblock {https://doi.org/10.1146/annurev.phyto.43.113004.133839}.
+
+\bibitem{ref10}
+{S. P. Mohanty, D. P. Hughes, and M. Salathé}.
+\newblock {Using Deep Learning for Image-Based Plant Disease Detection}.
+\newblock {\em {Frontiers in Plant Science}}, {7}:{1419}, {Sep.} {2016}.
+\newblock {https://doi.org/10.3389/fpls.2016.01419}.
+
+\bibitem{ref12}
+R.~R. Selvaraju, A.~Das, R.~Vedantam, M.~Cogswell, D.~Parikh, and D.~Batra.
+\newblock Grad-cam: Visual explanations from deep networks via gradient-based
+  localization.
+\newblock {\em {CoRR}}, {abs/1610.02391}, {2016}.
+\newblock {http://arxiv.org/abs/1610.02391}.
 
 \bibitem{ref4}
-{Bouley, Timothy; Gilbert, Marius; Whung, Pai-Yei; Gall, Francois Le; Plante,
-  Caroline}.
+{T. Bouley, M. Gilbert, Whung Pai-Yei, F. L. Gall, C. Plante}.
 \newblock {\em {Reducing Climate-Sensitive Risks}}, volume~{1} of {\em
   {Agriculture and environmental services discussion paper}}.
 \newblock {World Bank Group}, {Washington, DC}, {2014}.
 \newblock {http://documents.worldbank.org/curated/en/
   486511468167944431/Reducing-climate-sensitive-disease-risks}.
 
-\bibitem{ref2}
-{Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem
-  Services Fourth session"}.
-\newblock {\em {Report of the Plenary of the Intergovernmental
-  Science-PolicyPlatform on Biodiversity and Ecosystem Services on the work of
-  its fourth session}}, {Kuala Lampur}, {2016}.
-\newblock {https://www.ipbes.net/event/ipbes-4-plenary}.
+\bibitem{ref5}
+{UNEP, International Fund for Agricultural Development (IFAD)}.
+\newblock {\em {Smallholders, Food Security, and the Environment}}, {Rome},
+  {2013}.
+\newblock
+  {https://www.ifad.org/documents/10180/666cac24-14b6-43c2-876d-9c2d1f01d5dd}.
 
-\bibitem{ref3}
-{R. N. Strange and P. R. Scott}.
-\newblock {Plant Disease: A Threat to Global Food Security}.
-\newblock {\em {Annual Review of Phytopathology}}, {43}({1}):{83–116}, {Sep.}
-  {2005}.
-\newblock {doi: 10.1146/annurev.phyto.43.113004.133839}.
+\bibitem{ref30}
+{Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner}.
+\newblock {Gradient-based learning applied to document recognition}.
+\newblock {\em {Proceedings of the IEEE}}, {86}({11}):{2278--2324"}, {Nov.}
+  {1998}.
+\newblock {https://doi.org/10.1109/5.726791}.
 
-\bibitem{PlantVillage}
-{Sharada Mohanty}.
-\newblock {https://github.com/spMohanty/PlantVillage-Dataset}.
-
-\bibitem{ref1}
-{Tai, A. P., Martin, M. V., and Heald C. L.}
-\newblock {Threat to future global food security from climate change and ozone
-  air pollution}.
-\newblock {\em {Nat. Clim. Change}}, {4}({9}):{817–821}, {2014}.
-\newblock {doi: 10.1038/nclimate2317}.
+\bibitem{ref13}
+M.~D. Zeiler and R.~Fergus.
+\newblock {Visualizing and Understanding Convolutional Networks}.
+\newblock {\em {CoRR}}, {abs/1311.2901}, {2013}.
+\newblock {http://arxiv.org/abs/1311.2901}.
 
 \end{thebibliography}

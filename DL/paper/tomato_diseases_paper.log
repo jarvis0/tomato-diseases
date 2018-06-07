@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  7 JUN 2018 01:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  8 JUN 2018 01:34
 entering extended mode
 **./tomato_diseases_paper.tex
 (tomato_diseases_paper.tex
@@ -371,93 +371,277 @@ LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 ) (sections/introduction.tex) (sections/related_work.tex
-Underfull \hbox (badness 1067) in paragraph at lines 2--1
-\OT1/ptm/m/n/10 given the possibility to produce enough food to meet
+Underfull \hbox (badness 1082) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 the experiments are pursued keeping in mind realistic
  []
 
-
-Underfull \hbox (badness 1024) in paragraph at lines 2--1
-\OT1/ptm/m/n/10 such as climate change [[]][], the decline in pollinators
- []
-
-
-Underfull \hbox (badness 2096) in paragraph at lines 2--1
-\OT1/ptm/m/n/10 2013), and reports of yield loss of more than 50%
- []
-
-
-Underfull \hbox (badness 1616) in paragraph at lines 2--1
-\OT1/ptm/m/n/10 PlantVillage dataset [[]][] and secondly on the targeted
- []
-
-) (sections/proposed_approach.tex) (sections/experiments.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
-)
-(sections/conclusion.tex [1{/home/masch/.miktex/texmfs/data/pdftex/config/pdfte
-x.map}
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+
+LaTeX Warning: Citation `ref14' on page 1 undefined on input line 2.
 
 
-]) (sections/acknowledgements.tex) (sections/supplementary_material.tex)
+LaTeX Warning: Citation `ref15' on page 1 undefined on input line 2.
+
+
+LaTeX Warning: Citation `ref16' on page 1 undefined on input line 2.
+
+
+LaTeX Warning: Citation `ref17' on page 1 undefined on input line 2.
+
+
+LaTeX Warning: Citation `ref18' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ref19' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ref20' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ref21' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ref22' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ref23' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ref28' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ref25' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ref26' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ref27' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ref28' on page 1 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ref31' on page 1 undefined on input line 6.
+
+) (sections/proposed_approach.tex
+Underfull \hbox (badness 2846) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 conditions [[]][], optical technologies like thermal and
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 against noise from different sources; extracting shape
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 These methods are usually combined with classifiers
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 means of the LeNet architecture. For the first time,
+ []
+
+[1{/home/masch/.miktex/texmfs/data/pdftex/config/pdftex.map}
+
+
+])
+(sections/experiments.tex) (sections/conclusion.tex)
+(sections/acknowledgements.tex) (sections/supplementary_material.tex)
 (tomato_diseases_paper.bbl (tomato_diseases_paper.brf)
 \tf@brf=\write3
 \openout3 = `tomato_diseases_paper.brf'.
 
 
-Underfull \hbox (badness 5008) in paragraph at lines 11--11
-\OT1/ptm/m/it/9 discussion paper\OT1/ptm/m/n/9 .  World Bank Group, Washington,
-
+Underfull \hbox (badness 3158) in paragraph at lines 17--17
+[]\OT1/ptm/m/n/9 M. Brahimi, B. Kamel, and A. Moussaoui.  Deep
  []
 
 
-Underfull \hbox (badness 7030) in paragraph at lines 11--11
-\OT1/ptm/m/n/9 DC, 2014.  http://documents.worldbank.org/curated/en/
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+\OT1/ptm/m/n/9 Learning for Tomato Diseases: Classification
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--11
-\OT1/ptm/m/n/9 486511468167944431/Reducing-climate-sensitive-disease-
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+\OT1/ptm/m/n/9 and Symptoms Visualization.  \OT1/ptm/m/it/9 Applied Artificial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
-\OT1/ptm/m/n/9 and Ecosystem Services Fourth session".  \OT1/ptm/m/it/9 Report
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+\OT1/ptm/m/it/9 Intelligence\OT1/ptm/m/n/9 , 31(4):299--315, Apr. 2017.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--19
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]\OT1/ptm/m/n/9 C. A. Harvey et al.  Extreme vulnerability of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\OT1/ptm/m/n/9 smallholder farmers to agricultural risks and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\OT1/ptm/m/n/9 climate change in Madagascar.  \OT1/ptm/m/it/9 Philosophical
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\OT1/ptm/m/it/9 Transactions of the Royal Society B: Biological
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+\OT1/ptm/m/it/9 Sciences\OT1/ptm/m/n/9 , 369(1639):20130089--20130089, Feb. 201
+4.
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 31--31
+[]\OT1/ptm/m/n/9 C. Cortes and V. Vapnik.  Support-vector networks.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+\OT1/ptm/m/it/9 Machine Learning\OT1/ptm/m/n/9 , 20(3):273--297, Sep. 1995.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+\OT1/ptm/m/n/9 and Ecosystem Services Fourth session.  \OT1/ptm/m/it/9 Report
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
 \OT1/ptm/m/it/9 of the Plenary of the Intergovernmental Science-
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 19--19
+Underfull \hbox (badness 1810) in paragraph at lines 39--39
 \OT1/ptm/m/it/9 PolicyPlatform on Biodiversity and Ecosystem Services
  []
 
 
-Underfull \hbox (badness 3068) in paragraph at lines 26--26
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+[]\OT1/ptm/m/n/9 International Telecommunication Union (ITU).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+\OT1/ptm/m/it/9 ICT Facts and Figures { the World in 2015\OT1/ptm/m/n/9 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+\OT1/ptm/m/n/9 Geneva, 2015.  https://www.itu.int/en/ITU-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
+\OT1/ptm/m/n/9 D/Statistics/Documents/facts/ICTFactsFigures2015.pdf.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]\OT1/ptm/m/n/9 PlantVillage.  PlantVillage Dataset.
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 77--77
 []\OT1/ptm/m/n/9 R. N. Strange and P. R. Scott.  Plant Disease: A
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--26
+Underfull \hbox (badness 6859) in paragraph at lines 77--77
 \OT1/ptm/m/n/9 Threat to Global Food Security.  \OT1/ptm/m/it/9 Annual Review
  []
 
 
-Underfull \hbox (badness 6575) in paragraph at lines 26--26
-\OT1/ptm/m/it/9 of Phytopathology\OT1/ptm/m/n/9 , 43(1):83{116, Sep. 2005.  doi
-:
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+\OT1/ptm/m/it/9 of Phytopathology\OT1/ptm/m/n/9 , 43(1):83--116, Sep. 2005.
  []
 
 
-Overfull \hbox (4.23732pt too wide) in paragraph at lines 30--30
-[]\OT1/ptm/m/n/9 Sharada Mohanty.  https://github.com/spMohanty/PlantVillage-
+Underfull \hbox (badness 10000) in paragraph at lines 83--83
+[]\OT1/ptm/m/n/9 S. P. Mohanty, D. P. Hughes, and M. Salath[]e.
+ []
+
+
+Underfull \hbox (badness 3375) in paragraph at lines 83--83
+\OT1/ptm/m/n/9 Using Deep Learning for Image-Based Plant Disease
+ []
+
+[2]
+Underfull \hbox (badness 1418) in paragraph at lines 90--90
+[]\OT1/ptm/m/n/9 R. R. Selvaraju, A. Das, R. Vedantam, M. Cogswell,
+ []
+
+
+Underfull \hbox (badness 2671) in paragraph at lines 98--98
+\OT1/ptm/m/n/9 Plante.  \OT1/ptm/m/it/9 Reducing Climate-Sensitive Risks\OT1/pt
+m/m/n/9 , volume 1
+ []
+
+
+Underfull \hbox (badness 5711) in paragraph at lines 98--98
+\OT1/ptm/m/n/9 of \OT1/ptm/m/it/9 Agriculture and environmental services discus
+sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+\OT1/ptm/m/it/9 paper\OT1/ptm/m/n/9 .  World Bank Group, Washington, DC,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+\OT1/ptm/m/n/9 2014.  http://documents.worldbank.org/curated/en/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+\OT1/ptm/m/n/9 486511468167944431/Reducing-climate-sensitive-disease-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+[]\OT1/ptm/m/n/9 UNEP, International Fund for Agricultural
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+\OT1/ptm/m/n/9 Development (IFAD).  \OT1/ptm/m/it/9 Smallholders, Food
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+\OT1/ptm/m/it/9 Security, and the Environment\OT1/ptm/m/n/9 , Rome, 2013.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+\OT1/ptm/m/n/9 https://www.ifad.org/documents/10180/666cac24-14b6-
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 112--112
+[]\OT1/ptm/m/n/9 Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner.
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 118--118
+\OT1/ptm/m/n/9 Convolutional Networks.  \OT1/ptm/m/it/9 CoRR\OT1/ptm/m/n/9 , ab
+s/1311.2901, 2013.
  []
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
- [2
+ [3
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
@@ -465,26 +649,30 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `tomato_diseases_paper.brf' has not changed.
-(rerunfilecheck)             Checksum: B5AE1DF10017260F7AB75ACB41E15155;188.
+(rerunfilecheck)             Checksum: 54F93F9AB85623E62A1421E8994B48F9;1159.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 6416 strings out of 494892
- 93412 string characters out of 3178689
- 181581 words of memory out of 3000000
- 9906 multiletter control sequences out of 15000+200000
+ 6493 strings out of 494892
+ 94049 string characters out of 3178689
+ 183908 words of memory out of 3000000
+ 9970 multiletter control sequences out of 15000+200000
  23977 words of font info for 55 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 32i,9n,27p,1192b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,9n,27p,1335b,467s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/masch/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/masch/
 .miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/masch/.m
 iktex/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></home/masch/.miktex/te
 xmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/masch/.miktex/texmfs/insta
 ll/fonts/type1/urw/times/utmr8a.pfb></home/masch/.miktex/texmfs/install/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on tomato_diseases_paper.pdf (2 pages, 77883 bytes).
+Output written on tomato_diseases_paper.pdf (3 pages, 91502 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 19 named destinations out of 1000 (max. 500000)
+ 108 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
