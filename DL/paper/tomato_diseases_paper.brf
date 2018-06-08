@@ -9,6 +9,8 @@
 \backcite {ref9}{{1}{1}{section.1}}
 \backcite {PlantVillage}{{1}{1}{section.1}}
 \backcite {ref11, ref10}{{1}{1}{section.1}}
+\backcite {ref}{{1}{1}{section.1}}
+\backcite {ref11}{{1}{1}{section.1}}
 \backcite {ref12}{{1}{1}{section.1}}
 \backcite {ref13}{{1}{1}{section.1}}
 \backcite {ref14}{{2}{2}{section.2}}
@@ -16,16 +18,20 @@
 \backcite {ref16}{{2}{2}{section.2}}
 \backcite {ref17}{{2}{2}{section.2}}
 \backcite {ref18, ref19}{{2}{2}{section.2}}
+\backcite {ref24}{{2}{2}{section.2}}
+\backcite {ref27}{{2}{2}{section.2}}
+\backcite {ref25}{{2}{2}{section.2}}
 \backcite {ref20}{{2}{2}{section.2}}
 \backcite {ref21}{{2}{2}{section.2}}
 \backcite {ref22}{{2}{2}{section.2}}
 \backcite {ref23}{{2}{2}{section.2}}
-\backcite {ref28}{{2}{2}{section.2}}
-\backcite {ref24}{{2}{2}{section.2}}
-\backcite {ref25}{{2}{2}{section.2}}
-\backcite {ref26}{{2}{2}{section.2}}
-\backcite {ref27}{{2}{2}{section.2}}
+\backcite {ref}{{2}{2}{section.2}}
+\backcite {ref}{{2}{2}{section.2}}
 \backcite {ref28}{{2}{2}{section.2}}
 \backcite {ref29}{{2}{2}{section.2}}
 \backcite {ref30}{{2}{2}{section.2}}
-\backcite {ref31}{{2}{2}{section.2}}
+\backcite {Krizhevsky}{{2}{2}{section.2}}
+\backcite {tunisia}{{2}{2}{section.2}}
+\backcite {occlusion}{{2}{2}{section.2}}
+\backcite {erba}{{2}{2}{section.2}}
+\backcite {manzoni}{{2}{2}{section.2}}

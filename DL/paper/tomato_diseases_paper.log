@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  8 JUN 2018 01:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  8 JUN 2018 22:57
 entering extended mode
 **./tomato_diseases_paper.tex
 (tomato_diseases_paper.tex
@@ -370,88 +370,152 @@ LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
 (sections/abstract.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-) (sections/introduction.tex) (sections/related_work.tex
+) (sections/introduction.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
+
+
+LaTeX Warning: Citation `ref' on page 1 undefined on input line 7.
+
+) (sections/related_work.tex
+Underfull \hbox (badness 1072) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 analysis of the dataset which has been, in fact, used
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 2--1
+[]\OT1/ptm/m/n/10 As first step we reproduce the experiments of [[]][]
+ []
+
+
 Underfull \hbox (badness 1082) in paragraph at lines 2--1
 \OT1/ptm/m/n/10 the experiments are pursued keeping in mind realistic
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 
-LaTeX Warning: Citation `ref14' on page 1 undefined on input line 2.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-LaTeX Warning: Citation `ref15' on page 1 undefined on input line 2.
+ [1{/home/masch/.miktex/texmfs/data/pdftex/config/pdftex.map}
 
 
-LaTeX Warning: Citation `ref16' on page 1 undefined on input line 2.
+]
+
+LaTeX Warning: Citation `ref14' on page 2 undefined on input line 2.
 
 
-LaTeX Warning: Citation `ref17' on page 1 undefined on input line 2.
+LaTeX Warning: Citation `ref15' on page 2 undefined on input line 2.
 
 
-LaTeX Warning: Citation `ref18' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `ref16' on page 2 undefined on input line 2.
 
 
-LaTeX Warning: Citation `ref19' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `ref17' on page 2 undefined on input line 2.
 
 
-LaTeX Warning: Citation `ref20' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `ref18' on page 2 undefined on input line 4.
 
 
-LaTeX Warning: Citation `ref21' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `ref19' on page 2 undefined on input line 4.
 
 
-LaTeX Warning: Citation `ref22' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `ref27' on page 2 undefined on input line 4.
 
 
-LaTeX Warning: Citation `ref23' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `ref25' on page 2 undefined on input line 4.
 
 
-LaTeX Warning: Citation `ref28' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `ref20' on page 2 undefined on input line 4.
 
 
-LaTeX Warning: Citation `ref25' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `ref21' on page 2 undefined on input line 4.
 
 
-LaTeX Warning: Citation `ref26' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `ref22' on page 2 undefined on input line 4.
 
 
-LaTeX Warning: Citation `ref27' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `ref23' on page 2 undefined on input line 4.
 
 
-LaTeX Warning: Citation `ref28' on page 1 undefined on input line 4.
+LaTeX Warning: Citation `ref' on page 2 undefined on input line 4.
 
 
-LaTeX Warning: Citation `ref31' on page 1 undefined on input line 6.
+LaTeX Warning: Citation `ref' on page 2 undefined on input line 4.
+
+
+LaTeX Warning: Citation `ref28' on page 2 undefined on input line 4.
+
+
+LaTeX Warning: Citation `Krizhevsky' on page 2 undefined on input line 6.
+
+
+LaTeX Warning: Citation `tunisia' on page 2 undefined on input line 8.
+
+
+LaTeX Warning: Citation `occlusion' on page 2 undefined on input line 8.
+
+
+LaTeX Warning: Citation `erba' on page 2 undefined on input line 10.
+
+
+LaTeX Warning: Citation `manzoni' on page 2 undefined on input line 12.
 
 ) (sections/proposed_approach.tex
+Underfull \hbox (badness 1122) in paragraph at lines 2--1
+[]\OT1/ptm/m/n/10 Several works have been proposed in the literature
+ []
+
+
 Underfull \hbox (badness 2846) in paragraph at lines 2--1
 \OT1/ptm/m/n/10 conditions [[]][], optical technologies like thermal and
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 2--1
-\OT1/ptm/m/n/10 against noise from different sources; extracting shape
+Underfull \hbox (badness 2913) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 800 tomato leaf images and classified distinguishing
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 2--1
-\OT1/ptm/m/n/10 These methods are usually combined with classifiers
+Underfull \hbox (badness 1308) in paragraph at lines 2--1
+[]\OT1/ptm/m/n/10 The principles of CNNs have spread also to plant
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 2--1
-\OT1/ptm/m/n/10 means of the LeNet architecture. For the first time,
+Underfull \hbox (badness 1221) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 a comparison between shallow models with combined
  []
 
-[1{/home/masch/.miktex/texmfs/data/pdftex/config/pdftex.map}
+
+Underfull \hbox (badness 4752) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 models using PlantVillage dataset containing 14,828
+ []
 
 
-])
-(sections/experiments.tex) (sections/conclusion.tex)
-(sections/acknowledgements.tex) (sections/supplementary_material.tex)
-(tomato_diseases_paper.bbl (tomato_diseases_paper.brf)
+Underfull \hbox (badness 2662) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 model has achieved 95.47% accuracy using Random
+ []
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 having various hyper-parameters and dataset variations
+ []
+
+
+Underfull \hbox (badness 2150) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 from trusted Internet sources) taken under conditions
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 a substantial accuracy reduction, to just above 31%.
+ []
+
+) (sections/experiments.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2])
+(sections/conclusion.tex) (sections/acknowledgements.tex)
+(sections/supplementary_material.tex) (tomato_diseases_paper.bbl
+(tomato_diseases_paper.brf)
 \tf@brf=\write3
 \openout3 = `tomato_diseases_paper.brf'.
 
@@ -576,7 +640,7 @@ Underfull \hbox (badness 3375) in paragraph at lines 83--83
 \OT1/ptm/m/n/9 Using Deep Learning for Image-Based Plant Disease
  []
 
-[2]
+
 Underfull \hbox (badness 1418) in paragraph at lines 90--90
 []\OT1/ptm/m/n/9 R. R. Selvaraju, A. Das, R. Vedantam, M. Cogswell,
  []
@@ -641,15 +705,13 @@ s/1311.2901, 2013.
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
- [3
-
-]
+ [3]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
  (tomato_diseases_paper.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 Package rerunfilecheck Info: File `tomato_diseases_paper.brf' has not changed.
-(rerunfilecheck)             Checksum: 54F93F9AB85623E62A1421E8994B48F9;1159.
+(rerunfilecheck)             Checksum: F7B84C834CE9F810B5A565EF06B2FBC3;1387.
 
 
 LaTeX Warning: There were undefined references.
@@ -657,22 +719,22 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 6493 strings out of 494892
- 94049 string characters out of 3178689
- 183908 words of memory out of 3000000
- 9970 multiletter control sequences out of 15000+200000
+ 6497 strings out of 494892
+ 94091 string characters out of 3178689
+ 184908 words of memory out of 3000000
+ 9974 multiletter control sequences out of 15000+200000
  23977 words of font info for 55 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 32i,9n,27p,1335b,467s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,9n,27p,1530b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/masch/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/masch/
 .miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/masch/.m
 iktex/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></home/masch/.miktex/te
 xmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/masch/.miktex/texmfs/insta
 ll/fonts/type1/urw/times/utmr8a.pfb></home/masch/.miktex/texmfs/install/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on tomato_diseases_paper.pdf (3 pages, 91502 bytes).
+Output written on tomato_diseases_paper.pdf (3 pages, 94219 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 109 PDF objects out of 1000 (max. 8388607)
  32 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
