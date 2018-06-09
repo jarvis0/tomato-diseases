@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  8 JUN 2018 22:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  9 JUN 2018 19:25
 entering extended mode
 **./tomato_diseases_paper.tex
 (tomato_diseases_paper.tex
@@ -146,6 +146,74 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(/home/masch/.miktex/texmfs/install/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+)
+(/home/masch/.miktex/texmfs/install/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (/home/masch/.miktex/texmfs/install/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count105
+\float@exts=\toks22
+\float@box=\box30
+\@float@everytoks=\toks23
+\@floatcapt=\box31
+)
+(/home/masch/.miktex/texmfs/install/tex/latex/caption/caption.sty
+Package: caption 2018/05/01 v3.3-147 Customizing captions (AR)
+
+(/home/masch/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2018/05/27 v1.8a caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen119
+\captionmargin@=\dimen120
+\captionwidth=\dimen121
+\caption@tempdima=\dimen122
+\caption@indent=\dimen123
+\caption@parindent=\dimen124
+\caption@hangindent=\dimen125
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2-> \setbox \@tempboxa \hb
+ox {\small \noindent #1.~#2} \setlength {\@ctmp }{\hsize } \addtolength {\@ctmp
+ }{-\@figindent }\addtolength {\@ctmp }{-\@figindent } \ifdim \wd \@tempboxa >\
+@ctmp {\small #1.~#2\par } \else \hbox to\hsize {\hfil \box \@tempboxa \hfil } 
+\fi .
+\c@ContinuedFloat=\count106
+Package caption Info: float package is loaded.
+) (/home/masch/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip48
+\multirow@cntb=\count107
+\multirow@dima=\skip49
+\bigstrutjot=\dimen126
+)
+(/home/masch/.miktex/texmfs/install/tex/latex/tools/array.sty
+Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
+\col@sep=\dimen127
+\ar@mcellbox=\box32
+\extrarowheight=\dimen128
+\NC@list=\toks24
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box33
+)
 (/home/masch/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
@@ -202,16 +270,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/home/masch/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen119
-\Hy@linkcounter=\count105
-\Hy@pagecounter=\count106
+\@linkdim=\dimen129
+\Hy@linkcounter=\count108
+\Hy@pagecounter=\count109
 
 (/home/masch/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count107
+\Hy@SavedSpaceFactor=\count110
 
 (/home/masch/.miktex/texmfs/install/tex/latex/00miktex/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -238,17 +306,17 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count108
+\c@Hy@tempcnt=\count111
 
 (/home/masch/.miktex/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen120
-\Fld@menulength=\count109
-\Field@Width=\dimen121
-\Fld@charsize=\dimen122
+\XeTeXLinkMargin=\dimen130
+\Fld@menulength=\count112
+\Field@Width=\dimen131
+\Fld@charsize=\dimen132
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -258,36 +326,36 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count110
-\c@Item=\count111
-\c@Hfootnote=\count112
+\Hy@abspage=\count113
+\c@Item=\count114
+\c@Hfootnote=\count115
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count113
-\c@bookmark@seq@number=\count114
-\Hy@SectionHShift=\skip48
+\Fld@listcount=\count116
+\c@bookmark@seq@number=\count117
+\Hy@SectionHShift=\skip52
 )
 (tomato_diseases_paper.aux)
 \openout1 = `tomato_diseases_paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 35.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -303,17 +371,17 @@ Package color Info: Driver file: pdftex.def on input line 147.
 )
 (/home/masch/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count115
-\scratchdimen=\dimen123
-\scratchbox=\box30
-\nofMPsegments=\count116
-\nofMParguments=\count117
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count118
-\MPscratchDim=\dimen124
-\MPnumerator=\count119
-\makeMPintoPDFobject=\count120
-\everyMPtoPDFconversion=\toks21
+\scratchcounter=\count118
+\scratchdimen=\dimen133
+\scratchbox=\box34
+\nofMPsegments=\count119
+\nofMParguments=\count120
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count121
+\MPscratchDim=\dimen134
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
+\everyMPtoPDFconversion=\toks26
 ) (/home/masch/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -327,9 +395,12 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box31
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\AtBeginShipoutBox=\box35
 Package atbegshi Info: Package `everyshi' patched.
-Package hyperref Info: Link coloring ON on input line 24.
+Package hyperref Info: Link coloring ON on input line 35.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -337,35 +408,35 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/home/masch/.miktex/texmfs/install/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count121
+\c@section@level=\count124
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
-LaTeX Font Info:    Try loading font information for U+msa on input line 43.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 43.
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 43.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 54.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 43.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 54.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 43.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
 
 (sections/abstract.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -460,66 +531,104 @@ LaTeX Warning: Citation `erba' on page 2 undefined on input line 10.
 LaTeX Warning: Citation `manzoni' on page 2 undefined on input line 12.
 
 ) (sections/proposed_approach.tex
-Underfull \hbox (badness 1122) in paragraph at lines 2--1
+<./images/workflow.pdf, id=46, 7947.6925pt x 2137.9875pt>
+File: ./images/workflow.pdf Graphic file (type pdf)
+<use ./images/workflow.pdf>
+Package pdftex.def Info: ./images/workflow.pdf  used on input line 2.
+(pdftex.def)             Requested size: 491.99997pt x 132.3516pt.
+
+Overfull \hbox (1.94371pt too wide) in paragraph at lines 2--3
+[][] 
+ []
+
+
+Underfull \hbox (badness 1122) in paragraph at lines 2--8
 []\OT1/ptm/m/n/10 Several works have been proposed in the literature
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 2--1
+Underfull \hbox (badness 2846) in paragraph at lines 2--8
 \OT1/ptm/m/n/10 conditions [[]][], optical technologies like thermal and
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 2--1
+Underfull \hbox (badness 2913) in paragraph at lines 2--8
 \OT1/ptm/m/n/10 800 tomato leaf images and classified distinguishing
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 2--1
+Underfull \hbox (badness 1308) in paragraph at lines 2--8
 []\OT1/ptm/m/n/10 The principles of CNNs have spread also to plant
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 2--1
+Underfull \hbox (badness 1221) in paragraph at lines 2--8
 \OT1/ptm/m/n/10 a comparison between shallow models with combined
  []
 
 
-Underfull \hbox (badness 4752) in paragraph at lines 2--1
+Underfull \hbox (badness 4752) in paragraph at lines 2--8
 \OT1/ptm/m/n/10 models using PlantVillage dataset containing 14,828
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 2--1
+Underfull \hbox (badness 2662) in paragraph at lines 2--8
 \OT1/ptm/m/n/10 model has achieved 95.47% accuracy using Random
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 2--1
+Underfull \hbox (badness 1226) in paragraph at lines 2--8
 \OT1/ptm/m/n/10 having various hyper-parameters and dataset variations
  []
 
 
-Underfull \hbox (badness 2150) in paragraph at lines 2--1
+Underfull \hbox (badness 2150) in paragraph at lines 2--8
 \OT1/ptm/m/n/10 from trusted Internet sources) taken under conditions
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 2--1
+Underfull \hbox (badness 2119) in paragraph at lines 2--8
 \OT1/ptm/m/n/10 a substantial accuracy reduction, to just above 31%.
  []
 
-) (sections/experiments.tex
+
+Underfull \hbox (badness 2384) in paragraph at lines 2--8
+[]\OT1/ptm/m/n/10 According to the complains that have been made
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 2--8
+\OT1/ptm/m/n/10 heuristic solution to overcome its limitations for what
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2])
-(sections/conclusion.tex) (sections/acknowledgements.tex)
-(sections/supplementary_material.tex) (tomato_diseases_paper.bbl
-(tomato_diseases_paper.brf)
+ [2]
+Underfull \hbox (badness 2644) in paragraph at lines 22--41
+[]\OT1/ptm/m/n/10 Measures for multi-class classification based on a
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 22--41
+\OT1/ptm/m/n/10 generalization of binary classification measures for C
+ []
+
+
+Underfull \vbox (badness 2452) has occurred while \output is active []
+
+)
+(sections/experiments.tex) (sections/conclusion.tex)
+(sections/acknowledgements.tex) (sections/supplementary_material.tex)
+(tomato_diseases_paper.bbl (tomato_diseases_paper.brf)
 \tf@brf=\write3
 \openout3 = `tomato_diseases_paper.brf'.
 
+ [3 <./images/workflow.pdf
 
+pdfTeX warning: pdflatex (file ./images/workflow.pdf): PDF inclusion: invalid o
+ther resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
 Underfull \hbox (badness 3158) in paragraph at lines 17--17
 []\OT1/ptm/m/n/9 M. Brahimi, B. Kamel, and A. Moussaoui.  Deep
  []
@@ -704,37 +813,44 @@ s/1311.2901, 2013.
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
  (tomato_diseases_paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
 Package rerunfilecheck Info: File `tomato_diseases_paper.brf' has not changed.
 (rerunfilecheck)             Checksum: F7B84C834CE9F810B5A565EF06B2FBC3;1387.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
  ) 
 Here is how much of TeX's memory you used:
- 6497 strings out of 494892
- 94091 string characters out of 3178689
- 184908 words of memory out of 3000000
- 9974 multiletter control sequences out of 15000+200000
- 23977 words of font info for 55 fonts, out of 3000000 for 9000
+ 7761 strings out of 494892
+ 116544 string characters out of 3178689
+ 207543 words of memory out of 3000000
+ 11202 multiletter control sequences out of 15000+200000
+ 26783 words of font info for 64 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 32i,9n,27p,1530b,352s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,13n,39p,1530b,473s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/masch/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/masch/
-.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/masch/.m
-iktex/texmfs/install/fonts/type1/urw/courier/ucrr8a.pfb></home/masch/.miktex/te
-xmfs/install/fonts/type1/urw/times/utmb8a.pfb></home/masch/.miktex/texmfs/insta
-ll/fonts/type1/urw/times/utmr8a.pfb></home/masch/.miktex/texmfs/install/fonts/t
-ype1/urw/times/utmri8a.pfb>
-Output written on tomato_diseases_paper.pdf (3 pages, 94219 bytes).
+.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/masch/.
+miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/masch/.m
+iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/masch/.mik
+tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/masch/.mikte
+x/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/masch/.miktex/
+texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/masch/.miktex/tex
+mfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/masch/.miktex/texm
+fs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/masch/.miktex/texmfs
+/install/fonts/type1/urw/courier/ucrr8a.pfb></home/masch/.miktex/texmfs/install
+/fonts/type1/urw/times/utmb8a.pfb></home/masch/.miktex/texmfs/install/fonts/typ
+e1/urw/times/utmr8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/tim
+es/utmri8a.pfb>
+Output written on tomato_diseases_paper.pdf (4 pages, 200067 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

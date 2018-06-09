@@ -1,1 +1,42 @@
+\begin{figure*}
+		\fbox{\includegraphics[scale=0.0619]{./images/workflow.pdf}}
+	\begin{center}
+	\caption{System overview.}
+	\label{fig:1}
+	\end{center}
+\end{figure*}
 \section{Proposed approach}
+Hereby, we present how we have tackled the challenges set up in the introduction. In Figure \ref{fig:1} we show the workflow of our approach to image classification task.
+
+\subsection{Convolutional Neural Networks}
+a
+\subsection{Binary Classification}
+a
+\subsection{Multi-class Classification}
+a
+\subsubsection{Model Visualization}
+a
+\subsubsection{Sensitivity Analysis}
+a
+\subsection{Measures of Classification Performance}
+Measures for multi-class classification based on a generalization of binary classification measures for C classes: $tp_i$ are true positive for class $i$, and $fp_i$ – false positive, $fn_i$ – false negative, and $tn_i$ – true negative counts respectively. $\mu$ and $M$ indices represent micro- and macro-averaging.
+\begin{table}[H]
+	\begin{center}
+	\begin{tabular}{|l|c|}
+		\hline
+		\textbf{Measure} & \textbf{Formula} \\ 
+		\hline
+		$Average Accuracy$ & $\dfrac{\sum_{i=1}^{C} \frac{tp_i+tn_i}{tp_i+fn_i+fp_i+tn_i}}{C}$ \\
+		$Precision_\mu$ & $\sum_{i=1}^{C} \frac{tp_i}{tp_i+fp_i}$ \\
+		$Precision_M$ & $\dfrac{\sum_{\mu=1}^{C} Precision_\mu}{C}$ \\
+		$Recall_\mu$ & $\sum_{i=1}^{C} \frac{tp_i}{tp_i+fn_i}$ \\
+		$Recall_M$ & $\dfrac{\sum_{i=1}^{C} Recall_\mu}{C}$ \\
+		$F_1 score_\mu$ & $\dfrac{2\times Precision_\mu \times Recall_\mu}{Precision_\mu+Recall_\mu}$ \\
+		$F_1 score_M$ & $\dfrac{2\times Precision_M \times Recall_M}{Precision_M+Recall_M}$ \\
+		\hline
+	\end{tabular}
+	\end{center}
+	\caption{classification metrics.}
+	\label{table:1}
+\end{table}
+Table \ref{table:1} a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a 
