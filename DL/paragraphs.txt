@@ -1,18 +1,16 @@
 0. Abstract
 1. Introducton (task di classificazione di 10 malattie di piante di pomodoro di vitale importanza nel campo dell'agricoltura => task riguarda un contadino che fa la foto a foglie sul campo e riceve la predizione riguardo l'eventuale malattia di queste + problema dataset malformato) 
 2. Related work
-3. Proposed approach => workflow graph: data exploration -> data augmentation
-    3.1 Convolutional Neural Networks (riassunto teorico rispetto al loro funzionamento e ai loro componenti)
-    3.2 Binary classification (k-fold x-validation + task semplice con arch semplice per iniziare + dataset sbilanciato + hyper-tuning)
-    3.3 Multiclass classification (riproduzione dello stato dell'arte + pretrained + step successivi riguardanti la robustezza del dataset, cioè cambiamento delle immmagini del dataset ed in particolare degli sfondi e il perché a livello intuitivo)
-        3.3.1 Model visualization (gradCam + Occlusion e loro funzionamento + kernels)
-        3.3.2 Sensitivity analysis (approccio volto al cambiamento del test set in vista di un futuro deployment significativo)
-    3.4 Measures of classification performance (tabellina con formule)
-4. Experiments
-    4.1 Standard dataset
-        4.1.1 Binary classification
-        4.1.2 Multiclass classification (soliti esperimenti per migliorare la performance sul task normale + tensorboard allenamento e validation a riprova dello stato dell'arte + conclusione con img di gradCam + occlusion particolarmente patologiche)
-    4.2 Sensitivity evaluation (brevemente spiegare i limiti trovati così da introdurre gli esperimenti seguenti)
+3. Proposed approach
+    3.1 Workflow graph and explanation
+    3.2 The Classification Task (binary + multiclass + come abbiamo condotto gli esperimenti, confusion matrices, tabellina con formule)
+    3.3 Model visualization (gradCam + Occlusion e loro funzionamento + kernels)
+
+4. Experiments (weights inizialization, loss function choice, hyperparameters, optimizer(eps=10^-8), softmax)
+    4.1 Standard dataset (parlare della composizione del dataset: tipo di immagini, numero di immagini, intuitivamente sfondo omogeneo + alcuni immagini erano mal segmentate)
+        4.1.1 Binary classification (architettura scelta + k-fold x-validation + task semplice con arch semplice per iniziare + dataset sbilanciato [si poteva usare una cost matrix per ribilanciarlo] + hyper-tuning + baseline)
+        4.1.2 Multiclass classification (architettura scelta + riproduzione dello stato dell'arte + pretrained + soliti esperimenti per migliorare la performance sul task normale + tensorboard allenamento e validation a riprova dello stato dell'arte + conclusione con img di gradCam + occlusion particolarmente patologiche + baseline media)
+    4.2 Sensitivity evaluation (approccio volto al cambiamento del test set in vista di un futuro deployment significativo, brevemente spiegare i limiti trovati così da introdurre gli esperimenti seguenti + cambiamento delle immmagini del dataset ed in particolare degli sfondi e il perché a livello intuitivo e rispetto ai visualization methods)
         4.2.1 Normal train
         4.2.2 Segmented train
         4.2.3 Random crop from table backgrounds (normalization + performances + images results)
@@ -20,4 +18,4 @@
         4.2.5 Random images backgrounds (normalization + performances + images results)
         4.2.6 Random images backgrounds with more backgrounds and leaf norm (motivo di questo ulteriore exp che prosegue il 4.2.5 che era il più sensato e realistico rispetto al task di predizione e alle limitazioni trovate sul dataset originale)
     4.3 Test against plantation leaf images (results and possible motivations to quite bad results {ground truth potrebbe non essere affidabile})
-5. Conclusion (vgg11 miglioramento rispetto ad alexnet. Studi futuri che analizzino il miglioramento comparativo dei due datasets {normal e random background-improved} tra diversi modelli. Dataset di partenza andrebbe migliorato con sfondi diversificati e più realistici rispetto al task di riferimento. Dataset di testing più realistico deve provenire da qualche esperto e non da Internet. Parlare di quale sarebbe la baseline in media. Confronto con altri paper.
+5. Conclusion [and future developmets] (vgg11 miglioramento rispetto ad alexnet. Studi futuri che analizzino il miglioramento comparativo dei due datasets {normal e random background-improved} tra diversi modelli. Dataset di partenza andrebbe migliorato con sfondi diversificati e più realistici rispetto al task di riferimento. Dataset di testing più realistico deve provenire da qualche esperto e non da Internet. Parlare di quale sarebbe la baseline in media. Confronto con altri paper.

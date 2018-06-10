@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  9 JUN 2018 19:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  11 JUN 2018 01:52
 entering extended mode
 **./tomato_diseases_paper.tex
 (tomato_diseases_paper.tex
@@ -341,21 +341,21 @@ File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 (tomato_diseases_paper.aux)
 \openout1 = `tomato_diseases_paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 34.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -400,7 +400,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box35
 Package atbegshi Info: Package `everyshi' patched.
-Package hyperref Info: Link coloring ON on input line 35.
+Package hyperref Info: Link coloring ON on input line 34.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -410,33 +410,33 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count124
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
-LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 54.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 53.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-LaTeX Font Info:    Try loading font information for OMS+pcr on input line 54.
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 53.
 
 (/home/masch/.miktex/texmfs/install/tex/latex/psnfss/omspcr.fd
 File: omspcr.fd 
 )
 LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 54.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
 
 (sections/abstract.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -531,73 +531,78 @@ LaTeX Warning: Citation `erba' on page 2 undefined on input line 10.
 LaTeX Warning: Citation `manzoni' on page 2 undefined on input line 12.
 
 ) (sections/proposed_approach.tex
-<./images/workflow.pdf, id=46, 7947.6925pt x 2137.9875pt>
+<./images/workflow.pdf, id=46, 7865.385pt x 2153.04375pt>
 File: ./images/workflow.pdf Graphic file (type pdf)
 <use ./images/workflow.pdf>
 Package pdftex.def Info: ./images/workflow.pdf  used on input line 2.
-(pdftex.def)             Requested size: 491.99997pt x 132.3516pt.
+(pdftex.def)             Requested size: 504.30878pt x 138.04729pt.
 
-Overfull \hbox (1.94371pt too wide) in paragraph at lines 2--3
+Overfull \hbox (14.25252pt too wide) in paragraph at lines 2--3
 [][] 
  []
 
 
-Underfull \hbox (badness 1122) in paragraph at lines 2--8
+Underfull \hbox (badness 1122) in paragraph at lines 2--9
 []\OT1/ptm/m/n/10 Several works have been proposed in the literature
  []
 
 
-Underfull \hbox (badness 2846) in paragraph at lines 2--8
+Underfull \hbox (badness 2846) in paragraph at lines 2--9
 \OT1/ptm/m/n/10 conditions [[]][], optical technologies like thermal and
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 2--8
+Underfull \hbox (badness 2913) in paragraph at lines 2--9
 \OT1/ptm/m/n/10 800 tomato leaf images and classified distinguishing
  []
 
 
-Underfull \hbox (badness 1308) in paragraph at lines 2--8
+Underfull \hbox (badness 1308) in paragraph at lines 2--9
 []\OT1/ptm/m/n/10 The principles of CNNs have spread also to plant
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 2--8
+Underfull \hbox (badness 1221) in paragraph at lines 2--9
 \OT1/ptm/m/n/10 a comparison between shallow models with combined
  []
 
 
-Underfull \hbox (badness 4752) in paragraph at lines 2--8
+Underfull \hbox (badness 4752) in paragraph at lines 2--9
 \OT1/ptm/m/n/10 models using PlantVillage dataset containing 14,828
  []
 
 
-Underfull \hbox (badness 2662) in paragraph at lines 2--8
+Underfull \hbox (badness 2662) in paragraph at lines 2--9
 \OT1/ptm/m/n/10 model has achieved 95.47% accuracy using Random
  []
 
 
-Underfull \hbox (badness 1226) in paragraph at lines 2--8
+Underfull \hbox (badness 1226) in paragraph at lines 2--9
 \OT1/ptm/m/n/10 having various hyper-parameters and dataset variations
  []
 
 
-Underfull \hbox (badness 2150) in paragraph at lines 2--8
+Underfull \hbox (badness 2150) in paragraph at lines 2--9
 \OT1/ptm/m/n/10 from trusted Internet sources) taken under conditions
  []
 
 
-Underfull \hbox (badness 2119) in paragraph at lines 2--8
+Underfull \hbox (badness 2119) in paragraph at lines 2--9
 \OT1/ptm/m/n/10 a substantial accuracy reduction, to just above 31%.
  []
 
 
-Underfull \hbox (badness 2384) in paragraph at lines 2--8
+Underfull \hbox (badness 1221) in paragraph at lines 2--9
+\OT1/ptm/m/n/10 images unfeasible. Instead, their work has aimed at
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 2--9
 []\OT1/ptm/m/n/10 According to the complains that have been made
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 2--8
+Underfull \hbox (badness 1009) in paragraph at lines 2--9
 \OT1/ptm/m/n/10 heuristic solution to overcome its limitations for what
  []
 
@@ -605,30 +610,65 @@ Underfull \hbox (badness 1009) in paragraph at lines 2--8
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-Underfull \hbox (badness 2644) in paragraph at lines 22--41
-[]\OT1/ptm/m/n/10 Measures for multi-class classification based on a
+Underfull \hbox (badness 1783) in paragraph at lines 12--19
+\OT1/ptm/m/n/10 random flips and rotations transformations to images.
  []
 
 
-Underfull \hbox (badness 1859) in paragraph at lines 22--41
-\OT1/ptm/m/n/10 generalization of binary classification measures for C
+Underfull \hbox (badness 4634) in paragraph at lines 12--19
+\OT1/ptm/m/n/10 By doing this we let the model learn also slight
  []
 
 
-Underfull \vbox (badness 2452) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 12--19
+\OT1/ptm/m/n/10 modification of available data allowing for better
+ []
 
+
+Underfull \hbox (badness 1635) in paragraph at lines 12--19
+\OT1/ptm/m/n/10 generalization capabilities. Optionally, we can make
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 12--19
+\OT1/ptm/m/n/10 this point, once hyper-parameters are chosen, we can
+ []
+
+
+LaTeX Warning: Citation `ref' on page 3 undefined on input line 39.
+
+[3 <./images/workflow.pdf
+
+pdfTeX warning: pdflatex (file ./images/workflow.pdf): PDF inclusion: invalid o
+ther resource which is no dict (key 'ProcSets', type <array>); ignored.
+>]
+Underfull \hbox (badness 1762) in paragraph at lines 43--44
+[]\OT1/ptm/m/n/10 Sensitivity analysis and performance evaluation are
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 45.
+(/home/masch/.miktex/texmfs/install/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
 )
-(sections/experiments.tex) (sections/conclusion.tex)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+[]\OT1/ptm/m/n/10 Gradient-weighted Class Activation Mapping
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 49--50
+\OT1/ptm/m/n/10 regions in the image for predicting the concept.
+ []
+
+) (sections/experiments.tex) (sections/conclusion.tex)
 (sections/acknowledgements.tex) (sections/supplementary_material.tex)
 (tomato_diseases_paper.bbl (tomato_diseases_paper.brf)
 \tf@brf=\write3
 \openout3 = `tomato_diseases_paper.brf'.
 
- [3 <./images/workflow.pdf
 
-pdfTeX warning: pdflatex (file ./images/workflow.pdf): PDF inclusion: invalid o
-ther resource which is no dict (key 'ProcSets', type <array>); ignored.
->]
 Underfull \hbox (badness 3158) in paragraph at lines 17--17
 []\OT1/ptm/m/n/9 M. Brahimi, B. Kamel, and A. Moussaoui.  Deep
  []
@@ -781,7 +821,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--98
 \OT1/ptm/m/n/9 486511468167944431/Reducing-climate-sensitive-disease-
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 105--105
 []\OT1/ptm/m/n/9 UNEP, International Fund for Agricultural
  []
@@ -813,28 +853,30 @@ s/1311.2901, 2013.
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
+ [5
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (tomato_diseases_paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 80.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 80.
 Package rerunfilecheck Info: File `tomato_diseases_paper.brf' has not changed.
-(rerunfilecheck)             Checksum: F7B84C834CE9F810B5A565EF06B2FBC3;1387.
+(rerunfilecheck)             Checksum: 981FD8160188BDFC3BFAEACF7E3F598E;1430.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 81.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 7761 strings out of 494892
- 116544 string characters out of 3178689
- 207543 words of memory out of 3000000
- 11202 multiletter control sequences out of 15000+200000
+ 7774 strings out of 494892
+ 116768 string characters out of 3178689
+ 207568 words of memory out of 3000000
+ 11214 multiletter control sequences out of 15000+200000
  26783 words of font info for 64 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 36i,13n,39p,1530b,473s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,12n,39p,1530b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/masch/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/masch/
 .miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/masch/.
 miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/masch/.m
@@ -848,9 +890,9 @@ fs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/masch/.miktex/texmfs
 /fonts/type1/urw/times/utmb8a.pfb></home/masch/.miktex/texmfs/install/fonts/typ
 e1/urw/times/utmr8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/tim
 es/utmri8a.pfb>
-Output written on tomato_diseases_paper.pdf (4 pages, 200067 bytes).
+Output written on tomato_diseases_paper.pdf (5 pages, 256226 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 39 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
