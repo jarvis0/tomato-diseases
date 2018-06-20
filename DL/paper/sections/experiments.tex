@@ -55,7 +55,7 @@ layers activation function is rectified linear unit (ReLU) since diminishes the 
 the chosen loss function for the binary classification is BCEWithLogitsLoss since it is designed for binary tasks and more stable compared to cross entropy.
 \\
 \textbf{Validation:}
-for this task we have performed k-fold cross validation with k = 10 over the training set. This kind of validation was used to estimate the number of training epochs.
+for this task we have performed k-fold cross validation with k = 10 over the training set. This kind of validation was used to estimate the number of training epochs and the batch size to use.
 \subsubsection{Multi-class Classification Setup}
 \textbf{AlexNet}
 for this task we have chosen a more complex model since we have tested LeNet over the ten class with results very far from the state of the art \cite{ref11}. In order to compare our results with \cite{ref11} we have chosen AlexNet.  \\
@@ -69,8 +69,68 @@ layers activation function is again rectified linear unit (ReLU).
 in this case we have used Cross Entropy as loss function.
 \\
 \textbf{Validation:}
-in the case of Multi-class Classification we opt to proceed with cross validation. We have chosen a different approach from binary classification. In fact k-fold cross validation required on AlexNet requires a lot of computing time that is not justified in our dataset since there is small amount of variance in our pictures and consequently in each possible fold.
+in the case of Multi-class Classification we opt to proceed with cross validation. We have chosen a different approach from binary classification. In fact k-fold cross validation applied on AlexNet requires a lot of computing time that is not justified in our dataset since there is small amount of variance in our pictures and consequently in each possible fold.
 \\
 \textbf{Optimizer:}
 As optimizer we have choosen Adam \cite{ref32}. An important annotation should be done about this optimizer. In fact trough the training process we noticed that accuracy after a bunch of epochs drops. This was caused by the $\varepsilon$ coefficient, this coefficient used to avoid division by zero when the gradient is almost zero in parameters update.  By default is set to $1*10^{-8}$ and it causes large weights updates. So we set it to 0.1 to avoid this problem.
+
+\begin{figure*}
+\begin{center}
+	\fbox{\includegraphics[scale=1.5]{./images/tensorboards}}
+	\begin{center}
+		\caption{Tensorboard graph of experiments, from left to right: \textbf{Validation Accurancy over epochs}, \textbf{Valdiation error over epochs}. }
+		\label{fig:tensorboard}
+	\end{center}
+	\vspace{-15pt}
+\end{center}
+\end{figure*}
+
 \subsection{Results and discussion:}
+\subsubsection{Binary Classification:}
+After a training phase using 10-fold cross validation, we select as best hyperparameters for our binary classification problem, the batch size equal to 32 and the total number of epochs equal to 15. With this configuration, after retraining the net on the global train set, we obtain the results on the test set shown in the table \ref{table:binary}. Beeing a very unbalanced dataset because of the number of healthy leaves with respect to the non healthy ones, we expected to have an healthy accurancy lower than non healthy. The result show that our assumptions was correct. In fact LeNet accurancy for healthy aren't good as for non healthy one. By the way the average performances of our net are good.
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|l|c|}
+			\hline
+			\textbf{Measure} & \textbf{Results} \\ 
+			\hline
+			$Average Accuracy$ & $0.999184$ \\
+			$Healthy Accuracy$ & $0.996678$ \\
+			$Non Healthy Accuracy$ & $0.999407$ \\
+			$Precision_M$ & $0.993377$ \\
+			$Recall_M$ & $0.996678$ \\
+			$F_1 score_M$ & $0.995025$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Performance of binary classification.}
+	\label{table:binary}
+\end{table}
+
+\subsubsection{Multi-class Classification:}
+As we did for binary classification, we try different run using different hyperparameters and we test our result on the validation set. As figure \ref{fig:tensorboard} shows, it's possible to understand that the best configuration it's given from Alexnet pretrained, with batch size equal to 64, eps equal to 0.1 for 57 epochs. The results obtained from this configuration are described in the table \ref{table:multiclass} and in the figure \ref{fig:conf_matrix}. As the confusion matrix shows, AlexNet pretrained has a very good performance for all the classes. We expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been missclassified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl.
+\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|l|c|}
+			\hline
+			\textbf{Measure} & \textbf{Results} \\ 
+			\hline
+			$Average Accuracy$ & $0.998560$ \\
+			$Precision_M$ & $0.998339$ \\
+			$Recall_M$ & $0.998173$ \\
+			$F_1 score_M$ & $0.998254$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Performance of multi-class classification.}
+	\label{table:multiclass}
+\end{table}
+\begin{figure}[t]
+	\begin{center}
+		\fbox{\includegraphics[scale=0.2]{./images/conf_matrix_norm}}
+	\end{center}
+	\caption{Confusion matrix of AlexNet pretrained in multi-class classification problem in percentage. }
+	\label{fig:conf_matrix}
+	\label{fig:long}
+	\label{fig:onecol}
+\end{figure}
