@@ -4,20 +4,20 @@
 		\caption{Workflow overview schema.}
 		\label{fig:1}
 	\end{center}
-	\vspace{-15pt}
+	\vspace{-20pt}
 \end{figure*}
 \section{Proposed approach}
 Hereby, we present how we tackle the challenges set up in the introduction.
 \subsection{Workflow overview}
 First, we inspect the dataset by manually visualizing the images and by counting them for each class. Then, as showed in Figure \ref{fig:1}, we split the dataset (70\% train and 30\% test) so that we can train the model and assess its final performance on independent data.
 \\\indent
-As second step, we enhance train data by applying random flips and rotations transformations to images. By doing this we let the model learn also slight modification of available data allowing for better generalization capabilities. Optionally, we can make further transformations according to a previous sensitivity analysis of the dataset. Important to notice is that all data splits are normalized by subtracting the mean and dividing by the standard deviation computed on the augmented train data.
+As second step, we enhance train data by applying augmentation techniques. By doing this we let the model learn also slight modification of available data allowing for better generalization capabilities. Optionally, we can make further transformations according to a previous sensitivity analysis of the dataset. Important to notice is that, at this stage, all data splits are normalized.
 \\\indent
-After that, we set up the cross-validation framework by randomly dividing the data into train and validation sets (since we have a large number of samples, we can assume that each class has a sufficient number of representative samples, i.e., stratification). Cross-validation method is used to estimate the performance of the model on unseen samples and, hence, its generalization capabilities. At this point, once hyper-parameters are chosen, we can run the training phase. Hyper-parameters choice is of tremendous importance as it largely affects the resulting model in both qualitative (the model may learn different representations) and computing time terms. The main ones involve the architecture of the model, the learning rate and its decay speed, the batch size, the optimizer and its arguments choice, regularization and its value choice, the number of epochs. In our experiments we search the space of hyper-parameters guided by the model validation performances.
+After that, we set up the cross-validation framework by randomly dividing the data into train and validation sets (since we have a large number of samples, we can assume that each class has a sufficient number of representative samples, i.e., stratification). Cross-validation method is used to estimate the performance of the model on unseen samples and, hence, its generalization capabilities. At this point, once hyper-parameters are chosen, we can run the training phase. Hyper-parameters choice is of tremendous importance as it largely affects the resulting model in both qualitative (the model may learn different representations) and computing time terms. The main ones involve the architecture of the model, the learning rate and its decay speed, the batch size, the optimizer and its arguments choice, regularization type and its value choice, the number of epochs. In our experiments we search the space of hyper-parameters guided by the model validation performances.
 \\\indent
-Once a satisfactory number of trials is made, we move on to the selection of the best model according to the performances' estimates made by model validation. After that, as a further model performance evaluation, we test it against test data coming from the original dataset and possibly with the application of several  variations so to better assess its generalization capabilities. Furthermore, we visualize the model on test datasets by using Occlusion and GradCAM methods and its first layer kernels. At this stage, according to sensitivity analysis and performance evaluation, we may decide to make ad hoc modifications of the transformations we apply to the data in earlier stages, and then go through the workflow again.
+Once a satisfactory number of trials is made, we move on to the selection of the best model according to the performances' estimates made by model validation. After that, as a further model performance evaluation, we test it against test data coming from the original dataset and possibly with the application of several  variations so to better assess its generalization capabilities. This is further supported by model visualization on test datasets. At this stage, according to sensitivity analysis and performance evaluation, we may decide to make ad hoc modifications of the transformations we apply to the data in earlier stages, and then go through the workflow again.
 \subsection{The classification task}
-\begin{table}[H]
+\begin{table}
 	\begin{center}
 		\begin{tabular}{|l|c|}
 			\hline
@@ -35,16 +35,17 @@ Once a satisfactory number of trials is made, we move on to the selection of the
 	\end{center}
 	\caption{Measures of classification performance.}
 	\label{table:1}
+	\vspace{-16pt}
 \end{table}
-On the basis of the set up framework, we conduct several classification experiments. As first attempt we approach the simple task of binary classification. The two considered classes are healthy and infected. Then, we tackle the multi-class classification problem for tomato plant diseases recognition. For each experiment we take note of the confusion matrices on both validation phase -- for model selection -- and tests phase -- for sensitivity analysis and performance evaluation. In order to assess the quality of the results and to summarize them, we use metrics of performance commonly employed within classification problems (\cite{ref}).
+On the basis of the set up framework, we conduct several classification experiments. For each experiment we take note of the confusion matrices on both validation phase -- for model selection -- and tests phase -- for sensitivity analysis and performance evaluation. In order to assess the quality of the results and to summarize them, we use metrics of performance commonly employed within classification problems (\cite{ref}).
 \\\indent
 Measures for multi-class classification, showed in Table \ref{table:1}, are based on a generalization of binary classification measures for C classes: $tp_i$ are true positive for class $i$, and $fp_i$ – false positive, $fn_i$ – false negative, and $tn_i$ – true negative counts respectively. $\mu$ and $M$ indices represent micro- and macro-averaging.
 \subsection{Model visualization}
 Sensitivity analysis and performance evaluation are not only dealt with metrics of performance but also by visualizing the model using the following approaches.
 \begin{itemize}
-	\item Visualizing the kernels of the first (it is the most interpretable) layer of a CNN is useful because well-trained models usually display nice and smooth filters without any noisy patterns. Noisy patterns can be an indicator of a network that has not been trained for long enough, or possibly a very low regularization strength that may have led to overfitting.
+	\item \textbf{Kernels visualization} of the first (it is the most interpretable) layer of a CNN is useful because well-trained models usually display nice and smooth filters without any noisy patterns. Noisy patterns can be an indicator of a network that has not been trained for long enough, or possibly a very low regularization strength that may have led to overfitting.
 	\vspace{-5pt}
-	\item Occlusion method gives insights whether the model is truly identifying the location of the relevant object in the image, or just using the surrounding context. This is done by systematically occluding different portions of the input image, and monitoring the output. Therefore, if the model is correctly localizing the relevant objects, the probability of the correct class drops significantly when the objects are occluded.
+	\item \textbf{Gradient-weighted Class Activation Mapping (GradCAM)} uses the gradients of any target concept, flowing into the final convolutional layer to produce a coarse localization map highlighting the important regions in the image for predicting the concept. Among the other properties, this method helps in achieving generalization by identifying dataset bias.
 	\vspace{-5pt}
-	\item Gradient-weighted Class Activation Mapping (GradCAM) uses the gradients of any target concept, flowing into the final convolutional layer to produce a coarse localization map highlighting the important regions in the image for predicting the concept. Among the other properties, this method helps in achieving generalization by identifying dataset bias.
+	\item \textbf{Occlusion method} is done by systematically occluding different portions of the input image, and monitoring the output. Therefore, if the model is correctly localizing the relevant objects, the probability of the correct class drops significantly when the objects are occluded.
 \end{itemize}

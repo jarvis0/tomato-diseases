@@ -1,5 +1,8 @@
 \begin{thebibliography}{10}\itemsep=-1pt
 
+\bibitem{imagenet}
+{www.image-net.org/}.
+
 \bibitem{ref1}
 {A. P. Tai, M. V. Martin, and C. L. Heald}.
 \newblock {Threat to future global food security from climate change and ozone
@@ -28,6 +31,12 @@ C.~Cortes and V.~Vapnik.
 \newblock {Support-vector networks}.
 \newblock {\em {Machine Learning}}, {20}({3}):{273--297}, {Sep.} {1995}.
 \newblock {https://doi.org/10.1007/BF00994018}.
+
+\bibitem{ref32}
+{Diederik P. Kingma, Jimmy Lei Ba}.
+\newblock {ADAM: A METHOD FOR STOCHASTIC OPTIMIZATION}.
+\newblock {\em {international Conference on Learning Representations}}, {2015}.
+\newblock {https://arxiv.org/pdf/1412.6980.pdf}.
 
 \bibitem{ref2}
 {Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem
@@ -102,6 +111,14 @@ R.~R. Selvaraju, A.~Das, R.~Vedantam, M.~Cogswell, D.~Parikh, and D.~Batra.
   {2013}.
 \newblock
   {https://www.ifad.org/documents/10180/666cac24-14b6-43c2-876d-9c2d1f01d5dd}.
+
+\bibitem{ref31}
+{X. Glorot, Y. Bengio}.
+\newblock {Understanding the difficulty of training deep feedforward neural
+  networks}.
+\newblock {\em {Proceedings of the thirteenth international conference on
+  artificial intelligence and statistics}}, pages {249--256}, {2010}.
+\newblock {http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf}.
 
 \bibitem{ref30}
 {Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner}.
