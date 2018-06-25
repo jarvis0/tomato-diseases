@@ -30,8 +30,8 @@ from PIL import Image
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-data_dir = '../from_internet_dataset_improved/'
-test_dir = 'from_intenet_improved'
+data_dir = '../data/'
+test_dir = 'segmented_test'
 classes = sorted(os.listdir(data_dir + test_dir))
 batch_size = 16
 if os.path.exists(test_dir):
@@ -43,12 +43,12 @@ os.mkdir(test_dir)
 
 
 # normal test normalization
-#mean = [0.44947562, 0.46524084, 0.40037745]
-#std = [0.18456618, 0.16353698, 0.20014246]
+mean = [0.44947562, 0.46524084, 0.40037745]
+std = [0.18456618, 0.16353698, 0.20014246]
 
 # leaf normalization
-mean = [0.360007843, 0.482983922, 0.274050667]
-std = [0.177985098, 0.180084239, 0.141458866]
+#mean = [0.360007843, 0.482983922, 0.274050667]
+#std = [0.177985098, 0.180084239, 0.141458866]
 
 data_transforms = transforms.Compose([
         transforms.Resize((224, 224)),
