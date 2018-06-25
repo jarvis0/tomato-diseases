@@ -110,7 +110,7 @@ After a training phase using 10-fold cross validation, we select as best hyperpa
 As we did for binary classification, we try different run using different hyperparameters and we test our result on the validation set. As figure \ref{fig:tensorboard} shows, it's possible to understand that the best configuration it is given from Alexnet pretrained, with batch size equal to 64, eps equal to 0.1 for 57 epochs. The results obtained from this configuration are described in the first row of the table \ref{table:sensitivity}. AlexNet pretrained has a very good performance for all the classes and obtained also better result than the state of the art \cite{ref11}. We expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been missclassified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl. This do not happen in the reality, because our classifier missclassified only some samples that aren't related to the size of the class predicted.
 \subsubsection{Sensitivity Analisys}
 After having reached a good level of accuracy for our multi-class classification task, we move our attention to analise the robustness of our dataset by computing gradcam and occlusion methods to analise which parts of the leaf trigger the classifier. The table \ref{table:sensitivity} shows all the different approach we try. It's possible to see that the preformances of the results obtained are very far from the what we have done in the previous task. Sometimes also happens that some classes have never be predicted at all. Then we try in a different way, applying both normalization and backgrounds moving to something similar to what a predictor will see when it's applied on the field. Using per-leaf normalization and random background images we obtain the result shows in figure \ref{fig:conf_matrix}. It's also possibile to see in figure \ref{fig:gradcam} how the system is more robust to some background variation, activating only on the leaf surface.
-\begin{table}[H]
+\begin{table}
 	\centering
 	\small
 	\begin{center}
@@ -118,7 +118,7 @@ After having reached a good level of accuracy for our multi-class classification
 			\hline
 			Train & Test & Performance\\ 
 			\hline
-			\multirow{8}*{Original}
+			\multirow{4}*{Original}
 			& Original & 
 					\begin{tabular}{@{}c@{}}
 					$Average Accuracy = 0.998560$ \\
@@ -135,7 +135,7 @@ After having reached a good level of accuracy for our multi-class classification
 				$F_1 score_M = Nan$ \\
 				\end{tabular} \\  				
 			\hline
-			\multirow{8}*{Segmented}
+			\multirow{4}*{Segmented}
 			& Original & 
 					\begin{tabular}{@{}c@{}}
 					$Average Accuracy = 0.617933$ \\
@@ -152,7 +152,7 @@ After having reached a good level of accuracy for our multi-class classification
 				$F_1 score_M = 0.958019$ \\
 				\end{tabular} \\  				
 			\hline
-			\multirow{8}*{Random Background Crop}
+			\multirow{4}*{Random Background Crop}
 			& Original & 
 					\begin{tabular}{@{}c@{}}
 					$Average Accuracy = 0.769175$ \\
@@ -169,7 +169,7 @@ After having reached a good level of accuracy for our multi-class classification
 				$F_1 score_M = 0.739969$ \\
 				\end{tabular} \\  				
 			\hline
-			\multirow{8}*{Random Noise Background}
+			\multirow{4}*{Random Noise Background}
 			& Original & 
 					\begin{tabular}{@{}c@{}}
 					$Average Accuracy = 0.578862$ \\
