@@ -106,7 +106,6 @@ After a training phase using 10-fold cross validation, we select as best hyperpa
 	\caption{Performance of binary classification.}
 	\label{table:binary}
 \end{table}
-
 \subsubsection{Multi-class Classification:}
 As we did for binary classification, we try different run using different hyperparameters and we test our result on the validation set. As figure \ref{fig:tensorboard} shows, it's possible to understand that the best configuration it's given from Alexnet pretrained, with batch size equal to 64, eps equal to 0.1 for 57 epochs. The results obtained from this configuration are described in the table \ref{table:multiclass} and in the figure \ref{fig:conf_matrix}. As the confusion matrix shows, AlexNet pretrained has a very good performance for all the classes. We expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been missclassified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl.
 \begin{table}[H]
@@ -131,6 +130,17 @@ As we did for binary classification, we try different run using different hyperp
 	\end{center}
 	\caption{Confusion matrix of AlexNet pretrained in multi-class classification problem in percentage. }
 	\label{fig:conf_matrix}
+	\label{fig:long}
+	\label{fig:onecol}
+\end{figure}
+\subsubsection{Sensitivity Analisys:}
+After having reached a good level of accuracy for our multi-class classification task, we move our attention to analise the robustness of our dataset by computing gradcam and occlusion methods to analise which parts of the feal trigger the classifier. In figure \ref{fig:sensitivity} all the different approach we try are shown, to better illustrate which variation of the original dataset make it robust to further use in the future.
+\begin{figure}[t]
+	\begin{center}
+		\fbox{\includegraphics[scale=0.2]{./images/conf_matrix_norm}}
+	\end{center}
+	\caption{Confusion matrix of AlexNet pretrained in multi-class classification problem in percentage. }
+	\label{fig:sensitivity}
 	\label{fig:long}
 	\label{fig:onecol}
 \end{figure}
