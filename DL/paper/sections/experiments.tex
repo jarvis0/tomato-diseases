@@ -85,8 +85,8 @@ As optimizer we have choosen Adam \cite{ref32}. An important annotation should b
 \end{center}
 \end{figure*}
 
-\subsection{Results and discussion:}
-\subsubsection{Binary Classification:}
+\subsection{Results and discussion}
+\subsubsection{Binary Classification}
 After a training phase using 10-fold cross validation, we select as best hyperparameters for our binary classification problem, the batch size equal to 32 and the total number of epochs equal to 15. With this configuration, after retraining the net on the global train set, we obtain the results on the test set shown in the table \ref{table:binary}. Beeing a very unbalanced dataset because of the number of healthy leaves with respect to the non healthy ones, we expected to have an healthy accurancy lower than non healthy. The result show that our assumptions was correct. In fact LeNet accurancy for healthy aren't good as for non healthy one. By the way the average performances of our net are good.
 \begin{table}[H]
 	\begin{center}
@@ -106,34 +106,28 @@ After a training phase using 10-fold cross validation, we select as best hyperpa
 	\caption{Performance of binary classification.}
 	\label{table:binary}
 \end{table}
-\subsubsection{Multi-class Classification:}
-As we did for binary classification, we try different run using different hyperparameters and we test our result on the validation set. As figure \ref{fig:tensorboard} shows, it's possible to understand that the best configuration it's given from Alexnet pretrained, with batch size equal to 64, eps equal to 0.1 for 57 epochs. The results obtained from this configuration are described in the table \ref{table:multiclass}. AlexNet pretrained has a very good performance for all the classes and obtained also better result than the state of the art \cite{ref11}. We expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been missclassified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl. This do not happen in the reality, because our classifier missclassified only some samples that aren't related to the size of the class predicted.
-\begin{table}[H]
-	\begin{center}
-		\begin{tabular}{|l|c|}
-			\hline
-			\textbf{Measure} & \textbf{Results} \\ 
-			\hline
-			$Average Accuracy$ & $0.998560$ \\
-			$Precision_M$ & $0.998339$ \\
-			$Recall_M$ & $0.998173$ \\
-			$F_1 score_M$ & $0.998254$ \\
-			\hline
-		\end{tabular}
-	\end{center}
-	\caption{Performance of multi-class classification.}
-	\label{table:multiclass}
-\end{table}
-\subsubsection{Sensitivity Analisys:}
-After having reached a good level of accuracy for our multi-class classification task, we move our attention to analise the robustness of our dataset by computing gradcam and occlusion methods to analise which parts of the leaf trigger the classifier. The table \ref{table:sensitivity} shows all the different approach we try. It's possible to see that the preformances of the results obtained are very far from the what we have done in the previous task. Sometimes also happens that some classes have never be predicted at all. Then we try in a different way, applying both normalization and backgrounds moving to something similar to what a predictor will see when it's applied on the field. Using per-leaf normalization and random background images we obtain the result shows in figure \ref{}. It's also possibile to see in figure \ref{} how the system is more robust to some background variation, activating only on the leaf surface.
+\subsubsection{Multi-class Classification}
+As we did for binary classification, we try different run using different hyperparameters and we test our result on the validation set. As figure \ref{fig:tensorboard} shows, it's possible to understand that the best configuration it is given from Alexnet pretrained, with batch size equal to 64, eps equal to 0.1 for 57 epochs. The results obtained from this configuration are described in the first row of the table \ref{table:sensitivity}. AlexNet pretrained has a very good performance for all the classes and obtained also better result than the state of the art \cite{ref11}. We expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been missclassified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl. This do not happen in the reality, because our classifier missclassified only some samples that aren't related to the size of the class predicted.
+\subsubsection{Sensitivity Analisys}
+After having reached a good level of accuracy for our multi-class classification task, we move our attention to analise the robustness of our dataset by computing gradcam and occlusion methods to analise which parts of the leaf trigger the classifier. The table \ref{table:sensitivity} shows all the different approach we try. It's possible to see that the preformances of the results obtained are very far from the what we have done in the previous task. Sometimes also happens that some classes have never be predicted at all. Then we try in a different way, applying both normalization and backgrounds moving to something similar to what a predictor will see when it's applied on the field. Using per-leaf normalization and random background images we obtain the result shows in figure \ref{fig:conf_matrix}. It's also possibile to see in figure \ref{fig:gradcam} how the system is more robust to some background variation, activating only on the leaf surface.
 \begin{table}[H]
 	\centering
+	\small
 	\begin{center}
-		\begin{tabular}{|c|c|c|}
+		\begin{tabular}{|p{1.5cm}|p{1.5cm}|c|}
 			\hline
 			Train & Test & Performance\\ 
 			\hline
-			Original & Segmented &
+			\multirow{8}*{Original}
+			& Original & 
+					\begin{tabular}{@{}c@{}}
+					$Average Accuracy = 0.998560$ \\
+					$Precision_M = 0.998339$ \\
+					$Recall_M = 0.998173$ \\
+					$F_1 score_M = 0.998254$ \\
+					\end{tabular} \\
+			\cline{2-3}
+			& Segmented &
 				\begin{tabular}{@{}c@{}}
 				$Average Accuracy = 0.390169$ \\
 				$Precision_M = NaN$ \\
@@ -199,19 +193,19 @@ After having reached a good level of accuracy for our multi-class classification
 \end{table}
 \begin{figure}[t]
 	\begin{center}
-		\fbox{\includegraphics[scale=0.2]{./images/conf_matrix_norm}}
+		\fbox{\includegraphics[scale=0.3]{./images/conf_matrix_norm}}
 	\end{center}
-	\caption{Confusion matrix of AlexNet pretrained in multi-class classification problem in percentage. }
+	\caption{Confusion matrix of AlexNet pretrained in multi-class classification problem in percentage using per-leaf normalization and random background images.}
 	\label{fig:conf_matrix}
 	\label{fig:long}
 	\label{fig:onecol}
 \end{figure}
 \begin{figure}[t]
 	\begin{center}
-		\fbox{\includegraphics[scale=0.2]{./images/conf_matrix_norm}}
+		\fbox{\includegraphics[scale=1]{./images/gradcam}}
 	\end{center}
-	\caption{Confusion matrix of AlexNet pretrained in multi-class classification problem in percentage. }
-	\label{fig:sensitivity}
+	\caption{From left to right: \textbf{Original image, class: Target Spot}, \textbf{GradCAM of AlexNet pretrained on Original dataset}, \textbf{GradCAM of AlexNet pretrained on random background images}. It is possible to see the difference on the activation of GradCAM, one is distributed both on the leaf and on the background, the other is locate only on the leaf disease.}
+	\label{fig:gradcam}
 	\label{fig:long}
 	\label{fig:onecol}
 \end{figure}
