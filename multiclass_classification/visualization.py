@@ -30,8 +30,8 @@ from PIL import Image
 
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-data_dir = '../data/'
-test_dir = 'normal_test'
+data_dir = '../random_backgrounds_augmented/'
+test_dir = 'train'
 classes = sorted(os.listdir(data_dir + test_dir))
 batch_size = 16
 if os.path.exists(test_dir):
@@ -43,12 +43,12 @@ os.mkdir(test_dir)
 
 
 # normal test normalization
-mean = [0.44947562, 0.46524084, 0.40037745]
-std = [0.18456618, 0.16353698, 0.20014246]
+#mean = [0.44947562, 0.46524084, 0.40037745]
+#std = [0.18456618, 0.16353698, 0.20014246]
 
 # leaf normalization
-#mean = [0.360007843, 0.482983922, 0.274050667]
-#std = [0.177985098, 0.180084239, 0.141458866]
+mean = [0.360007843, 0.482983922, 0.274050667]
+std = [0.177985098, 0.180084239, 0.141458866]
 
 data_transforms = transforms.Compose([
         transforms.Resize((224, 224)),
@@ -160,8 +160,8 @@ def occlusion(image, occluding_size, occluding_stride, model, classes, groundTru
     for images, labels in dataloader:
         images, labels = images.to(device), labels.to(device)
         outputs = model(images)
-        m = nn.Softmax(dim=1)
-        outputs = m(outputs)
+        #m = nn.Softmax(dim=1)
+        #outputs = m(outputs)
         outputs = outputs.cpu()
         heatmap = np.concatenate((heatmap, outputs[0:outputs.size()[0], groundTruth].data.numpy()))
         
