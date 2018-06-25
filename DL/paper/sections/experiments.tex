@@ -134,7 +134,7 @@ As we did for binary classification, we try different run using different hyperp
 	\label{fig:onecol}
 \end{figure}
 \subsubsection{Sensitivity Analisys:}
-After having reached a good level of accuracy for our multi-class classification task, we move our attention to analise the robustness of our dataset by computing gradcam and occlusion methods to analise which parts of the feal trigger the classifier. In figure \ref{fig:sensitivity} all the different approach we try are shown, to better illustrate which variation of the original dataset make it robust to further use in the future.
+After having reached a good level of accuracy for our multi-class classification task, we move our attention to analise the robustness of our dataset by computing gradcam and occlusion methods to analise which parts of the leaf trigger the classifier. In figure \ref{fig:sensitivity} all the different approach we try are shown, to better illustrate which variation of the original dataset make it robust to further use in the future. it's possible to see that the result of the accuracy obtained was related sometimes to the background and not to the leaf. So in try to change normalization and background to choose the possibile configuration that makes this dataset robust. This was reached using the last configuration, composed by using amodification of the dataset with random images and a normalization calculated only on the pixel of the leaf and not on the total image.
 \begin{figure}[t]
 	\begin{center}
 		\fbox{\includegraphics[scale=0.2]{./images/conf_matrix_norm}}
