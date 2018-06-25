@@ -107,7 +107,7 @@ After a training phase using 10-fold cross validation, we select as best hyperpa
 	\label{table:binary}
 \end{table}
 \subsubsection{Multi-class Classification:}
-As we did for binary classification, we try different run using different hyperparameters and we test our result on the validation set. As figure \ref{fig:tensorboard} shows, it's possible to understand that the best configuration it's given from Alexnet pretrained, with batch size equal to 64, eps equal to 0.1 for 57 epochs. The results obtained from this configuration are described in the table \ref{table:multiclass} and in the figure \ref{fig:conf_matrix}. As the confusion matrix shows, AlexNet pretrained has a very good performance for all the classes and obtained also better result than the state of the art \cite{ref11}. We expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been missclassified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl.
+As we did for binary classification, we try different run using different hyperparameters and we test our result on the validation set. As figure \ref{fig:tensorboard} shows, it's possible to understand that the best configuration it's given from Alexnet pretrained, with batch size equal to 64, eps equal to 0.1 for 57 epochs. The results obtained from this configuration are described in the table \ref{table:multiclass}. AlexNet pretrained has a very good performance for all the classes and obtained also better result than the state of the art \cite{ref11}. We expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been missclassified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl. This do not happen in the reality, because our classifier missclassified only some samples that aren't related to the size of the class predicted.
 \begin{table}[H]
 	\begin{center}
 		\begin{tabular}{|l|c|}
@@ -124,6 +124,79 @@ As we did for binary classification, we try different run using different hyperp
 	\caption{Performance of multi-class classification.}
 	\label{table:multiclass}
 \end{table}
+\subsubsection{Sensitivity Analisys:}
+After having reached a good level of accuracy for our multi-class classification task, we move our attention to analise the robustness of our dataset by computing gradcam and occlusion methods to analise which parts of the leaf trigger the classifier. The table \ref{table:sensitivity} shows all the different approach we try. It's possible to see that the preformances of the results obtained are very far from the what we have done in the previous task. Sometimes also happens that some classes have never be predicted at all. Then we try in a different way, applying both normalization and backgrounds moving to something similar to what a predictor will see when it's applied on the field. Using per-leaf normalization and random background images we obtain the result shows in figure \ref{}. It's also possibile to see in figure \ref{} how the system is more robust to some background variation, activating only on the leaf surface.
+\begin{table}[H]
+	\centering
+	\begin{center}
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Train & Test & Performance\\ 
+			\hline
+			Original & Segmented &
+				\begin{tabular}{@{}c@{}}
+				$Average Accuracy = 0.390169$ \\
+				$Precision_M = NaN$ \\
+				$Recall_M = 0.285877$ \\
+				$F_1 score_M = Nan$ \\
+				\end{tabular} \\  				
+			\hline
+			\multirow{8}*{Segmented}
+			& Original & 
+					\begin{tabular}{@{}c@{}}
+					$Average Accuracy = 0.617933$ \\
+					$Precision_M = 0.730197$ \\
+					$Recall_M = 0.494125$ \\
+					$F_1 score_M = 0.486940$ \\
+					\end{tabular} \\
+			\cline{2-3}
+			& Segmented &
+				\begin{tabular}{@{}c@{}}
+				$Average Accuracy = 0.966511$ \\
+				$Precision_M = 0.959517$ \\
+				$Recall_M = 0.956894$ \\
+				$F_1 score_M = 0.958019$ \\
+				\end{tabular} \\  				
+			\hline
+			\multirow{8}*{Random Background Crop}
+			& Original & 
+					\begin{tabular}{@{}c@{}}
+					$Average Accuracy = 0.769175$ \\
+					$Precision_M = 0.794344$ \\
+					$Recall_M = 0.673085$ \\
+					$F_1 score_M = 0.671527$ \\
+					\end{tabular} \\
+			\cline{2-3}
+			& Segmented &
+				\begin{tabular}{@{}c@{}}
+				$Average Accuracy = 0.848037$ \\
+				$Precision_M = 0.885544$ \\
+				$Recall_M = 0.737432$ \\
+				$F_1 score_M = 0.739969$ \\
+				\end{tabular} \\  				
+			\hline
+			\multirow{8}*{Random Noise Background}
+			& Original & 
+					\begin{tabular}{@{}c@{}}
+					$Average Accuracy = 0.578862$ \\
+					$Precision_M = 0.666754$ \\
+					$Recall_M = 0.490099$ \\
+					$F_1 score_M = 0.499304$ \\
+					\end{tabular} \\
+			\cline{2-3}
+			& Segmented &
+				\begin{tabular}{@{}c@{}}
+				$Average Accuracy = 0.748469$ \\
+				$Precision_M = 0.820938$ \\
+				$Recall_M = 0.709873$ \\
+				$F_1 score_M = 0.697417$ \\
+				\end{tabular} \\  								
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Performance of multi-class classification with difference training and test sets. We use a NaN value for the class that are never predicted to avoid division by zero in precision, recall and F1 score.}
+	\label{table:sensitivity}
+\end{table}
 \begin{figure}[t]
 	\begin{center}
 		\fbox{\includegraphics[scale=0.2]{./images/conf_matrix_norm}}
@@ -133,8 +206,6 @@ As we did for binary classification, we try different run using different hyperp
 	\label{fig:long}
 	\label{fig:onecol}
 \end{figure}
-\subsubsection{Sensitivity Analisys:}
-After having reached a good level of accuracy for our multi-class classification task, we move our attention to analise the robustness of our dataset by computing gradcam and occlusion methods to analise which parts of the leaf trigger the classifier. In figure \ref{fig:sensitivity} all the different approach we try are shown, to better illustrate which variation of the original dataset make it robust to further use in the future. it's possible to see that the result of the accuracy obtained was related sometimes to the background and not to the leaf. So in try to change normalization and background to choose the possibile configuration that makes this dataset robust. This was reached using the last configuration, composed by using amodification of the dataset with random images and a normalization calculated only on the pixel of the leaf and not on the total image.
 \begin{figure}[t]
 	\begin{center}
 		\fbox{\includegraphics[scale=0.2]{./images/conf_matrix_norm}}
