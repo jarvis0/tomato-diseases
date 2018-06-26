@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  25 JUN 2018 22:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  27 JUN 2018 01:27
 entering extended mode
 **./tomato_diseases_paper.tex
 (tomato_diseases_paper.tex
@@ -477,6 +477,16 @@ Underfull \hbox (badness 2512) in paragraph at lines 2--1
  []
 
 
+Underfull \hbox (badness 1796) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 classes (1 healthy and 9 diseases) using PlantVillage
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 2--1
+\OT1/ptm/m/n/10 sensitivity analysis of the dataset which has been, in
+ []
+
+
 Underfull \hbox (badness 1527) in paragraph at lines 2--1
 []\OT1/ptm/m/n/10 As first step we reproduce the experiments of [[]][]
  []
@@ -486,55 +496,14 @@ Underfull \hbox (badness 1082) in paragraph at lines 2--1
 \OT1/ptm/m/n/10 the experiments are pursued keeping in mind realistic
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-
-LaTeX Warning: Citation `ref17' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Citation `ref18' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `ref19' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `ref27' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `ref25' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `ref28' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `Krizhevsky' on page 1 undefined on input line 6.
-
-
-LaTeX Warning: Citation `tunisia' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Citation `occlusion' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Citation `manzoni' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Citation `erba' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Citation `erba' on page 1 undefined on input line 10.
-
-
-LaTeX Warning: Citation `manzoni' on page 1 undefined on input line 12.
-
 ) (sections/proposed_approach.tex
-<./images/workflow.pdf, id=17, 7865.385pt x 2153.04375pt>
+<./images/workflow.pdf, id=32, 7865.385pt x 2153.04375pt>
 File: ./images/workflow.pdf Graphic file (type pdf)
 <use ./images/workflow.pdf>
 Package pdftex.def Info: ./images/workflow.pdf  used on input line 2.
-(pdftex.def)             Requested size: 504.30878pt x 138.04729pt.
+(pdftex.def)             Requested size: 491.89041pt x 134.6306pt.
 
-Overfull \hbox (14.25252pt too wide) in paragraph at lines 2--3
+Overfull \hbox (1.83415pt too wide) in paragraph at lines 2--3
 [][] 
  []
 
@@ -600,102 +569,83 @@ Underfull \hbox (badness 1009) in paragraph at lines 2--9
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-
-LaTeX Warning: Citation `ref' on page 3 undefined on input line 40.
-
-
-Underfull \hbox (badness 1762) in paragraph at lines 44--45
+Underfull \hbox (badness 1762) in paragraph at lines 22--23
 []\OT1/ptm/m/n/10 Sensitivity analysis and performance evaluation are
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 46.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 24.
 (/home/masch/.miktex/texmfs/install/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 
-Underfull \hbox (badness 1132) in paragraph at lines 46--48
+Underfull \hbox (badness 1132) in paragraph at lines 24--26
 []\OT1/ptm/b/n/10 Kernels visualization \OT1/ptm/m/n/10 of the first (it is the
  most
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--50
+Underfull \hbox (badness 10000) in paragraph at lines 26--28
 []\OT1/ptm/b/n/10 Gradient-weighted Class Activation Mapping
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 48--50
+Underfull \hbox (badness 1867) in paragraph at lines 26--28
 \OT1/ptm/m/n/10 regions in the image for predicting the concept.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
-[]\OT1/ptm/b/n/10 Occlusion method \OT1/ptm/m/n/10 is done by systematically
- []
-
-
-Underfull \hbox (badness 2903) in paragraph at lines 50--51
-\OT1/ptm/m/n/10 occluding different portions of the input image,
- []
-
-
-Underfull \hbox (badness 4556) in paragraph at lines 50--51
-\OT1/ptm/m/n/10 is correctly localizing the relevant objects, the
+Underfull \hbox (badness 1142) in paragraph at lines 28--29
+\OT1/ptm/m/n/10 the output. Therefore, if the model is correctly
  []
 
 ) (sections/experiments.tex
-<./images/normal_3159.jpg, id=52, 256.96pt x 256.96pt>
+<./images/tensorboards.jpg, id=80, 224.037pt x 101.6598pt>
+File: ./images/tensorboards.jpg Graphic file (type jpg)
+<use ./images/tensorboards.jpg>
+Package pdftex.def Info: ./images/tensorboards.jpg  used on input line 3.
+(pdftex.def)             Requested size: 336.05466pt x 152.48932pt.
+<./images/normal_3159.jpg, id=81, 256.96pt x 256.96pt>
 File: ./images/normal_3159.jpg Graphic file (type jpg)
 <use ./images/normal_3159.jpg>
-Package pdftex.def Info: ./images/normal_3159.jpg  used on input line 8.
+Package pdftex.def Info: ./images/normal_3159.jpg  used on input line 19.
 (pdftex.def)             Requested size: 42.91412pt x 42.91412pt.
-<./images/segmented_3159.jpg, id=53, 256.96pt x 256.96pt>
+<./images/segmented_3159.jpg, id=82, 256.96pt x 256.96pt>
 File: ./images/segmented_3159.jpg Graphic file (type jpg)
 <use ./images/segmented_3159.jpg>
-Package pdftex.def Info: ./images/segmented_3159.jpg  used on input line 8.
+Package pdftex.def Info: ./images/segmented_3159.jpg  used on input line 19.
 (pdftex.def)             Requested size: 42.91412pt x 42.91412pt.
-<./images/9_ROTATE_180_crop.png, id=54, 192.72pt x 192.72pt>
+<./images/9_ROTATE_180_crop.png, id=83, 192.72pt x 192.72pt>
 File: ./images/9_ROTATE_180_crop.png Graphic file (type png)
 <use ./images/9_ROTATE_180_crop.png>
-Package pdftex.def Info: ./images/9_ROTATE_180_crop.png  used on input line 8.
+Package pdftex.def Info: ./images/9_ROTATE_180_crop.png  used on input line 19.
+
 (pdftex.def)             Requested size: 43.18956pt x 43.18956pt.
-<./images/196_ROTATE_270.jpg, id=55, 256.96pt x 256.96pt>
+<./images/196_ROTATE_270.jpg, id=84, 256.96pt x 256.96pt>
 File: ./images/196_ROTATE_270.jpg Graphic file (type jpg)
 <use ./images/196_ROTATE_270.jpg>
-Package pdftex.def Info: ./images/196_ROTATE_270.jpg  used on input line 8.
+Package pdftex.def Info: ./images/196_ROTATE_270.jpg  used on input line 19.
 (pdftex.def)             Requested size: 42.91412pt x 42.91412pt.
-<./images/random_backgorund.png, id=56, 192.72pt x 192.72pt>
+<./images/random_backgorund.png, id=85, 192.72pt x 192.72pt>
 File: ./images/random_backgorund.png Graphic file (type png)
 <use ./images/random_backgorund.png>
-Package pdftex.def Info: ./images/random_backgorund.png  used on input line 8.
+Package pdftex.def Info: ./images/random_backgorund.png  used on input line 19.
+
 (pdftex.def)             Requested size: 43.18956pt x 43.18956pt.
 
-Underfull \hbox (badness 1742) in paragraph at lines 10--10
+Underfull \hbox (badness 1742) in paragraph at lines 21--21
 \OT1/ptm/b/n/10 Background Crop\OT1/ptm/m/n/10 , \OT1/ptm/b/n/10 Random Noise B
 ackground \OT1/ptm/m/n/10 and
  []
 
-<./images/tensorboards.jpg, id=57, 224.037pt x 101.6598pt>
-File: ./images/tensorboards.jpg Graphic file (type jpg)
-<use ./images/tensorboards.jpg>
-Package pdftex.def Info: ./images/tensorboards.jpg  used on input line 18.
-(pdftex.def)             Requested size: 336.05466pt x 152.48932pt.
 [3 <./images/workflow.pdf
 
 pdfTeX warning: pdflatex (file ./images/workflow.pdf): PDF inclusion: invalid o
 ther resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
-
-LaTeX Warning: Citation `manzoni' on page 4 undefined on input line 30.
-
-
-Underfull \hbox (badness 1803) in paragraph at lines 29--32
-\OT1/ptm/m/n/10 confirmed by us. Especially, we have found out a
- []
-
-
 Underfull \hbox (badness 1484) in paragraph at lines 35--37
 []\OT1/ptm/b/n/10 Segmented PlantVillage dataset. \OT1/ptm/m/n/10 It consists o
 f
@@ -711,47 +661,45 @@ Underfull \hbox (badness 1158) in paragraph at lines 45--52
 \OT1/ptm/m/n/10 original sample two randomly selected transformations
  []
 
-[4 <./images/normal_3159.jpg> <./images/segmented_3159.jpg> <./images/9_ROTATE_
-180_crop.png> <./images/196_ROTATE_270.jpg> <./images/random_backgorund.png>]
-Underfull \hbox (badness 1571) in paragraph at lines 88--106
+[4 <./images/tensorboards.jpg> <./images/normal_3159.jpg> <./images/segmented_3
+159.jpg> <./images/9_ROTATE_180_crop.png> <./images/196_ROTATE_270.jpg> <./imag
+es/random_backgorund.png>]
+Underfull \hbox (badness 1571) in paragraph at lines 89--105
 \OT1/ptm/m/n/10 After a training phase using 10-fold cross validation,
  []
 
 
-Overfull \hbox (54.31332pt too wide) in paragraph at lines 153--154
+Overfull \hbox (54.31332pt too wide) in paragraph at lines 152--153
 []|[]| 
  []
 
 
-Overfull \hbox (57.31015pt too wide) in paragraph at lines 170--171
+Overfull \hbox (57.31015pt too wide) in paragraph at lines 169--170
 []|[]| 
  []
 
 
-Overfull \hbox (5.99847pt too wide) in paragraph at lines 115--188
+Overfull \hbox (5.99847pt too wide) in paragraph at lines 114--187
  [] 
  []
 
-<./images/conf_matrix_norm.jpg, id=121, 822.07124pt x 623.32875pt>
+<./images/conf_matrix_norm.jpg, id=146, 822.07124pt x 623.32875pt>
 File: ./images/conf_matrix_norm.jpg Graphic file (type jpg)
 <use ./images/conf_matrix_norm.jpg>
-Package pdftex.def Info: ./images/conf_matrix_norm.jpg  used on input line 194.
+Package pdftex.def Info: ./images/conf_matrix_norm.jpg  used on input line 193.
 
 (pdftex.def)             Requested size: 246.62328pt x 187.00006pt.
 
-Overfull \hbox (16.28732pt too wide) in paragraph at lines 194--195
+Overfull \hbox (16.28732pt too wide) in paragraph at lines 193--194
  [] 
  []
 
-<./images/gradcam.jpg, id=122, 154.32657pt x 50.43843pt>
+<./images/gradcam.jpg, id=147, 154.32657pt x 50.43843pt>
 File: ./images/gradcam.jpg Graphic file (type jpg)
 <use ./images/gradcam.jpg>
-Package pdftex.def Info: ./images/gradcam.jpg  used on input line 203.
+Package pdftex.def Info: ./images/gradcam.jpg  used on input line 202.
 (pdftex.def)             Requested size: 154.32617pt x 50.4383pt.
 ) (sections/conclusion.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <./images/tensorboards.jpg>]
 Underfull \hbox (badness 1199) in paragraph at lines 2--6
 \OT1/ptm/m/n/10 very good on this task. Furthermore we provide an
  []
@@ -766,7 +714,10 @@ Underfull \hbox (badness 4765) in paragraph at lines 2--6
 \OT1/ptm/m/n/10 Background Image we have created a new dataset
  []
 
-[6 <./images/conf_matrix_norm.jpg> <./images/gradcam.jpg>]
+
+Underfull \vbox (badness 2253) has occurred while \output is active []
+
+ [5]
 Underfull \hbox (badness 2418) in paragraph at lines 8--9
 []\OT1/ptm/m/n/10 use more complex deep learning models as the
  []
@@ -776,231 +727,295 @@ Underfull \hbox (badness 2418) in paragraph at lines 8--9
 \tf@brf=\write3
 \openout3 = `tomato_diseases_paper.brf'.
 
-
-Underfull \hbox (badness 3158) in paragraph at lines 20--20
+ [6 <./images/conf_matrix_norm.jpg> <./images/gradcam.jpg>]
+Underfull \hbox (badness 3158) in paragraph at lines 17--17
 []\OT1/ptm/m/n/9 M. Brahimi, B. Kamel, and A. Moussaoui.  Deep
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
 \OT1/ptm/m/n/9 Learning for Tomato Diseases: Classification
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
 \OT1/ptm/m/n/9 and Symptoms Visualization.  \OT1/ptm/m/it/9 Applied Artificial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
 \OT1/ptm/m/it/9 Intelligence\OT1/ptm/m/n/9 , 31(4):299--315, Apr. 2017.
  []
 
 
-Underfull \hbox (badness 4291) in paragraph at lines 20--20
-\OT1/ptm/m/n/9 https://doi.org/10.1080/08839514.2017.1315516.  [][]1[][], [][]4
+Underfull \hbox (badness 4291) in paragraph at lines 17--17
+\OT1/ptm/m/n/9 https://doi.org/10.1080/08839514.2017.1315516.  [][]1[][], [][]2
 [][],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 []\OT1/ptm/m/n/9 C. A. Harvey et al.  Extreme vulnerability of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \OT1/ptm/m/n/9 smallholder farmers to agricultural risks and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \OT1/ptm/m/n/9 climate change in Madagascar.  \OT1/ptm/m/it/9 Philosophical
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \OT1/ptm/m/it/9 Transactions of the Royal Society B: Biological
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 28--28
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 \OT1/ptm/m/it/9 Sciences\OT1/ptm/m/n/9 , 369(1639):20130089--20130089, Feb. 201
 4.
  []
 
 
-Underfull \hbox (badness 2781) in paragraph at lines 34--34
+Underfull \hbox (badness 2781) in paragraph at lines 37--37
 []\OT1/ptm/m/n/9 C. Cortes and V. Vapnik.  Support-vector networks.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--34
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
 \OT1/ptm/m/it/9 Machine Learning\OT1/ptm/m/n/9 , 20(3):273--297, Sep. 1995.
  []
 
 
-Underfull \hbox (badness 4846) in paragraph at lines 40--40
-[]\OT1/ptm/m/n/9 Diederik P. Kingma, Jimmy Lei Ba.  ADAM: A
+Underfull \hbox (badness 4254) in paragraph at lines 50--50
+\OT1/ptm/m/n/9 optimization.  \OT1/ptm/m/it/9 international Conference on Learn
+ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 40--40
-\OT1/ptm/m/n/9 METHOD FOR STOCHASTIC OPTIMIZATION.
- []
-
-
-Underfull \hbox (badness 3735) in paragraph at lines 40--40
-\OT1/ptm/m/it/9 international Conference on Learning Representations\OT1/ptm/m/
-n/9 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 \OT1/ptm/m/n/9 and Ecosystem Services Fourth session.  \OT1/ptm/m/it/9 Report
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 \OT1/ptm/m/it/9 of the Plenary of the Intergovernmental Science-
  []
 
 
-Underfull \hbox (badness 1810) in paragraph at lines 48--48
+Underfull \hbox (badness 1810) in paragraph at lines 70--70
 \OT1/ptm/m/it/9 PolicyPlatform on Biodiversity and Ecosystem Services
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 []\OT1/ptm/m/n/9 International Telecommunication Union (ITU).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 \OT1/ptm/m/it/9 ICT Facts and Figures { the World in 2015\OT1/ptm/m/n/9 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 \OT1/ptm/m/n/9 Geneva, 2015.  https://www.itu.int/en/ITU-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 \OT1/ptm/m/n/9 D/Statistics/Documents/facts/ICTFactsFigures2015.pdf.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
-[]\OT1/ptm/m/n/9 PlantVillage.  PlantVillage Dataset.
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 86--86
-[]\OT1/ptm/m/n/9 R. N. Strange and P. R. Scott.  Plant Disease: A
- []
-
-
-Underfull \hbox (badness 6859) in paragraph at lines 86--86
-\OT1/ptm/m/n/9 Threat to Global Food Security.  \OT1/ptm/m/it/9 Annual Review
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\OT1/ptm/m/it/9 Processing Systems 25\OT1/ptm/m/n/9 , pages 1097--1105. Curran
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\OT1/ptm/m/n/9 imagenet-classification-with-deep-convolutional-neural-
+ []
+
+
+Underfull \hbox (badness 4954) in paragraph at lines 106--106
+[]\OT1/ptm/m/n/9 O. W. Liew, P. C. J. Chong, B. Li, and A. K.
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 112--112
+[]\OT1/ptm/m/n/9 A.-K. Mahlein, E.-C. Oerke, U. Steiner, and H.-W.
+ []
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 112--112
+\OT1/ptm/m/n/9 Dehne.  Recent advances in sensing plant diseases.
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 118--118
+[]\OT1/ptm/m/n/9 M. Mazarei, I. Teplova, M. R. Hajimorad, and C. N.
+ []
+
+
+Underfull \hbox (badness 3907) in paragraph at lines 118--118
+\OT1/ptm/m/n/9 Stewart.  Pathogen Phytosensing: Plants to Report
+ []
+
+
+Underfull \hbox (badness 7925) in paragraph at lines 118--118
+\OT1/ptm/m/n/9 Plant Pathogens.  \OT1/ptm/m/it/9 Sensors\OT1/ptm/m/n/9 , 8(4):2
+628--2641, 2008.
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 127--127
+\OT1/ptm/m/n/9 C. Nali, and R. Colombo.  Assessing Steady-state
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 127--127
+\OT1/ptm/m/n/9 as Early Indicators of Plant Stress: The Case of
+ []
+
+
+Underfull \hbox (badness 6708) in paragraph at lines 127--127
+\OT1/ptm/m/n/9 Ozone Exposure.  \OT1/ptm/m/it/9 Sensors\OT1/ptm/m/n/9 , 8(3):17
+40--1754, 2008.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]\OT1/ptm/m/n/9 PlantVillage.  PlantVillage Dataset.
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 139--139
+[]\OT1/ptm/m/n/9 R. N. Strange and P. R. Scott.  Plant Disease: A
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 139--139
+\OT1/ptm/m/n/9 Threat to Global Food Security.  \OT1/ptm/m/it/9 Annual Review
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \OT1/ptm/m/it/9 of Phytopathology\OT1/ptm/m/n/9 , 43(1):83--116, Sep. 2005.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
+Underfull \hbox (badness 5036) in paragraph at lines 144--144
+\OT1/ptm/m/n/9 disease detection techniquetool-a theoretical approach.
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 151--151
+[]\OT1/ptm/m/n/9 T. Reed and J. Dubuf.  A Review of Recent Texture
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
+\OT1/ptm/m/n/9 Segmentation and Feature Extraction Techniques.
+ []
+
+
+Underfull \hbox (badness 6300) in paragraph at lines 151--151
+\OT1/ptm/m/it/9 CVGIP: Image Understanding\OT1/ptm/m/n/9 , 57(3):359--372, 1993
+.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 []\OT1/ptm/m/n/9 S. P. Mohanty, D. P. Hughes, and M. Salath[]e.
  []
 
 
-Underfull \hbox (badness 3375) in paragraph at lines 92--92
+Underfull \hbox (badness 3375) in paragraph at lines 157--157
 \OT1/ptm/m/n/9 Using Deep Learning for Image-Based Plant Disease
  []
 
 
-Underfull \hbox (badness 1418) in paragraph at lines 99--99
+Underfull \hbox (badness 1418) in paragraph at lines 164--164
 []\OT1/ptm/m/n/9 R. R. Selvaraju, A. Das, R. Vedantam, M. Cogswell,
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 107--107
-\OT1/ptm/m/n/9 Plante.  \OT1/ptm/m/it/9 Reducing Climate-Sensitive Risks\OT1/pt
-m/m/n/9 , volume 1
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\OT1/ptm/m/n/9 D. Parikh, and D. Batra.  Grad-CAM: Visual
  []
 
 
-Underfull \hbox (badness 5711) in paragraph at lines 107--107
-\OT1/ptm/m/n/9 of \OT1/ptm/m/it/9 Agriculture and environmental services discus
-sion
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\OT1/ptm/m/n/9 Explanations from Deep Networks via Gradient-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-\OT1/ptm/m/it/9 paper\OT1/ptm/m/n/9 .  World Bank Group, Washington, DC,
+Underfull \hbox (badness 7012) in paragraph at lines 164--164
+\OT1/ptm/m/n/9 based Localization.  \OT1/ptm/m/it/9 CoRR\OT1/ptm/m/n/9 , abs/16
+10.02391, 2016.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-\OT1/ptm/m/n/9 2014.  http://documents.worldbank.org/curated/en/
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
+\OT1/ptm/m/it/9 Processing & Management\OT1/ptm/m/n/9 , 45(4):427--437, 2009.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-\OT1/ptm/m/n/9 486511468167944431/Reducing-climate-sensitive-disease-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 []\OT1/ptm/m/n/9 UNEP, International Fund for Agricultural
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 \OT1/ptm/m/n/9 Development (IFAD).  \OT1/ptm/m/it/9 Smallholders, Food
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 \OT1/ptm/m/it/9 Security, and the Environment\OT1/ptm/m/n/9 , Rome, 2013.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
 \OT1/ptm/m/n/9 https://www.ifad.org/documents/10180/666cac24-14b6-
  []
 
 
-Underfull \hbox (badness 2753) in paragraph at lines 122--122
+Underfull \hbox (badness 2753) in paragraph at lines 187--187
 \OT1/ptm/m/it/9 of the thirteenth international conference on artificial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
 \OT1/ptm/m/it/9 intelligence and statistics\OT1/ptm/m/n/9 , pages 249--256, 201
 0.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
 \OT1/ptm/m/n/9 http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf.
  []
 
-
-Underfull \hbox (badness 5592) in paragraph at lines 129--129
+[7]
+Underfull \hbox (badness 5592) in paragraph at lines 194--194
 []\OT1/ptm/m/n/9 Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner.
  []
 
 
-Underfull \hbox (badness 1215) in paragraph at lines 135--135
+Underfull \hbox (badness 1215) in paragraph at lines 200--200
 \OT1/ptm/m/n/9 Convolutional Networks.  \OT1/ptm/m/it/9 CoRR\OT1/ptm/m/n/9 , ab
 s/1311.2901, 2013.
  []
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
- [7]
+ [8
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (tomato_diseases_paper.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 84.
@@ -1011,45 +1026,40 @@ Package rerunfilecheck Warning: File `tomato_diseases_paper.brf' has changed.
 (rerunfilecheck)                Rerun to get bibliographical references right.
 
 Package rerunfilecheck Info: Checksums for `tomato_diseases_paper.brf':
-(rerunfilecheck)             Before: FCB3DF218CD661957EF3129769CAA3FB;1600
-(rerunfilecheck)             After:  A30043E1D41B5835AD677BC8BC4FF314;1600.
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Before: 6E29A96AE930A718D8DC1D090B5801F5;1623
+(rerunfilecheck)             After:  ABECD77936D05B87B242EC3AB8DC2765;1621.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 7900 strings out of 494892
- 119063 string characters out of 3178689
- 216933 words of memory out of 3000000
- 11306 multiletter control sequences out of 15000+200000
+ 7933 strings out of 494892
+ 119354 string characters out of 3178689
+ 219118 words of memory out of 3000000
+ 11330 multiletter control sequences out of 15000+200000
  28073 words of font info for 69 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 36i,16n,39p,1107b,424s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,16n,39p,1108b,466s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/masch/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/masch/
-.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/masch/.
-miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/masch/.m
-iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi5.pfb></home/masch/.mik
-tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/masch/.mikte
-x/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/masch/.miktex/
-texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/masch/.miktex/te
-xmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/masch/.miktex/texm
-fs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/masch/.miktex/texmfs/
-install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/masch/.miktex/texmfs/ins
-tall/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/masch/.miktex/texmfs/instal
-l/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/masch/.miktex/texmfs/install
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/masch/.miktex/texmfs/install/f
-onts/type1/public/amsfonts/cm/cmsy9.pfb></home/masch/.miktex/texmfs/install/fon
-ts/type1/urw/courier/ucrr8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1
-/urw/times/utmb8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/times
-/utmr8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.p
-fb>
-Output written on tomato_diseases_paper.pdf (7 pages, 968119 bytes).
+.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/masch/.
+miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/masch/.mi
+ktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></home/masch/.mikt
+ex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/masch/.miktex
+/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/masch/.miktex/t
+exmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/masch/.miktex/texm
+fs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/masch/.miktex/texmfs/
+install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/masch/.miktex/texmfs/ins
+tall/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/masch/.miktex/texmfs/inst
+all/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/masch/.miktex/texmfs/instal
+l/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/masch/.miktex/texmfs/install/
+fonts/type1/urw/courier/ucrr8a.pfb></home/masch/.miktex/texmfs/install/fonts/ty
+pe1/urw/times/utmb8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/ti
+mes/utmr8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/times/utmri8
+a.pfb>
+Output written on tomato_diseases_paper.pdf (8 pages, 956965 bytes).
 PDF statistics:
- 251 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

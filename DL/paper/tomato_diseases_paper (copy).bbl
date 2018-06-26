@@ -15,12 +15,6 @@ M.~Brahimi, B.~Kamel, and A.~Moussaoui.
   {2017}.
 \newblock {https://doi.org/10.1080/08839514.2017.1315516}.
 
-\bibitem{ref26}
-L.~Breiman.
-\newblock {Random Forests}.
-\newblock {\em {Machine Learning}}, {45}({1}):{5--32}, {Oct.} {2001}.
-\newblock {https://doi.org/10.1023/A:1010933404324}.
-
 \bibitem{ref6}
 {C. A. Harvey et al.}
 \newblock {Extreme vulnerability of smallholder farmers to agricultural risks
@@ -57,7 +51,7 @@ A.~Fuentes, S.~Yoon, S.~C. Kim, and D.~S. Park.
 
 \bibitem{imagenet}
 {ImageNet}.
-\newblock {ImageNet dataset}.
+\newblock {ImageNet database}.
 \newblock {www.image-net.org/}.
 
 \bibitem{ref2}
@@ -104,26 +98,11 @@ O.~W. Liew, P.~C.~J. Chong, B.~Li, and A.~K. Asundi.
 \newblock {\em {Sensors}}, {8}({5}):{3205--3239}, {2008}.
 \newblock {https://doi.org/10.3390/s8053205}.
 
-\bibitem{ref15}
-A.-K. Mahlein, E.-C. Oerke, U.~Steiner, and H.-W. Dehne.
-\newblock {Recent advances in sensing plant diseases}.
-\newblock {\em {European Journal of Plant Pathology}}, {133}, {May} {2012}.
-\newblock {https://doi.org/10.1007/s10658-011-9878-z}.
-
 \bibitem{ref18}
 M.~Mazarei, I.~Teplova, M.~R. Hajimorad, and C.~N. Stewart.
 \newblock {Pathogen Phytosensing: Plants to Report Plant Pathogens}.
 \newblock {\em {Sensors}}, {8}({4}):{2628--2641}, {2008}.
 \newblock {https://doi.org/10.3390/s8042628}.
-
-\bibitem{ref16}
-M.~Meroni, M.~Rossini, V.~Picchi, C.~Panigada, S.~Cogliati, C.~Nali, and
-  R.~Colombo.
-\newblock {Assessing Steady-state Fluorescence and PRI from Hyperspectral
-  Proximal Sensing as Early Indicators of Plant Stress: The Case of Ozone
-  Exposure}.
-\newblock {\em {Sensors}}, {8}({3}):{1740--1754}, {2008}.
-\newblock {https://doi.org/10.3390/s8031740}.
 
 \bibitem{PlantVillage}
 {PlantVillage}.
@@ -136,11 +115,6 @@ M.~Meroni, M.~Rossini, V.~Picchi, C.~Panigada, S.~Cogliati, C.~Nali, and
 \newblock {\em {Annual Review of Phytopathology}}, {43}({1}):{83--116}, {Sep.}
   {2005}.
 \newblock {https://doi.org/10.1146/annurev.phyto.43.113004.133839}.
-
-\bibitem{ref14}
-P.~R. Reddy, S.~Divya, and M.~R. Vijayalakshmi.
-\newblock Plant disease detection techniquetool-a theoretical approach.
-\newblock {\em {IJITR}}, pages {91--93}, {2015}.
 
 \bibitem{ref27}
 T.~Reed and J.~Dubuf.
@@ -166,7 +140,7 @@ R.~R. Selvaraju, A.~Das, R.~Vedantam, M.~Cogswell, D.~Parikh, and D.~Batra.
 M.~Sokolova and G.~Lapalme.
 \newblock {A systematic analysis of performance measures for classification
   tasks}.
-\newblock {\em {Information Processing \& Management}}, {45}({4}):{427--437},
+\newblock {\em {Information Processing & Management}}, {45}({4}):{427--437},
   {2009}.
 \newblock {https://doi.org/10.1016/j.ipm.2009.03.002}.
 

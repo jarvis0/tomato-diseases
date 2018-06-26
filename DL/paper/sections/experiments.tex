@@ -1,18 +1,3 @@
-\begin{figure}
-\begin{center}
-\fbox{\includegraphics[scale=0.167]{./images/normal_3159}
-	   \includegraphics[scale=0.167]{./images/segmented_3159}
-	   \includegraphics[scale=0.2241]{./images/9_ROTATE_180_crop}
-	   \includegraphics[scale=0.167]{./images/196_ROTATE_270}
-	   \includegraphics[scale=0.2241]{./images/random_backgorund}
-	   }
-	\begin{center}
-		\caption{Samples of dataset images, from left to right: \textbf{Original PlantVillage}, \textbf{Segmented PlantVillage}, \textbf{Random Background Crop}, \textbf{Random Noise Background} and \textbf{Random Background Image}.}
-		\label{fig:samples}
-	\end{center}
-	\vspace{-32pt}
-\end{center}
-\end{figure}
 \begin{figure*}
 	\begin{center}
 		\fbox{\includegraphics[scale=1.5]{./images/tensorboards}}
@@ -20,14 +5,29 @@
 			\caption{Tensorboard graph of experiments, from left to right: \textbf{Validation Accurancy over epochs}, \textbf{Valdiation error over epochs}. }
 			\label{fig:tensorboard}
 		\end{center}
-		\vspace{-15pt}
+		\vspace{-25pt}
 	\end{center}
 \end{figure*}
 \section{Experiments}
+\begin{figure}
+	\begin{center}
+		\fbox{\includegraphics[scale=0.167]{./images/normal_3159}
+			\includegraphics[scale=0.167]{./images/segmented_3159}
+			\includegraphics[scale=0.2241]{./images/9_ROTATE_180_crop}
+			\includegraphics[scale=0.167]{./images/196_ROTATE_270}
+			\includegraphics[scale=0.2241]{./images/random_backgorund}
+		}
+		\begin{center}
+			\caption{Samples of dataset images, from left to right: \textbf{Original PlantVillage}, \textbf{Segmented PlantVillage}, \textbf{Random Background Crop}, \textbf{Random Noise Background} and \textbf{Random Background Image}.}
+			\label{fig:samples}
+		\end{center}
+		\vspace{-32pt}
+	\end{center}
+\end{figure}
 Our experiments are about two main tasks: binary and multi-class classification. In this section, first we describe the dataset and the variations created to perform sensitivity analysis. Then we go trough the experiments setup where we describe how we have conducted the experiments to accomplish the two task and finally we show the results.
 \subsection{Datasets}
 We analyze 18,158 images of tomato plant leaves, which are split in 10 classes, 9 diseases and 1 healthy. The scope is to predict the correct class of a leaf image. All the images are sized 256x256 pixels. 
-\\\indent Given the original dataset we have conducted the training phase on different variations of the original dataset, we have worked on the backgrounds in order to find a way to overcome the limits highlighted in \cite{ref10} and \cite{manzoni} and confirmed by us. Especially, we have found out a dependence between the original backgrounds and their belonging class.
+\\\indent Given the original dataset we have conducted the training phase on different variations of the original dataset, we have worked on the backgrounds in order to find a way to overcome the limits highlighted in \cite{ref33, ref10} and confirmed by us. Especially, we have found out a dependence between the original backgrounds and their belonging class.
 In Figure \ref{fig:samples} we can see all the images and the different variations of the dataset that we have tested.
 \begin{itemize}
 	\item{\textbf{Original PlantVillage dataset.} It consists of images of tomato leaves laying over a gray table.}
@@ -43,7 +43,7 @@ In Figure \ref{fig:samples} we can see all the images and the different variatio
 \subsection{Experiments setup}
 \subsubsection{Data augmentation and normalization}
 We have performed data augmentation applying to the original sample two randomly selected transformations from this pool: Flip Top Bottom, Flip Left Right, Rotate 90\degree, Rotate 180\degree, Rotate 270\degree, Flip Top Bottom and Rotate 90\degree, Flip Top Bottom and Rotate 270\degree.
-\\\indent
+\\
 Another key aspect of our setup is the normalization of the input images, indeed, the chosen normalization changes dramatically the model performance. In our work we have considered the following normalization approaches:
 \\
 \textbf{Dataset Normalization.} Given the chosen variation of the dataset we have computed the mean and the standard deviation of the train dataset.
@@ -94,8 +94,6 @@ After a training phase using 10-fold cross validation, we have selected as best 
 			\textbf{Measure} & \textbf{Results} \\ 
 			\hline
 			$Average Accuracy$ & $0.999184$ \\
-			$Healthy Accuracy$ & $0.996678$ \\
-			$Non Healthy Accuracy$ & $0.999407$ \\
 			$Precision_M$ & $0.993377$ \\
 			$Recall_M$ & $0.996678$ \\
 			$F_1 score_M$ & $0.995025$ \\
@@ -108,7 +106,7 @@ After a training phase using 10-fold cross validation, we have selected as best 
 \subsubsection{Multi-class Classification}
 As we have done for binary classification, we have tried different run using different hyperparameters and we test our result on the validation set. As figure \ref{fig:tensorboard} shows, it's possible to understand that the best configuration it has been given from Alexnet pretrained, with batch size equal to 64, eps equal to 0.1 for 57 epochs. The results obtained from this configuration are described in the first row of the table \ref{table:sensitivity}. AlexNet pretrained has a very good performance for all the classes and obtained also better result than the state of the art \cite{ref11}. We have expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been missclassified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl. This does not happen in the reality, because our classifier missclassified only some samples that aren't related to the size of the class predicted.
 \subsubsection{Sensitivity Analisys}
-After having reached a good level of accuracy for our multi-class classification task, we have moved our attention to analise the robustness of our dataset by computing gradcam and occlusion methods to analise which parts of the leaf trigger the classifier. The table \ref{table:sensitivity} shows all the different approach we have tried. It's possible to see that the preformances of the results obtained are very far from the what we have done in the previous task. Sometimes also happens that some classes have never be predicted at all. Then we have tried a different way, applying both normalization and backgrounds moving to something similar to what a predictor will see when it will applied on the field. Using per-leaf normalization and random background images we obtain the result shows in figure \ref{fig:conf_matrix}. It's also possible to see in figure \ref{fig:gradcam} how the system is more robust to some background variation, activating only on the leaf surface.
+After having reached a good level of accuracy for our multi-class classification task, we have moved our attention to analise the robustness of our dataset by computing gradcam and occlusion methods to analise which parts of the leaf trigger the classifier. The table \ref{table:sensitivity} shows all the different approach we have tried. It's possible to see that the preformances of the results obtained are very far from the what we have done in the previous task. Sometimes also happens that some classes have never be predicted at all. Then we have tried a different way, applying both normalization and backgrounds moving to something similar to what a predictor will see when it will applied on the field. Using per-leaf normalization and random background images we obtain the result shows in figure \ref{fig:conf_matrix}. It is also possible to see in figure \ref{fig:gradcam} how the system is more robust to some background variation, activating only on the leaf surface.
 \begin{table}
 	\centering
 	\small

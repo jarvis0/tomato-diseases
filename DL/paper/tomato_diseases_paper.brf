@@ -8,32 +8,32 @@
 \backcite {PlantVillage}{{1}{1}{section.1}}
 \backcite {ref11, ref10}{{1}{1}{section.1}}
 \backcite {ref11}{{1}{1}{section.1}}
-\backcite {ref17}{{2}{2}{section.2}}
-\backcite {ref18, ref19}{{2}{2}{section.2}}
+\backcite {ref17, ref18, ref16}{{2}{2}{section.2}}
+\backcite {ref15, ref14}{{2}{2}{section.2}}
 \backcite {ref24}{{2}{2}{section.2}}
-\backcite {ref27}{{2}{2}{section.2}}
 \backcite {ref25}{{2}{2}{section.2}}
-\backcite {ref28}{{2}{2}{section.2}}
+\backcite {ref26}{{2}{2}{section.2}}
+\backcite {ref27}{{2}{2}{section.2}}
 \backcite {ref29}{{2}{2}{section.2}}
 \backcite {ref30}{{2}{2}{section.2}}
-\backcite {Krizhevsky}{{2}{2}{section.2}}
-\backcite {tunisia}{{2}{2}{section.2}}
-\backcite {occlusion}{{2}{2}{section.2}}
-\backcite {manzoni}{{2}{2}{section.2}}
-\backcite {erba}{{2}{2}{section.2}}
-\backcite {erba}{{2}{2}{section.2}}
-\backcite {manzoni}{{2}{2}{section.2}}
-\backcite {ref}{{3}{3.2}{table.caption.2}}
-\backcite {ref10}{{4}{4.1}{subsection.4.1}}
-\backcite {manzoni}{{4}{4.1}{subsection.4.1}}
+\backcite {ref28}{{2}{2}{section.2}}
+\backcite {ref11}{{2}{2}{section.2}}
+\backcite {ref13}{{2}{2}{section.2}}
+\backcite {ref33, ref10}{{2}{2}{section.2}}
+\backcite {ref10}{{2}{2}{section.2}}
+\backcite {ref33}{{2}{2}{section.2}}
+\backcite {ref34}{{3}{3.2}{subsection.3.2}}
+\backcite {ref12}{{3}{3.3}{subsection.3.3}}
+\backcite {ref13}{{3}{3.3}{subsection.3.3}}
+\backcite {ref33, ref10}{{4}{4.1}{subsection.4.1}}
 \backcite {ref10}{{4}{4.1}{subsection.4.1}}
 \backcite {ref30}{{4}{4.2.2}{subsubsection.4.2.2}}
 \backcite {ref31}{{4}{4.2.2}{subsubsection.4.2.2}}
-\backcite {ref11}{{4}{4.2.3}{subsubsection.4.2.3}}
-\backcite {ref31}{{4}{4.2.3}{subsubsection.4.2.3}}
+\backcite {ref11}{{5}{4.2.3}{subsubsection.4.2.3}}
+\backcite {ref31}{{5}{4.2.3}{subsubsection.4.2.3}}
 \backcite {imagenet}{{5}{4.2.3}{subsubsection.4.2.3}}
 \backcite {ref32}{{5}{4.2.3}{subsubsection.4.2.3}}
 \backcite {ref11}{{5}{4.3.2}{subsubsection.4.3.2}}
 \backcite {ref11}{{6}{5}{section.5}}
 \backcite {ref11}{{6}{5}{section.5}}
-\backcite {ref10}{{7}{5}{section.5}}
+\backcite {ref10}{{6}{5}{section.5}}
