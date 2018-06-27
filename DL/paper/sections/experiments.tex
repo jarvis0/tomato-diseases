@@ -86,27 +86,12 @@ As optimizer we have choosen Adam \cite{ref32}. An important annotation should b
 
 \subsection{Results and discussion}
 \subsubsection{Binary Classification}
-After a training phase using 10-fold cross validation, we have selected as best hyperparameters for our binary classification problem, the batch size equal to 32 and the total number of epochs equal to 15. With this configuration, after retraining the net on the global train set, we have obtained the results on the test set shown in the table \ref{table:binary}. Beeing a very unbalanced dataset because of the number of healthy leaves with respect to the non healthy ones, we have expected to have an healthy accurancy lower than non healthy. The result shows that our assumptions was correct. In fact LeNet accurancy for healthy aren't good as for non healthy one. By the way the average performances of our net are good.
-\begin{table}[H]
-	\begin{center}
-		\begin{tabular}{|l|c|}
-			\hline
-			\textbf{Measure} & \textbf{Results} \\ 
-			\hline
-			$Average Accuracy$ & $0.999184$ \\
-			$Precision_M$ & $0.993377$ \\
-			$Recall_M$ & $0.996678$ \\
-			$F_1 score_M$ & $0.995025$ \\
-			\hline
-		\end{tabular}
-	\end{center}
-	\caption{Performance of binary classification.}
-	\label{table:binary}
-\end{table}
+After a training phase using 10-fold cross validation, we select as best hyperparameters for our binary classification problem, the batch size equal to 32 and the total number of epochs equal to 15. With this configuration, after retraining the net on the global train set, we obtain an average accuracy of $99.92\%$. Beeing a very unbalanced dataset because of the number of healthy leaves with respect to the non healthy ones, we have expected to have an healthy accurancy lower than non healthy. The result shows that our assumptions was correct. In fact LeNet accurancy for healthy aren't good as for non healthy one, but if we look to the F1 score, equals to $0.9950$, and to the accuracy baseline of the this classification task, equal to $90\%$, we can say that our results are good.
 \subsubsection{Multi-class Classification}
-As we have done for binary classification, we have tried different run using different hyperparameters and we test our result on the validation set. As figure \ref{fig:tensorboard} shows, it's possible to understand that the best configuration it has been given from Alexnet pretrained, with batch size equal to 64, eps equal to 0.1 for 57 epochs. The results obtained from this configuration are described in the first row of the table \ref{table:sensitivity}. AlexNet pretrained has a very good performance for all the classes and obtained also better result than the state of the art \cite{ref11}. We have expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been missclassified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl. This does not happen in the reality, because our classifier missclassified only some samples that aren't related to the size of the class predicted.
+As we have done for binary classification, we try different run using different hyperparameters and we test our result on the validation set. As figure \ref{fig:tensorboard} shows, it's possible to understand that we obtain the best configuration from Alexnet pretrained, with batch size equal to 64, eps equal to 0.1 for 57 epochs. We also try configuration with some weight decay factor and also changing the initial learning rate but the resulting perfomance was not so good as the configuration explained before. We think that weight decay do not help to improve perfomances because AlexNet for this task is not so complex to create the overfitting problem and also because in AlexNet there are dropout layers that limit that problem. For what concern the learning rate, Adam optimizer \cite{ref32} adapt automatically the learning rate after some epochs, so we think that most of job is done by the optimizer and our selected learning rates involves the first few epochs of training and not the overall phase.
+\\The results obtained from configuration described before are shown in the first row of the table \ref{table:sensitivity}. AlexNet pretrained has a very good performance for all the classes and obtained also better result than the state of the art \cite{ref11}. We have expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been missclassified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl. This does not happen in the reality, because our classifier missclassified only some samples that aren't related to the size of the class predicted.
 \subsubsection{Sensitivity Analisys}
-After having reached a good level of accuracy for our multi-class classification task, we have moved our attention to analise the robustness of our dataset by computing gradcam and occlusion methods to analise which parts of the leaf trigger the classifier. The table \ref{table:sensitivity} shows all the different approach we have tried. It's possible to see that the preformances of the results obtained are very far from the what we have done in the previous task. Sometimes also happens that some classes have never be predicted at all. Then we have tried a different way, applying both normalization and backgrounds moving to something similar to what a predictor will see when it will applied on the field. Using per-leaf normalization and random background images we obtain the result shows in figure \ref{fig:conf_matrix}. It is also possible to see in figure \ref{fig:gradcam} how the system is more robust to some background variation, activating only on the leaf surface.
+After having reached a good level of accuracy for our multi-class classification task, we move our attention to analise the robustness of our dataset by using visualization methods to analise which parts of the leaf trigger the classifier. The table \ref{table:sensitivity} shows all the different approach we try. It is possible to see that the preformances of the results obtained are very far from the what we have done in the previous task. In particular, when we have tested the model we heve obtained with the multi-class classification problem on the segmeted dataset, we see that some classes have never been classified bring to NaN value for Precision and F1 score. Then we try different ways, applying different normalizations and backgrounds. First of all, we use in train phase the segmented test and we test it both on segmented and normal datasets. Also in this case the trained predictor has not able to correctly identify the leaves looking at the normal dataset. We have obtained better result using Random Background Crop and Rnadom Noise Background datasets. In both case tests performed on segmented tests bring us to a better results with respect to the normal dataset. With think that the problem is related to some information that is encoded inside the table. Afterall we try to see if changing the background to one similar to the field, where photos of leaves can be taken. Using per-leaf normalization and Random Background Images we obtain the result shows in figure \ref{fig:conf_matrix}. This model is the only with an high value on precision and recall, sign of robustness. It is also possible to see in figure \ref{fig:gradcam} how the system is more robust to some background variation, activating only on the leaf surface.
 \begin{table}
 	\centering
 	\small
@@ -118,10 +103,10 @@ After having reached a good level of accuracy for our multi-class classification
 			\multirow{4}*{Original}
 			& Original & 
 					\begin{tabular}{@{}c@{}}
-					$Average Accuracy = 0.998560$ \\
-					$Precision_M = 0.998339$ \\
-					$Recall_M = 0.998173$ \\
-					$F_1 score_M = 0.998254$ \\
+					$\textbf{Average Accuracy = 0.998560}$ \\
+					$\textbf{Precision_M = 0.998339}$ \\
+					$\textbf{Recall_M = 0.998173}$ \\
+					$\textbf{F_1 score_M = 0.998254}$ \\
 					\end{tabular} \\
 			\cline{2-3}
 			& Segmented &
@@ -182,6 +167,23 @@ After having reached a good level of accuracy for our multi-class classification
 				$Recall_M = 0.709873$ \\
 				$F_1 score_M = 0.697417$ \\
 				\end{tabular} \\  								
+			\hline
+			\multirow{4}*{Random Background Images}
+			& Original & 
+					\begin{tabular}{@{}c@{}}
+					$\textbf{Average Accuracy = 0.932301}$ \\
+					$\textbf{Precision_M = 0.925955}$ \\
+					$\textbf{Recall_M = 0.913326}$ \\
+					$\textbf{F_1 score_M = 0.916384}$ \\
+					\end{tabular} \\
+			\cline{2-3}
+			& Segmented &
+				\begin{tabular}{@{}c@{}}
+				$\textbf{Average Accuracy = 0.390169}$ \\
+				$\textbf{Precision_M = NaN}$ \\
+				$\textbf{Recall_M = 0.285877}$ \\
+				$\textbf{F_1 score_M = Nan}$ \\
+				\end{tabular} \\  				
 			\hline
 		\end{tabular}
 	\end{center}
