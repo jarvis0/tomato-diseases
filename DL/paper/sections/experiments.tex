@@ -96,7 +96,7 @@ After having reached a good level of accuracy for our multi-class classification
 	\centering
 	\small
 	\begin{center}
-		\begin{tabular}{|p{1.5cm}|p{1.5cm}|c|}
+		\begin{tabularx}{|X|p{1.5cm}|c|}
 			\hline
 			Train & Test & Performance\\ 
 			\hline
@@ -179,13 +179,13 @@ After having reached a good level of accuracy for our multi-class classification
 			\cline{2-3}
 			& Segmented &
 				\begin{tabular}{@{}c@{}}
-				$\textbf{Average Accuracy = 0.390169}$ \\
-				$\textbf{Precision_M = NaN}$ \\
-				$\textbf{Recall_M = 0.285877}$ \\
-				$\textbf{F_1 score_M = Nan}$ \\
+				$\textbf{Average Accuracy = 0.949766}$ \\
+				$\textbf{Precision_M = 0.942972}$ \\
+				$\textbf{Recall_M = 0.928461}$ \\
+				$\textbf{F_1 score_M = 0.934499}$ \\
 				\end{tabular} \\  				
 			\hline
-		\end{tabular}
+		\end{tabularx}
 	\end{center}
 	\caption{Performance of multi-class classification with difference training and test sets. We use a NaN value for the class that are never predicted to avoid division by zero in precision, recall and F1 score.}
 	\label{table:sensitivity}
