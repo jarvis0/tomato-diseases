@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.4)  28 JUN 2018 11:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.6.4)  28 JUN 2018 13:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -669,7 +669,14 @@ File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 \c@bookmark@seq@number=\count116
 \Hy@SectionHShift=\skip50
 )
-(./tomato_diseases_paper.aux)
+(./tomato_diseases_paper.aux
+
+LaTeX Warning: Label `fig:long' multiply defined.
+
+
+LaTeX Warning: Label `fig:onecol' multiply defined.
+
+)
 \openout1 = `tomato_diseases_paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -687,8 +694,7 @@ LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
 LaTeX Font Info:    ... okay on input line 39.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 39.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 ABD: EveryShipout initializing macros
@@ -776,100 +782,9 @@ LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
 (./sections/abstract.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-) (./sections/introduction.tex
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-
-
-LaTeX Warning: Citation `ref1' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Citation `ref2' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Citation `ref3' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Citation `ref5' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Citation `ref6' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Citation `ref8' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Citation `ref9' on page 1 undefined on input line 5.
-
-
-LaTeX Warning: Citation `PlantVillage' on page 1 undefined on input line 7.
-
-
-LaTeX Warning: Citation `ref11' on page 1 undefined on input line 7.
-
-
-LaTeX Warning: Citation `ref10' on page 1 undefined on input line 7.
-
-
-LaTeX Warning: Citation `ref11' on page 1 undefined on input line 9.
-
-) (./sections/related_work.tex
-
-LaTeX Warning: Citation `ref17' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Citation `ref18' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Citation `ref16' on page 1 undefined on input line 2.
-
-
-LaTeX Warning: Citation `ref15' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `ref14' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `ref24' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `ref25' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `ref26' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `ref27' on page 1 undefined on input line 4.
-
-
-LaTeX Warning: Citation `ref29' on page 1 undefined on input line 6.
-
-
-LaTeX Warning: Citation `ref30' on page 1 undefined on input line 6.
-
-
-LaTeX Warning: Citation `ref28' on page 1 undefined on input line 6.
-
-
-LaTeX Warning: Citation `ref11' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Citation `ref13' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Citation `ref33' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Citation `ref10' on page 1 undefined on input line 8.
-
-
-LaTeX Warning: Citation `ref10' on page 1 undefined on input line 10.
-
-
-LaTeX Warning: Citation `ref33' on page 1 undefined on input line 12.
-
-) (./sections/proposed_approach.tex
-<./images/workflow.pdf, id=4, 7865.385pt x 2153.04375pt>
+) (./sections/introduction.tex)
+(./sections/related_work.tex) (./sections/proposed_approach.tex
+<./images/workflow.pdf, id=33, 7865.385pt x 2153.04375pt>
 File: ./images/workflow.pdf Graphic file (type pdf)
 <use ./images/workflow.pdf>
 Package pdftex.def Info: ./images/workflow.pdf  used on input line 2.
@@ -891,19 +806,15 @@ Underfull \hbox (badness 1122) in paragraph at lines 2--9
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
-
-LaTeX Warning: Citation `ref34' on page 3 undefined on input line 20.
-
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 24.
+
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
-
-
-LaTeX Warning: Citation `ref12' on page 3 undefined on input line 26.
-
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 
 Underfull \hbox (badness 10000) in paragraph at lines 26--28
 []\OT1/ptm/b/n/10 Gradient-weighted Class Ac-ti-va-tion Map-ping
@@ -914,57 +825,44 @@ Underfull \hbox (badness 1867) in paragraph at lines 26--28
 \OT1/ptm/m/n/10 re-gions in the im-age for pre-dict-ing the con-cept.
  []
 
-
-LaTeX Warning: Citation `ref13' on page 3 undefined on input line 28.
-
 ) (./sections/experiments.tex
-<./images/tensorboards.jpg, id=25, 224.037pt x 101.6598pt>
+<./images/tensorboards.jpg, id=81, 167.9073pt x 123.0999pt>
 File: ./images/tensorboards.jpg Graphic file (type jpg)
 <use ./images/tensorboards.jpg>
 Package pdftex.def Info: ./images/tensorboards.jpg  used on input line 3.
-(pdftex.def)             Requested size: 336.05466pt x 152.48932pt.
-<./images/normal_3159.jpg, id=26, 256.96pt x 256.96pt>
+(pdftex.def)             Requested size: 251.8603pt x 184.64937pt.
+<./images/normal_3159.jpg, id=82, 256.96pt x 256.96pt>
 File: ./images/normal_3159.jpg Graphic file (type jpg)
 <use ./images/normal_3159.jpg>
 Package pdftex.def Info: ./images/normal_3159.jpg  used on input line 19.
 (pdftex.def)             Requested size: 42.91412pt x 42.91412pt.
-<./images/segmented_3159.jpg, id=27, 256.96pt x 256.96pt>
+<./images/segmented_3159.jpg, id=83, 256.96pt x 256.96pt>
 File: ./images/segmented_3159.jpg Graphic file (type jpg)
 <use ./images/segmented_3159.jpg>
 Package pdftex.def Info: ./images/segmented_3159.jpg  used on input line 19.
 (pdftex.def)             Requested size: 42.91412pt x 42.91412pt.
-<./images/9_ROTATE_180_crop.png, id=28, 192.72pt x 192.72pt>
+<./images/9_ROTATE_180_crop.png, id=84, 192.72pt x 192.72pt>
 File: ./images/9_ROTATE_180_crop.png Graphic file (type png)
 <use ./images/9_ROTATE_180_crop.png>
 Package pdftex.def Info: ./images/9_ROTATE_180_crop.png  used on input line 19.
 
 (pdftex.def)             Requested size: 43.18956pt x 43.18956pt.
-<./images/196_ROTATE_270.jpg, id=29, 256.96pt x 256.96pt>
+<./images/196_ROTATE_270.jpg, id=85, 256.96pt x 256.96pt>
 File: ./images/196_ROTATE_270.jpg Graphic file (type jpg)
 <use ./images/196_ROTATE_270.jpg>
 Package pdftex.def Info: ./images/196_ROTATE_270.jpg  used on input line 19.
 (pdftex.def)             Requested size: 42.91412pt x 42.91412pt.
-<./images/random_backgorund.png, id=30, 192.72pt x 192.72pt>
+<./images/random_backgorund.png, id=86, 192.72pt x 192.72pt>
 File: ./images/random_backgorund.png Graphic file (type png)
 <use ./images/random_backgorund.png>
 Package pdftex.def Info: ./images/random_backgorund.png  used on input line 19.
 
 (pdftex.def)             Requested size: 43.18956pt x 43.18956pt.
-
-
-LaTeX Warning: Citation `ref33' on page 3 undefined on input line 30.
-
-
-LaTeX Warning: Citation `ref10' on page 3 undefined on input line 30.
-
-[3 <./images/workflow.pdf
+ [3 <./images/workflow.pdf
 
 pdfTeX warning: pdflatex (file ./images/workflow.pdf): PDF inclusion: invalid o
 ther resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
-
-LaTeX Warning: Citation `ref10' on page 4 undefined on input line 35.
-
 ! Undefined control sequence.
 l.45 ... Bottom, Flip Left Right, Rotate 90\degree
                                                   , Rotate 180\degree, Rotat...
@@ -989,2275 +887,341 @@ l.45 ...gree, Flip Top Bottom and Rotate 90\degree
 l.45 ...ree, Flip Top Bottom and Rotate 270\degree
                                                   .
 ? 
-
-LaTeX Warning: Citation `ref30' on page 4 undefined on input line 53.
-
-
-LaTeX Warning: Citation `ref31' on page 4 undefined on input line 55.
-
 [4 <./images/tensorboards.jpg> <./images/normal_3159.jpg> <./images/segmented_3
 159.jpg> <./images/9_ROTATE_180_crop.png> <./images/196_ROTATE_270.jpg> <./imag
 es/random_backgorund.png>]
-
-LaTeX Warning: Citation `ref11' on page 5 undefined on input line 67.
-
-
-LaTeX Warning: Citation `ref31' on page 5 undefined on input line 70.
-
-
-LaTeX Warning: Citation `imagenet' on page 5 undefined on input line 70.
-
-
-LaTeX Warning: Citation `ref32' on page 5 undefined on input line 83.
-
-
-LaTeX Warning: Citation `ref32' on page 5 undefined on input line 91.
-
-
-LaTeX Warning: Reference `table:sensitivity' on page 5 undefined on input line 
-92.
-
-
-LaTeX Warning: Citation `ref11' on page 5 undefined on input line 92.
-
-
-LaTeX Warning: Reference `table:sensitivity' on page 5 undefined on input line 
-94.
-
-
-LaTeX Warning: Reference `fig:conf_matrix' on page 5 undefined on input line 94
-.
-
-
-LaTeX Warning: Reference `fig:gradcam' on page 5 undefined on input line 94.
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.101 			Train & Test &
-                        Performance\\
-? 
-
-Overfull \hbox (3.30138pt too wide) in paragraph at lines 101--102
-[]|\OT1/ptm/m/n/9 Performance| 
- []
-
 ! Undefined control sequence.
 <recently read> \multirow 
                           
 l.103 			\multirow
                   {4}*{Original}
 ? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.104 			& Original &
-                     
-? 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
-                                                  {\textdef@ \textstyle \f@s...
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...xtstyle \f@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \sf@...
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...tstyle \sf@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \ssf...
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...style \ssf@size {\firstchoice@false #1}}
-                                                  \check@mathfonts }
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...firstchoice@false #1}}\check@mathfonts }
-                                                  
-l.107 					$\textbf{Precision_M = 0.998339}
-                                           $ \\
-? 
-! Misplaced \cr.
-\reserved@c ->\ifnum 0=`{}\fi \cr 
-                                  
-l.108 					$
-            \textbf{Recall_M = 0.998173}$ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
-                                                  {\textdef@ \textstyle \f@s...
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...xtstyle \f@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \sf@...
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...tstyle \sf@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \ssf...
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...style \ssf@size {\firstchoice@false #1}}
-                                                  \check@mathfonts }
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...firstchoice@false #1}}\check@mathfonts }
-                                                  
-l.108 					$\textbf{Recall_M = 0.998173}
-                                        $ \\
-? 
-! Misplaced \cr.
-\reserved@c ->\ifnum 0=`{}\fi \cr 
-                                  
-l.109 					$
-            \textbf{F_1 score_M = 0.998254}$ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
-                                                  {\textdef@ \textstyle \f@s...
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...xtstyle \f@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \sf@...
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...tstyle \sf@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \ssf...
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...style \ssf@size {\firstchoice@false #1}}
-                                                  \check@mathfonts }
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Extra }, or forgotten $.
-\text@ ...firstchoice@false #1}}\check@mathfonts }
-                                                  
-l.109 					$\textbf{F_1 score_M = 0.998254}
-                                           $ \\
-? 
-! Misplaced \cr.
-\reserved@c ->\ifnum 0=`{}\fi \cr 
-                                  
-l.110 					\end
-               {tabular} \\
-? 
-! Misplaced \crcr.
-\endarray ->\crcr 
-                  \egroup \egroup \@arrayright \gdef \@preamble {}
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing { inserted.
-<to be read again> 
-                   \endgroup 
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing { inserted.
-<to be read again> 
-                   \endgroup 
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing { inserted.
-<to be read again> 
-                   \endgroup 
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing { inserted.
-<to be read again> 
-                   \endgroup 
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing { inserted.
-<to be read again> 
-                   \endgroup 
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing { inserted.
-<to be read again> 
-                   \endgroup 
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing { inserted.
-<to be read again> 
-                   \endgroup 
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing { inserted.
-<to be read again> 
-                   \endgroup 
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing { inserted.
-<to be read again> 
-                   \endgroup 
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.110 					\end{tabular}
-                         \\
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.110 					\end{tabular}
-                         \\
-? 
-! Misplaced \cr.
-\reserved@c ->\ifnum 0=`{}\fi \cr 
-                                  
-l.111 			\cline
-               {2-3}
-? 
-! Misplaced \omit.
-\@cline #1-#2\@nil ->\omit 
-                           \@multicnt #1\advance \@multispan \m@ne \ifnum \@...
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced alignment tab character &.
-<argument> &
-            \omit 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \omit.
-<argument> &\omit 
-                  
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \span.
-\sp@n ->\span 
-              \omit \advance \@multicnt \m@ne 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \omit.
-\sp@n ->\span \omit 
-                    \advance \@multicnt \m@ne 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-\@cline ...le \@height \arrayrulewidth \hfill \cr 
-                                                  \noalign {\vskip -\arrayru...
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \noalign.
-\@cline ...ht \arrayrulewidth \hfill \cr \noalign 
-                                                  {\vskip -\arrayrulewidth }
-l.111 			\cline{2-3}
-                    
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.111 			\cline{2-3}
-                    
-? 
-! Missing } inserted.
-<inserted text> 
-                }
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-                    
-l.111 			\cline{2-3}
-                    
-? 
-! Missing \cr inserted.
-<inserted text> 
-                \cr 
-l.111 			\cline{2-3}
-                    
-? 
-! Misplaced \cr.
-<inserted text> \cr 
-         
+! Undefined control sequence.
+<recently read> \multirow 
+                          
+l.120 			\multirow
+                  {4}*{Segmented}
+? 
+! Undefined control sequence.
+<recently read> \multirow 
+                          
+l.137 			\multirow
+                  {4}*{Random Background Crop}
+? 
+! Undefined control sequence.
+<recently read> \multirow 
+                          
+l.154 			\multirow
+                  {4}*{Random Noise Background}
+? 
+! Undefined control sequence.
+<recently read> \multirow 
+                          
+l.171 			\multirow
+                  {4}*{Random Background Images}
+? 
+
+Overfull \hbox (77.30356pt too wide) in paragraph at lines 99--189
+ [] 
+ []
+
+<./images/conf_matrix_norm.jpg, id=146, 822.07124pt x 623.32875pt>
+File: ./images/conf_matrix_norm.jpg Graphic file (type jpg)
+<use ./images/conf_matrix_norm.jpg>
+Package pdftex.def Info: ./images/conf_matrix_norm.jpg  used on input line 195.
+
+(pdftex.def)             Requested size: 246.62328pt x 187.00006pt.
+
+Overfull \hbox (16.28732pt too wide) in paragraph at lines 195--196
+ [] 
+ []
+
+<./images/gradcam.jpg, id=147, 154.32657pt x 50.43843pt>
+File: ./images/gradcam.jpg Graphic file (type jpg)
+<use ./images/gradcam.jpg>
+Package pdftex.def Info: ./images/gradcam.jpg  used on input line 204.
+(pdftex.def)             Requested size: 154.32617pt x 50.4383pt.
+) (./sections/conclusion.tex [5] [6 <./images/conf_matrix_norm.jpg> <./images/g
+radcam.jpg>]) (./sections/acknowledgements.tex)
+(./sections/supplementary_material.tex) (./tomato_diseases_paper.bbl
+(./tomato_diseases_paper.brf)
+\tf@brf=\write3
+\openout3 = `tomato_diseases_paper.brf'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]\OT1/ptm/m/n/9 C. Cortes and V. Vap-nik.  Support-vector net-
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 70--70
+[]\OT1/ptm/m/n/9 Intergovernmental Science-Policy Plat-form on Bio-di-ver-
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 70--70
+\OT1/ptm/m/n/9 sity and Ecosys-tem Ser-vices Fourth ses-sion.  \OT1/ptm/m/it/9 
+Re-
+ []
+
+
+Underfull \hbox (badness 1817) in paragraph at lines 70--70
+\OT1/ptm/m/it/9 port of the Ple-nary of the In-ter-gov-ern-men-tal Science-
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 70--70
+\OT1/ptm/m/it/9 PolicyPlatform on Bio-di-ver-sity and Ecosys-tem Ser-vices
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+[]\OT1/ptm/m/n/9 International Telecom-mu-ni-ca-tion Union (ITU).
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+\OT1/ptm/m/it/9 ICT Facts and Fig-ures { the World in 2015\OT1/ptm/m/n/9 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+\OT1/ptm/m/n/9 Geneva, 2015.  https://www.itu.int/en/ITU-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
+\OT1/ptm/m/n/9 D/Statistics/Documents/facts/ICTFactsFigures2015.pdf.
+ []
+
+
+Underfull \hbox (badness 4217) in paragraph at lines 86--86
+\OT1/ptm/m/n/9 Inc., 2012.  http://papers.nips.cc/paper/4824-imagenet-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--86
+\OT1/ptm/m/n/9 classification-with-deep-convolutional-neural-networks.pdf.
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 106--106
+\OT1/ptm/m/n/9 i-tor-ing Plant Health.  \OT1/ptm/m/it/9 Sen-sors\OT1/ptm/m/n/9 
+, 8(5):3205--3239, 2008.
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 112--112
+[]\OT1/ptm/m/n/9 A.-K. Mahlein, E.-C. Oerke, U. Steiner, and H.-W.
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 112--112
+\OT1/ptm/m/it/9 ro-pean Jour-nal of Plant Pathol-ogy\OT1/ptm/m/n/9 , 133, May 2
+012.
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 118--118
+[]\OT1/ptm/m/n/9 M. Mazarei, I. Teplova, M. R. Ha-ji-morad, and C. N.
+ []
+
+
+Underfull \hbox (badness 3907) in paragraph at lines 118--118
+\OT1/ptm/m/n/9 Stew-art.  Pathogen Phy-tosens-ing: Plants to Re-port
+ []
+
+
+Underfull \hbox (badness 7925) in paragraph at lines 118--118
+\OT1/ptm/m/n/9 Plant Pathogens.  \OT1/ptm/m/it/9 Sen-sors\OT1/ptm/m/n/9 , 8(4):
+2628--2641, 2008.
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 127--127
+\OT1/ptm/m/n/9 o-res-cence and PRI from Hy-per-spec-tral Prox-i-mal Sens-
+ []
+
+
+Underfull \hbox (badness 4303) in paragraph at lines 127--127
+\OT1/ptm/m/n/9 ing as Early In-di-ca-tors of Plant Stress: The Case
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 127--127
+\OT1/ptm/m/n/9 of Ozone Ex-po-sure.  \OT1/ptm/m/it/9 Sen-sors\OT1/ptm/m/n/9 , 8
+(3):1740--1754, 2008.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]\OT1/ptm/m/n/9 PlantVillage.  PlantVil-lage Dataset.
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 139--139
+[]\OT1/ptm/m/n/9 R. N. Strange and P. R. Scott.  Plant Dis-ease:
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 139--139
+\OT1/ptm/m/n/9 A Threat to Global Food Se-cu-rity.  \OT1/ptm/m/it/9 An-nual Re-
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--139
+\OT1/ptm/m/it/9 view of Phy-topathol-ogy\OT1/ptm/m/n/9 , 43(1):83--116, Sep. 20
+05.
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 151--151
+[]\OT1/ptm/m/n/9 T. Reed and J. Dubuf.  A Re-view of Re-cent Tex-
+ []
+
+
+Underfull \hbox (badness 3428) in paragraph at lines 151--151
+\OT1/ptm/m/n/9 ture Seg-men-ta-tion and Fea-ture Ex-trac-tion Tech-niques.
+ []
+
+
+Underfull \hbox (badness 6300) in paragraph at lines 151--151
+\OT1/ptm/m/it/9 CVGIP: Im-age Un-der-stand-ing\OT1/ptm/m/n/9 , 57(3):359--372, 
+1993.
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 157--157
+[]\OT1/ptm/m/n/9 S. P. Mo-hanty, D. P. Hughes, and M. Salath[]e.  Us-
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 157--157
+\OT1/ptm/m/n/9 ing Deep Learn-ing for Image-Based Plant Dis-ease De-
+ []
+
+[7]
+Underfull \hbox (badness 1418) in paragraph at lines 164--164
+[]\OT1/ptm/m/n/9 R. R. Sel-varaju, A. Das, R. Vedan-tam, M. Cogswell,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\OT1/ptm/m/n/9 D. Parikh, and D. Ba-tra.  Grad-CAM: Vi-sual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--164
+\OT1/ptm/m/n/9 Ex-pla-na-tions from Deep Net-works via Gradient-
+ []
+
+
+Underfull \hbox (badness 7012) in paragraph at lines 164--164
+\OT1/ptm/m/n/9 based Lo-cal-iza-tion.  \OT1/ptm/m/it/9 CoRR\OT1/ptm/m/n/9 , abs
+/1610.02391, 2016.
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 172--172
+[]\OT1/ptm/m/n/9 M. Sokolova and G. La-palme.  A sys-tem-atic anal-y-sis
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+[]\OT1/ptm/m/n/9 UNEP, In-ter-na-tional Fund for Agri-cul-tural De-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\OT1/ptm/m/n/9 vel-op-ment (IFAD).  \OT1/ptm/m/it/9 Small-hold-ers, Food Se-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\OT1/ptm/m/it/9 cu-rity, and the En-vi-ron-ment\OT1/ptm/m/n/9 , Rome, 2013.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--179
+\OT1/ptm/m/n/9 https://www.ifad.org/documents/10180/666cac24-14b6-
+ []
+
+
+Underfull \hbox (badness 1867) in paragraph at lines 187--187
+\OT1/ptm/m/n/9 train-ing deep feed-for-ward neu-ral net-works.  \OT1/ptm/m/it/9
+ Pro-ceed-
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 187--187
+\OT1/ptm/m/it/9 ings of the thir-teenth in-ter-na-tional con-fer-ence on ar-ti-
+
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 187--187
+\OT1/ptm/m/it/9 fi-cial in-tel-li-gence and statis-tics\OT1/ptm/m/n/9 , pages 2
+49--256, 2010.
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 194--194
+\OT1/ptm/m/n/9 based learn-ing ap-plied to doc-u-ment recog-ni-tion.  \OT1/ptm/
+m/it/9 Pro-
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 194--194
+\OT1/ptm/m/it/9 ceed-ings of the IEEE\OT1/ptm/m/n/9 , 86(11):2278--2324", Nov. 
+1998.
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 85.
+ [8
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 85.
+ (./tomato_diseases_paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 85.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 85.
+Package rerunfilecheck Info: File `tomato_diseases_paper.brf' has not changed.
+(rerunfilecheck)             Checksum: 4A8317E6963EA0C8E67118CABF9493C9;1672.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 85.
+ ) 
+Here is how much of TeX's memory you used:
+ 8193 strings out of 494923
+ 119937 string characters out of 6180743
+ 217384 words of memory out of 5000000
+ 11271 multiletter control sequences out of 15000+600000
+ 32858 words of font info for 76 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 36i,19n,39p,1835b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
+utmri8a.pfb>
+Output written on tomato_diseases_paper.pdf (8 pages, 925503 bytes).
+PDF statistics:
+ 292 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+
