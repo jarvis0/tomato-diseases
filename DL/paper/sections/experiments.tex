@@ -96,7 +96,7 @@ After having reached a good level of accuracy for our multi-class classification
 	\centering
 	\small
 	\begin{center}
-		\begin{tabularx}{|X|p{1.5cm}|c|}
+		\begin{tabular}{|c|p{1.5cm}|c|}
 			\hline
 			Train & Test & Performance\\ 
 			\hline
@@ -134,7 +134,7 @@ After having reached a good level of accuracy for our multi-class classification
 				$F_1 score_M = 0.958019$ \\
 				\end{tabular} \\  				
 			\hline
-			\multirow{4}*{Random Background Crop}
+			\multirow{6}*{\shortstack[1]{Random\\ Background \\Crop}}
 			& Original & 
 					\begin{tabular}{@{}c@{}}
 					$Average Accuracy = 0.769175$ \\
@@ -151,7 +151,7 @@ After having reached a good level of accuracy for our multi-class classification
 				$F_1 score_M = 0.739969$ \\
 				\end{tabular} \\  				
 			\hline
-			\multirow{4}*{Random Noise Background}
+			\multirow{6}*{\shortstack[1]{Random\\ Noise \\Background}}
 			& Original & 
 					\begin{tabular}{@{}c@{}}
 					$Average Accuracy = 0.578862$ \\
@@ -168,7 +168,7 @@ After having reached a good level of accuracy for our multi-class classification
 				$F_1 score_M = 0.697417$ \\
 				\end{tabular} \\  								
 			\hline
-			\multirow{4}*{Random Background Images}
+			\multirow{6}*{\shortstack[1]{Random\\ Background\\ Images}}
 			& Original & 
 					\begin{tabular}{@{}c@{}}
 					$\textbf{Average Accuracy = 0.932301}$ \\
@@ -185,7 +185,7 @@ After having reached a good level of accuracy for our multi-class classification
 				$\textbf{F}_\textbf{1}\textbf{ score}_\textbf{M}\textbf{ = 0.934499}$ \\
 				\end{tabular} \\  				
 			\hline
-		\end{tabularx}
+		\end{tabular}
 	\end{center}
 	\caption{Performance of multi-class classification with difference training and test sets. We use a NaN value for the class that are never predicted to avoid division by zero in precision, recall and F1 score.}
 	\label{table:sensitivity}
@@ -199,12 +199,18 @@ After having reached a good level of accuracy for our multi-class classification
 	\label{fig:long}
 	\label{fig:onecol}
 \end{figure}
-\begin{figure}[t]
+\begin{figure}
 	\begin{center}
-		\fbox{\includegraphics[scale=1]{./images/gradcam}}
-	\end{center}
-	\caption{From left to right: \textbf{Original image, class: Target Spot}, \textbf{GradCAM of AlexNet pretrained on Original dataset}, \textbf{GradCAM of AlexNet pretrained on random background images}. It is possible to see the difference on the activation of GradCAM, one is distributed both on the leaf and on the background, the other is locate only on the leaf disease.}
+		\fbox{\includegraphics[scale=0.11]{./images/Target_Spot2_orig}
+			\includegraphics[scale=0.24]{./images/Target_Spot2_cam}
+			\includegraphics[scale=0.24]{./images/Target_Spot2normal_cam}
+		}
+		\begin{center}
+				\caption{From left to right: \textbf{Original image, class: Target Spot}, \textbf{GradCAM of AlexNet pretrained on Original dataset}, \textbf{GradCAM of AlexNet pretrained on random background images}. It is possible to see the difference on the activation of GradCAM, one is distributed both on the leaf and on the background, the other is locate only on the leaf disease.}
 	\label{fig:gradcam}
 	\label{fig:long}
 	\label{fig:onecol}
+		\end{center}
+		\vspace{-32pt}
+	\end{center}
 \end{figure}

@@ -17,10 +17,11 @@
 \usepackage{array}
 \usepackage[labelsep=period]{caption}
 \usepackage{tabularx}
-
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
+
 
 % Include other packages here, before hyperref.
 
