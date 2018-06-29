@@ -2,7 +2,7 @@
 	\begin{center}
 		\fbox{\includegraphics[scale=1.5]{./images/tensorboards}}
 		\begin{center}
-			\caption{\textbf{Validation accurancy over epochs}. }
+			\caption{\textbf{Validation accuracy over epochs}.}
 			\label{fig:tensorboard}
 		\end{center}
 		\vspace{-25pt}
@@ -24,11 +24,12 @@
 		\vspace{-32pt}
 	\end{center}
 \end{figure}
-Our experiments are about two main tasks: binary and multi-class classification. In this section, first we describe the dataset and the variations created to perform sensitivity analysis. Then we go trough the experiments setup where we describe how we have conducted the experiments to accomplish the two task and finally we show the results.
+Our experiments are about two main tasks: binary and multi-class classification. In this section, first we describe the dataset and the variations created to perform sensitivity analysis. Then, we go trough the experiments setup where we describe how we have conducted the experiments to accomplish the two tasks and finally we show the results.
 \subsection{Datasets}
-We analyze 18,158 images of tomato plant leaves, which are split in 10 classes, 9 diseases and 1 healthy. The scope is to predict the correct class of a leaf image. All the images are sized 256x256 pixels. 
-\\\indent Given the original dataset we have conducted the training phase on different variations of the original dataset, we have worked on the backgrounds in order to find a way to overcome the limits highlighted in \cite{ref33, ref10} and confirmed by us. Especially, we have found out a dependence between the original backgrounds and their belonging class.
-In Figure \ref{fig:samples} we can see all the images and the different variations of the dataset that we have tested.
+We analyze 18,158 images of tomato plant leaves, which are split in 10 classes, 9 diseases and 1 healthy. The scope is to predict the correct class of a leaf image. All the images are sized 256x256 pixels.*******************************
+\\\indent
+Given the original dataset we conduct the training phase on different variations of the original dataset, we work on the backgrounds in order to find a way to overcome the limits highlighted in \cite{ref33, ref10} and confirmed by us. Especially, we have found out a dependence between the original backgrounds and their belonging class.
+In Figure \ref{fig:samples} we can see all the images and the different variations of the dataset we have tested.
 \begin{itemize}
 	\item{\textbf{Original PlantVillage dataset.} It consists of images of tomato leaves laying over a gray table.}
 	\vspace{-5pt}
@@ -38,60 +39,60 @@ In Figure \ref{fig:samples} we can see all the images and the different variatio
 	\vspace{-5pt}
 	\item{\textbf{Random Noise Background dataset.} It consists of leaf images coming from PlantVillage with a background composed of random colored pixels.}
 	\vspace{-5pt}
-	\item{\textbf{Random Background Image dataset.} It consists of leaf images coming from PlantVillage dataset with a background taken from a set of 4,176 images we have built by looking for tomato plantation pictures on the Internet. The objective of this set was not only to decouple the background influence on the classifier but also try to take the leaf in a situation similar to a realistic one, where the leaf image is taken directly in the plantation.}
+	\item{\textbf{Random Background Image dataset.} It consists of leaf images coming from PlantVillage dataset, each with a background taken from a set of 4,176 images we have built by looking for tomato plantation pictures on the Internet. The objective of this dataset is not only to decouple the background influence on the classifier but also to try to bring the leaf to a realistic situation, where the leaf image is taken directly from the plantation.}
 \end{itemize}
 \subsection{Experiments setup}
 \subsubsection{Data augmentation and normalization}
-We have performed data augmentation applying to the original sample two randomly selected transformations from this pool: Flip Top Bottom, Flip Left Right, Rotate 90\degree, Rotate 180\degree, Rotate 270\degree, Flip Top Bottom and Rotate 90\degree, Flip Top Bottom and Rotate 270\degree.
+We perform data augmentation applying to each original sample two randomly selected transformations from this pool: Flip Top Bottom, Flip Left Right, Rotate 90\degree, Rotate 180\degree, Rotate 270\degree, Flip Top Bottom and Rotate 90\degree, Flip Top Bottom and Rotate 270\degree.
 \\
-Another key aspect of our setup is the normalization of the input images, indeed, the chosen normalization changes dramatically the model performance. In our work we have considered the following normalization approaches:
+Another key aspect of our setup is the normalization of the input images, indeed, the chosen normalization changes dramatically the model performance. In our work we consider the following normalization approaches:
 \\
-\textbf{Dataset Normalization.} Given the chosen variation of the dataset we have computed the mean and the standard deviation of the train dataset.
+\textbf{Dataset Normalization.} Given the chosen variation of the dataset we compute the mean and the standard deviation of the train dataset.
 \\
-\textbf{Per-leaf Normalization.} Starting from the segmented train dataset we have computed the mean and standard deviation of the non-black pixels.
+\textbf{Per-leaf Normalization.} Starting from the segmented train dataset we compute the mean and standard deviation of the non-black pixels.
 \subsubsection{Binary classification setup}
-\textbf{LeNet architecture.} This network proposed in \cite{ref30} is the first and simplest deep model available. We have adapted it to perform our binary task.
+\textbf{LeNet architecture.} This network, proposed in \cite{ref30}, is the first and simplest deep model available. We have adapted the first and the last convolutional layers to fit our images size and the last fully connected layer to perform our binary task.
 \\
-\textbf{Weights initialization.} For this network we have started using training from scratch approach. The weights in the network are initialized using Xavier initialization (\cite{ref31}). This helps the training since we start from a normally distributed set of weights and we avoid that certain weighs vanish through epochs.
+\textbf{Weights initialization.} For this network we start by using training from scratch approach. The weights in the network are initialized using Xavier initialization \cite{ref31}. This helps the training since we start from a normally distributed set of weights and we avoid that certain weighs vanish through epochs.
 \\
 \textbf{Activation function.}
-The layer activation functions is the rectified linear unit (ReLU) function since it diminishes the likelihood of a gradient to vanish.
+The layers activation function is the rectified linear unit (ReLU) function since it diminishes the likelihood of a gradient to vanish.
 \\
 \textbf{Loss function.}
 The chosen loss function for the binary classification is the binary cross-entropy since it is properly designed for binary tasks.
 \\
+\textbf{Optimizer.}
+We have chosen Adam with its default parameters. It is based on adaptive estimates of lower-order moments and it is computationally efficient.
+\\
 \textbf{Validation.}
-For this task we have performed 10-fold cross validation. This kind of validation has been used to estimate the hyper-parameters.
+For this task we perform 10-fold cross validation. This kind of validation is used to estimate the model performance and therefore to select the hyper-parameters.
 \subsubsection{Multi-class classification setup}
 \textbf{AlexNet architecture.}
-For this task we have chosen a more complex model since we have first tested LeNet architecture achieving results very far from the state-of-the-art \cite{ref11}.
+For this task we choose a more complex model since we have first tested LeNet architecture achieving results far from the state-of-the-art \cite{ref11}.
 \\
 \textbf{Weights initialization.}
-For this network we have tried both training from scratch approach and transfer learning. The weights in the first case are initialized using Xavier initialization (\cite{ref31}). In the transfer learning approach we have used the weights coming from the training on ImageNet \cite{imagenet}.
+For this network we try both training from scratch approach and transfer learning. The weights in the first case are initialized using Xavier initialization (\cite{ref31}). In the transfer learning approach, instead, we use the weights coming from the training on ImageNet \cite{imagenet}.
 \\
 \textbf{Activation function.}
-Layers activation function is again the rectified linear unit (ReLU) function.
+Layers activation function is the rectified linear unit (ReLU) function.
 \\
 \textbf{Loss function.}
-In this case we have used cross-entropy as loss function since it is largely used for multi-class classification tasks.
-=========================
+In this case we use cross-entropy as loss function since it is largely used for multi-class classification tasks.
+\\
+\textbf{Optimizer.}
+As optimizer we have chosen Adam \cite{ref32}. An important annotation should be done about this optimizer. Indeed, through the training process we have noticed that the accuracy after a certain number of epochs largely drops as we can see in Figure \ref{fig:tensorboard}. This has been caused by the $\varepsilon$ parameter. It is used to avoid division by zero when the gradient is almost zero during Adam parameters update. By default it is set to $10^{-8}$, however in some cases it causes large network weights updates. Therefore, we set it to $0.1$ in order to avoid this problem. All the other parameters are set to their default values.
 \\
 \textbf{Validation.}
-in the case of Multi-class Classification we opt to proceed with cross validation. We have chosen a different approach from binary classification. In fact k-fold cross validation applied on AlexNet requires a lot of computing time that is not justified in our dataset since there is small amount of variance in our pictures and consequently in each possible fold.
-\\
-\textbf{Optimizer:}
-As optimizer we have choosen Adam \cite{ref32}. An important annotation should be done about this optimizer. In fact trough the training process we noticed that accuracy after a bunch of epochs drops. This was caused by the $\varepsilon$ coefficient, this coefficient used to avoid division by zero when the gradient is almost zero in parameters update.  By default is set to $1*10^{-8}$ and it causes large weights updates. So we set it to 0.1 to avoid this problem.
-
-
-
+In the case of multi-class classification we opt to proceed with cross-validation. We have chosen a different approach from binary classification. Indeed, k-fold cross validation applied to AlexNet requires massive computational time that is not justified since we have checked that there is a small amount of variance across different validation folds.
 \subsection{Results and discussion}
-\subsubsection{Binary Classification}
-After a training phase using 10-fold cross validation, we select as best hyperparameters for our binary classification problem, the batch size equal to 32 and the total number of epochs equal to 15. With this configuration, after retraining the net on the global train set, we obtain an average accuracy of $99.92\%$. Beeing a very unbalanced dataset because of the number of healthy leaves with respect to the non healthy ones, we have expected to have an healthy accurancy lower than non healthy. The result shows that our assumptions was correct. In fact LeNet accurancy for healthy aren't good as for non healthy one, but if we look to the F1 score, equals to $0.9950$, and to the accuracy baseline of the this classification task, equal to $90\%$, we can say that our results are good.
-\subsubsection{Multi-class Classification}
-As we have done for binary classification, we try different run using different hyperparameters and we test our result on the validation set. As figure \ref{fig:tensorboard} shows, it's possible to understand that we obtain the best configuration from Alexnet pretrained, with batch size equal to 64, eps equal to 0.1 for 57 epochs. We also try configuration with some weight decay factor and also changing the initial learning rate but the resulting perfomance was not so good as the configuration explained before. We think that weight decay do not help to improve perfomances because AlexNet for this task is not so complex to create the overfitting problem and also because in AlexNet there are dropout layers that limit that problem. For what concern the learning rate, Adam optimizer \cite{ref32} adapt automatically the learning rate after some epochs, so we think that most of job is done by the optimizer and our selected learning rates involves the first few epochs of training and not the overall phase.
-\\The results obtained from configuration described before are shown in the first row of the table \ref{table:sensitivity}. AlexNet pretrained has a very good performance for all the classes and obtained also better result than the state of the art \cite{ref11}. We have expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been missclassified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl. This does not happen in the reality, because our classifier missclassified only some samples that aren't related to the size of the class predicted.
-\subsubsection{Sensitivity Analisys}
-After having reached a good level of accuracy for our multi-class classification task, we move our attention to analise the robustness of our dataset by using visualization methods to analise which parts of the leaf trigger the classifier. The table \ref{table:sensitivity} shows all the different approach we try. It is possible to see that the preformances of the results obtained are very far from the what we have done in the previous task. In particular, when we have tested the model we heve obtained with the multi-class classification problem on the segmeted dataset, we see that some classes have never been classified bring to NaN value for Precision and F1 score. Then we try different ways, applying different normalizations and backgrounds. First of all, we use in train phase the segmented test and we test it both on segmented and normal datasets. Also in this case the trained predictor has not able to correctly identify the leaves looking at the normal dataset. We have obtained better result using Random Background Crop and Rnadom Noise Background datasets. In both case tests performed on segmented tests bring us to a better results with respect to the normal dataset. With think that the problem is related to some information that is encoded inside the table. Afterall we try to see if changing the background to one similar to the field, where photos of leaves can be taken. Using per-leaf normalization and Random Background Images we obtain the result shows in figure \ref{fig:conf_matrix}. This model is the only with an high value on precision and recall, sign of robustness. It is also possible to see in figure \ref{fig:gradcam} how the system is more robust to some background variation, activating only on the leaf surface.
+\subsubsection{Binary classification}
+After a training phase using 10-fold cross-validation, we select as best hyper-parameters for our binary classification problem, the batch size equal to $32$ and the total number of epochs equal to $15$. With this configuration, after re-training the model on the whole train set, we obtain an average accuracy of $99.92\%$. As expected we obtained the healthy class accuracy lower than the infected one because, since the dataset is unbalanced, the model sees more infected samples. As a further analysis, we have to consider that for our unbalanced dataset the baseline accuracy is 90\%, therefore just looking at the accuracy is not enough in this case. The F1-score ($99.50\%$) can better assess the performance of the model, which are satisfactory.
+\subsubsection{Multi-class classification}
+As we have done for binary classification, we try several runs by using different hyper-parameters and we test our results on the validation set. As figure \ref{fig:tensorboard} shows, it is possible to understand that we have obtained the best configuration from AlexNet pre-trained, with batch size equal to 64, $\varepsilon$ equal to 0.1 for 57 epochs. We have also tried several configurations by using weight decay regularization and also by changing the initial learning rate. The resulting performances were not as good as the chosen configuration. We think that weight decay did not help to improve performances because we have a fairly large dataset and AlexNet is not enough complex to reach overfitting. Furthermore, in AlexNet there are dropout layers that limit this problem. For what concerns the learning rate, Adam optimizer \cite{ref32} automatically adapts it after some epochs. Hence, most of the job is done by the optimizer and our selected learning rates involves the first few epochs of training and not the overall training.
+\\
+The results obtained from the chosen configuration are shown in the first row of Table \ref{table:sensitivity}. AlexNet pre-trained has a very good performance for all the classes and has obtained also better result than the state-of-the-art \cite{ref11}. We have expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been wrongly classified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl. This is not supported by the results, because our classifier wrongly classifies only some samples that are not related to the size of the predicted class.
+\subsubsection{Sensitivity Analysis}
+After having reached a good level of accuracy for our multi-class classification task, we move our attention to analise the robustness of our dataset by using visualization methods to analyze which parts of the leaf trigger the classifier. The table \ref{table:sensitivity} shows all the different approach we try. It is possible to see that the performances of the results obtained are very far from the what we have done in the previous task. In particular, when we have tested the model we heve obtained with the multi-class classification problem on the segmented dataset, we see that some classes have never been classified bring to $NaN$ value for Precision and F1 score. Then we try different ways, applying different normalizations and backgrounds. First of all, we use in train phase the segmented test and we test it both on segmented and normal datasets. Also in this case the trained predictor has not able to correctly identify the leaves looking at the normal dataset. We have obtained better result using Random Background Crop and Rnadom Noise Background datasets. In both case tests performed on segmented tests bring us to a better results with respect to the normal dataset. With think that the problem is related to some information that is encoded inside the table. Afterall we try to see if changing the background to one similar to the field, where photos of leaves can be taken. Using per-leaf normalization and Random Background Images we obtain the result shows in figure \ref{fig:conf_matrix}. This model is the only with an high value on precision and recall, sign of robustness. It is also possible to see in figure \ref{fig:gradcam} how the system is more robust to some background variation, activating only on the leaf surface.
 \begin{table}
 	\centering
 	\small
@@ -114,7 +115,7 @@ After having reached a good level of accuracy for our multi-class classification
 				$Average Accuracy = 0.390169$ \\
 				$Precision_M = NaN$ \\
 				$Recall_M = 0.285877$ \\
-				$F_1 score_M = Nan$ \\
+				$F_1 score_M = NaN$ \\
 				\end{tabular} \\  				
 			\hline
 			\multirow{4}*{Segmented}
