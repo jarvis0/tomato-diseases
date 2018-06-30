@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  29 JUN 2018 22:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  30 JUN 2018 18:26
 entering extended mode
 **./tomato_diseases_paper.tex
 (tomato_diseases_paper.tex
@@ -471,7 +471,17 @@ LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <9> not available
 (sections/abstract.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
-) (sections/introduction.tex) (sections/related_work.tex
+) (sections/introduction.tex
+Underfull \hbox (badness 1661) in paragraph at lines 2--1
+[]\OT1/ptm/m/it/10 Most of the proposed approaches to Tomato plant
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 2--1
+\OT1/ptm/m/it/10 Networks trained on PlantVillage dataset reaching an
+ []
+
+) (sections/related_work.tex
 Underfull \hbox (badness 2368) in paragraph at lines 2--1
 \OT1/ptm/m/n/10 times, these efforts have been additionally supported
  []
@@ -613,62 +623,39 @@ Underfull \hbox (badness 1142) in paragraph at lines 28--29
  []
 
 ) (sections/experiments.tex
-<./images/tensorboards.jpg, id=80, 167.9073pt x 123.0999pt>
-File: ./images/tensorboards.jpg Graphic file (type jpg)
-<use ./images/tensorboards.jpg>
-Package pdftex.def Info: ./images/tensorboards.jpg  used on input line 3.
-(pdftex.def)             Requested size: 251.8603pt x 184.64937pt.
-<./images/normal_3159.jpg, id=81, 256.96pt x 256.96pt>
+<./images/normal_3159.jpg, id=82, 256.96pt x 256.96pt>
 File: ./images/normal_3159.jpg Graphic file (type jpg)
 <use ./images/normal_3159.jpg>
-Package pdftex.def Info: ./images/normal_3159.jpg  used on input line 19.
+Package pdftex.def Info: ./images/normal_3159.jpg  used on input line 11.
 (pdftex.def)             Requested size: 42.91412pt x 42.91412pt.
-<./images/segmented_3159.jpg, id=82, 256.96pt x 256.96pt>
+<./images/segmented_3159.jpg, id=83, 256.96pt x 256.96pt>
 File: ./images/segmented_3159.jpg Graphic file (type jpg)
 <use ./images/segmented_3159.jpg>
-Package pdftex.def Info: ./images/segmented_3159.jpg  used on input line 19.
+Package pdftex.def Info: ./images/segmented_3159.jpg  used on input line 11.
 (pdftex.def)             Requested size: 42.91412pt x 42.91412pt.
-<./images/9_ROTATE_180_crop.png, id=83, 192.72pt x 192.72pt>
+<./images/9_ROTATE_180_crop.png, id=84, 192.72pt x 192.72pt>
 File: ./images/9_ROTATE_180_crop.png Graphic file (type png)
 <use ./images/9_ROTATE_180_crop.png>
-Package pdftex.def Info: ./images/9_ROTATE_180_crop.png  used on input line 19.
+Package pdftex.def Info: ./images/9_ROTATE_180_crop.png  used on input line 11.
 
 (pdftex.def)             Requested size: 43.18956pt x 43.18956pt.
-<./images/196_ROTATE_270.jpg, id=84, 256.96pt x 256.96pt>
+<./images/196_ROTATE_270.jpg, id=85, 256.96pt x 256.96pt>
 File: ./images/196_ROTATE_270.jpg Graphic file (type jpg)
 <use ./images/196_ROTATE_270.jpg>
-Package pdftex.def Info: ./images/196_ROTATE_270.jpg  used on input line 19.
+Package pdftex.def Info: ./images/196_ROTATE_270.jpg  used on input line 11.
 (pdftex.def)             Requested size: 42.91412pt x 42.91412pt.
-<./images/random_backgorund.png, id=85, 192.72pt x 192.72pt>
+<./images/random_backgorund.png, id=86, 192.72pt x 192.72pt>
 File: ./images/random_backgorund.png Graphic file (type png)
 <use ./images/random_backgorund.png>
-Package pdftex.def Info: ./images/random_backgorund.png  used on input line 19.
+Package pdftex.def Info: ./images/random_backgorund.png  used on input line 11.
 
 (pdftex.def)             Requested size: 43.18956pt x 43.18956pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 13.
 
-Underfull \hbox (badness 1742) in paragraph at lines 21--21
-\OT1/ptm/b/n/10 Background Crop\OT1/ptm/m/n/10 , \OT1/ptm/b/n/10 Random Noise B
-ackground \OT1/ptm/m/n/10 and
- []
-
-
-Underfull \hbox (badness 1337) in paragraph at lines 29--33
-[]\OT1/ptm/m/n/10 We analyze 18,158 images of tomato plant leaves,
- []
-
-
-Underfull \hbox (badness 6380) in paragraph at lines 29--33
-\OT1/ptm/m/n/10 which are split in 10 classes, 9 diseases and 1
- []
-
-
-Underfull \hbox (badness 2753) in paragraph at lines 29--33
-\OT1/ptm/m/n/10 healthy. The scope is to predict the correct class
- []
-
-
-Underfull \hbox (badness 1242) in paragraph at lines 29--33
-\OT1/ptm/m/n/10 of a leaf image. All the images are sized 256x256
+Underfull \hbox (badness 2229) in paragraph at lines 13--13
+[]\OT1/ptm/m/n/10 Figure 2. |\OT1/ptm/m/it/10 Samples of dataset images, from l
+eft to
  []
 
 [3 <./images/workflow.pdf
@@ -676,93 +663,74 @@ Underfull \hbox (badness 1242) in paragraph at lines 29--33
 pdfTeX warning: pdflatex (file ./images/workflow.pdf): PDF inclusion: invalid o
 ther resource which is no dict (key 'ProcSets', type <array>); ignored.
 >]
-Underfull \hbox (badness 1484) in paragraph at lines 36--38
-[]\OT1/ptm/b/n/10 Segmented PlantVillage dataset. \OT1/ptm/m/n/10 It consists o
-f
- []
-
-
-Underfull \hbox (badness 1681) in paragraph at lines 40--42
+Underfull \hbox (badness 1681) in paragraph at lines 32--34
 \OT1/ptm/m/n/10 of leaf images coming from PlantVillage with a
  []
 
+<./images/tensorboards.jpg, id=122, 167.9073pt x 123.0999pt>
+File: ./images/tensorboards.jpg Graphic file (type jpg)
+<use ./images/tensorboards.jpg>
+Package pdftex.def Info: ./images/tensorboards.jpg  used on input line 39.
+(pdftex.def)             Requested size: 218.27945pt x 160.02982pt.
 
-Underfull \hbox (badness 1728) in paragraph at lines 54--69
+Underfull \hbox (badness 1728) in paragraph at lines 56--71
 \OT1/ptm/b/n/10 Optimizer. \OT1/ptm/m/n/10 We have chosen Adam with its default
 
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 54--69
+Underfull \hbox (badness 1635) in paragraph at lines 56--71
 \OT1/ptm/b/n/10 Validation. \OT1/ptm/m/n/10 For this task we perform 10-fold cr
 oss
  []
 
-[4 <./images/tensorboards.jpg> <./images/normal_3159.jpg> <./images/segmented_3
-159.jpg> <./images/9_ROTATE_180_crop.png> <./images/196_ROTATE_270.jpg> <./imag
-es/random_backgorund.png>]
-Underfull \hbox (badness 1960) in paragraph at lines 70--87
+
+Underfull \hbox (badness 1960) in paragraph at lines 72--89
 \OT1/ptm/m/n/10 weights in the first case are initialized using Xavier
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
-
-Overfull \hbox (7.31113pt too wide) in paragraph at lines 99--189
- [] 
- []
-
-<./images/conf_matrix_norm.jpg, id=146, 822.07124pt x 623.32875pt>
+[4 <./images/normal_3159.jpg> <./images/segmented_3159.jpg> <./images/9_ROTATE_
+180_crop.png> <./images/196_ROTATE_270.jpg> <./images/random_backgorund.png> <.
+/images/tensorboards.jpg>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+ [5]
+<./images/conf_matrix_norm.jpg, id=166, 431.6125pt x 434.62375pt>
 File: ./images/conf_matrix_norm.jpg Graphic file (type jpg)
 <use ./images/conf_matrix_norm.jpg>
-Package pdftex.def Info: ./images/conf_matrix_norm.jpg  used on input line 195.
+Package pdftex.def Info: ./images/conf_matrix_norm.jpg  used on input line 200.
 
-(pdftex.def)             Requested size: 246.62328pt x 187.00006pt.
-
-Overfull \hbox (16.28732pt too wide) in paragraph at lines 195--196
- [] 
- []
-
-<./images/Target_Spot2_orig.jpg, id=147, 627.3036pt x 617.9085pt>
+(pdftex.def)             Requested size: 215.80571pt x 217.31134pt.
+<./images/Target_Spot2_orig.jpg, id=167, 627.3036pt x 617.9085pt>
 File: ./images/Target_Spot2_orig.jpg Graphic file (type jpg)
 <use ./images/Target_Spot2_orig.jpg>
-Package pdftex.def Info: ./images/Target_Spot2_orig.jpg  used on input line 207
+Package pdftex.def Info: ./images/Target_Spot2_orig.jpg  used on input line 213
 .
 (pdftex.def)             Requested size: 69.0036pt x 67.97014pt.
-<./images/Target_Spot2_cam.jpg, id=148, 310.0383pt x 301.3659pt>
+<./images/Target_Spot2_cam.jpg, id=168, 310.0383pt x 301.3659pt>
 File: ./images/Target_Spot2_cam.jpg Graphic file (type jpg)
 <use ./images/Target_Spot2_cam.jpg>
-Package pdftex.def Info: ./images/Target_Spot2_cam.jpg  used on input line 207.
+Package pdftex.def Info: ./images/Target_Spot2_cam.jpg  used on input line 213.
 
 (pdftex.def)             Requested size: 74.4107pt x 72.32928pt.
-<./images/Target_Spot2normal_cam.jpg, id=149, 310.0383pt x 301.3659pt>
+<./images/Target_Spot2normal_cam.jpg, id=169, 310.0383pt x 301.3659pt>
 File: ./images/Target_Spot2normal_cam.jpg Graphic file (type jpg)
 <use ./images/Target_Spot2normal_cam.jpg>
 Package pdftex.def Info: ./images/Target_Spot2normal_cam.jpg  used on input lin
-e 207.
+e 213.
 (pdftex.def)             Requested size: 74.4107pt x 72.32928pt.
-) (sections/conclusion.tex [5]
-Underfull \hbox (badness 1199) in paragraph at lines 2--6
-\OT1/ptm/m/n/10 very good on this task. Furthermore we provide an
+) (sections/conclusion.tex
+Underfull \hbox (badness 3690) in paragraph at lines 197--1
+\OT1/ptm/m/n/10 After a good level of accuracy for our multi-class
  []
 
+) (sections/acknowledgements.tex) (sections/supplementary_material.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \hbox (badness 1406) in paragraph at lines 2--6
-[]\OT1/ptm/m/n/10 In order to develop further works on the Random
- []
-
-
-Underfull \hbox (badness 4765) in paragraph at lines 2--6
-\OT1/ptm/m/n/10 Background Image we have created a new dataset
- []
-
-[6 <./images/conf_matrix_norm.jpg>]
-Underfull \hbox (badness 2418) in paragraph at lines 8--9
-[]\OT1/ptm/m/n/10 use more complex deep learning models as the
- []
-
-) (sections/acknowledgements.tex) (sections/supplementary_material.tex)
-(tomato_diseases_paper.bbl (tomato_diseases_paper.brf)
+ [6 <./images/conf_matrix_norm.jpg> <./images/Target_Spot2_orig.jpg> <./images/
+Target_Spot2_cam.jpg> <./images/Target_Spot2normal_cam.jpg>]) (tomato_diseases_
+paper.bbl
+(tomato_diseases_paper.brf)
 \tf@brf=\write3
 \openout3 = `tomato_diseases_paper.brf'.
 
@@ -926,8 +894,7 @@ Underfull \hbox (badness 6708) in paragraph at lines 127--127
 40--1754, 2008.
  []
 
-[7 <./images/Target_Spot2_orig.jpg> <./images/Target_Spot2_cam.jpg> <./images/T
-arget_Spot2normal_cam.jpg>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 132--132
 []\OT1/ptm/m/n/9 PlantVillage.  PlantVillage Dataset.
  []
@@ -1040,7 +1007,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 187--187
 \OT1/ptm/m/n/9 http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf.
  []
 
-
+[7]
 Underfull \hbox (badness 5592) in paragraph at lines 194--194
 []\OT1/ptm/m/n/9 Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner.
  []
@@ -1060,40 +1027,45 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (tomato_diseases_paper.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
-Package rerunfilecheck Info: File `tomato_diseases_paper.brf' has not changed.
-(rerunfilecheck)             Checksum: 325F5AF1C1CB359BAF615BEFADB7F7C1;1672.
 
+
+Package rerunfilecheck Warning: File `tomato_diseases_paper.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `tomato_diseases_paper.brf':
+(rerunfilecheck)             Before: B3D66F1403088D67E702E70079826D70;1639
+(rerunfilecheck)             After:  64C03A581A783AAD4EF3941E0F735219;1639.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
- 7998 strings out of 494892
- 120412 string characters out of 3178689
- 222252 words of memory out of 3000000
- 11389 multiletter control sequences out of 15000+200000
- 32858 words of font info for 76 fonts, out of 3000000 for 9000
+ 7995 strings out of 494892
+ 120393 string characters out of 3178689
+ 217468 words of memory out of 3000000
+ 11387 multiletter control sequences out of 15000+200000
+ 33675 words of font info for 74 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 36i,19n,39p,1837b,466s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,19n,39p,1772b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/masch/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/masch/
 .miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/masch/.
 miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/masch/.mi
-ktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></home/masch/.mikt
+ktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/masch/.mikt
 ex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/masch/.miktex
 /texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/masch/.miktex/te
 xmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/masch/.miktex/texmf
-s/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/masch/.miktex/texmfs/i
+s/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/masch/.miktex/texmfs/i
 nstall/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/masch/.miktex/texmfs/in
 stall/fonts/type1/public/amsfonts/cm/cmsy7.pfb></home/masch/.miktex/texmfs/inst
 all/fonts/type1/public/amsfonts/cm/cmsy9.pfb></home/masch/.miktex/texmfs/instal
 l/fonts/type1/urw/courier/ucrr8a.pfb></home/masch/.miktex/texmfs/install/fonts/
 type1/urw/times/utmb8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/
-times/utmr8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on tomato_diseases_paper.pdf (8 pages, 1278009 bytes).
+times/utmbi8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/times/utm
+r8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
+Output written on tomato_diseases_paper.pdf (8 pages, 1237350 bytes).
 PDF statistics:
- 289 PDF objects out of 1000 (max. 8388607)
+ 294 PDF objects out of 1000 (max. 8388607)
  64 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

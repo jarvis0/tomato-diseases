@@ -1,9 +1,7 @@
 \section{Conclusion and Future Works}
-In this study we have proposed deep models approach to build classifiers for disease classification and the related sensitivity analysis on plant village dataset. Our results confirms what suggested in \cite{ref11} that deep models performs very good on this task. Furthermore we provide an improved dataset to overcome the problem of sensitivity analysis as we highlined during the work.
-\\\indent A final remark about occlusion methods purposed \cite{ref11}. We have tried to see the outcomes of the same occlusion method but with our trained models, we are not able at all to come up with the same conclusion about independence of the prediction with respect to the background.
-\\\indent In order to develop further works on the Random Background Image we have created a new dataset containing 256 images  found on Internet. We have used tested these images against the AlexNet model trained on Random Background Image dataset. The accuracy on this test set is 29.8\%. The reason of this result is in line with the results on internet images purposed in \cite{ref10}. Moreover we have tried to train a vgg11 network on Random Background Image dataset and tested it against the images coming from internet; the accuracy reached 35.8\%
-We think this result is so poor if compared with the results on Normal Test because no one validated this test set. In order to improve this work we think that two ways should be followed:
-\begin{itemize}
-	\item{build a dataset of images coming from plantations that is validated by a domain expert.}
-	\item{use more complex deep learning models as the experiment with vgg11 suggests}
-\end{itemize}
+In this study we have proposed deep learning approach to build classifiers for tomato plant diseases recognition and the related sensitivity analysis on PlantVillage dataset. Our results confirms what claimed in \cite{ref11} that deep models perform well on this task. Furthermore we provide an improved dataset to overcome the problem of homogeneous backgrounds using the sensitivity analysis as highlighted during the work.
+\\\indent
+A final remark should be made about the results obtained by the Occlusion method proposed in \cite{ref11}. We have tried to reproduce the same results with our models, but we have not been able at all to come up with the same conclusion about the independence between the class prediction and the background.
+\\\indent
+In order to develop further assess the performances of our final model on the Random Background Image dataset, we have created a new test dataset containing $256$ images found on Internet. The average accuracy we have obtained is $29.8\%$. Moreover, we have tried to train a VGG11 model on Random Background Image dataset and tested it against the images coming from Internet; the average accuracy we have obtained is $35.8\%$.
+We think this result is so poor if compared with the results on Original dataset because no one validated this test dataset. In order to improve this work we suggest to use a dataset of images taken from plantations and validated by a domain expert.
