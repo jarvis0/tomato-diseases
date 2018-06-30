@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  30 JUN 2018 18:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.5)  30 JUN 2018 18:33
 entering extended mode
 **./tomato_diseases_paper.tex
 (tomato_diseases_paper.tex
@@ -498,7 +498,8 @@ Underfull \hbox (badness 2512) in paragraph at lines 2--1
 
 
 Underfull \hbox (badness 1796) in paragraph at lines 2--1
-\OT1/ptm/m/n/10 classes (1 healthy and 9 diseases) using PlantVillage
+\OT1/ptm/m/n/10 classes ($\OT1/cmr/m/n/10 1$ \OT1/ptm/m/n/10 healthy and $\OT1/
+cmr/m/n/10 9$ \OT1/ptm/m/n/10 diseases) using PlantVillage
  []
 
 
@@ -700,7 +701,7 @@ File: ./images/conf_matrix_norm.jpg Graphic file (type jpg)
 <use ./images/conf_matrix_norm.jpg>
 Package pdftex.def Info: ./images/conf_matrix_norm.jpg  used on input line 200.
 
-(pdftex.def)             Requested size: 215.80571pt x 217.31134pt.
+(pdftex.def)             Requested size: 228.75352pt x 230.34949pt.
 <./images/Target_Spot2_orig.jpg, id=167, 627.3036pt x 617.9085pt>
 File: ./images/Target_Spot2_orig.jpg Graphic file (type jpg)
 <use ./images/Target_Spot2_orig.jpg>
@@ -724,17 +725,16 @@ Underfull \hbox (badness 3690) in paragraph at lines 197--1
 \OT1/ptm/m/n/10 After a good level of accuracy for our multi-class
  []
 
-) (sections/acknowledgements.tex) (sections/supplementary_material.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6 <./images/conf_matrix_norm.jpg> <./images/Target_Spot2_orig.jpg> <./images/
-Target_Spot2_cam.jpg> <./images/Target_Spot2normal_cam.jpg>]) (tomato_diseases_
-paper.bbl
-(tomato_diseases_paper.brf)
+) (sections/acknowledgements.tex) (sections/supplementary_material.tex)
+(tomato_diseases_paper.bbl (tomato_diseases_paper.brf)
 \tf@brf=\write3
 \openout3 = `tomato_diseases_paper.brf'.
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./images/conf_matrix_norm.jpg> <./images/Target_Spot2_orig.jpg> <./images/
+Target_Spot2_cam.jpg> <./images/Target_Spot2normal_cam.jpg>]
 Underfull \hbox (badness 3158) in paragraph at lines 17--17
 []\OT1/ptm/m/n/9 M. Brahimi, B. Kamel, and A. Moussaoui.  Deep
  []
@@ -1027,27 +1027,22 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (tomato_diseases_paper.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
+Package rerunfilecheck Info: File `tomato_diseases_paper.brf' has not changed.
+(rerunfilecheck)             Checksum: 64C03A581A783AAD4EF3941E0F735219;1639.
 
-
-Package rerunfilecheck Warning: File `tomato_diseases_paper.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `tomato_diseases_paper.brf':
-(rerunfilecheck)             Before: B3D66F1403088D67E702E70079826D70;1639
-(rerunfilecheck)             After:  64C03A581A783AAD4EF3941E0F735219;1639.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
- 7995 strings out of 494892
- 120393 string characters out of 3178689
+ 7994 strings out of 494892
+ 120383 string characters out of 3178689
  217468 words of memory out of 3000000
  11387 multiletter control sequences out of 15000+200000
  33675 words of font info for 74 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 36i,19n,39p,1772b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,19n,39p,1772b,467s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/masch/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/masch/
 .miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/masch/.
 miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/masch/.mi
@@ -1063,9 +1058,9 @@ l/fonts/type1/urw/courier/ucrr8a.pfb></home/masch/.miktex/texmfs/install/fonts/
 type1/urw/times/utmb8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/
 times/utmbi8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/times/utm
 r8a.pfb></home/masch/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on tomato_diseases_paper.pdf (8 pages, 1237350 bytes).
+Output written on tomato_diseases_paper.pdf (8 pages, 1237125 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 63 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
