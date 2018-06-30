@@ -1,13 +1,13 @@
-\begin{figure*}
+\begin{figure}
 	\begin{center}
-		\fbox{\includegraphics[scale=1.5]{./images/tensorboards}}
+		\fbox{\includegraphics[scale=1.3]{./images/tensorboards}}
 		\begin{center}
-			\caption{\textbf{Validation accuracy over epochs}.}
+			\caption{\textit{Validation accuracy over epochs}.}
 			\label{fig:tensorboard}
 		\end{center}
-		\vspace{-25pt}
+		\vspace{-40pt}
 	\end{center}
-\end{figure*}
+\end{figure}
 \section{Experiments}
 \begin{figure}
 	\begin{center}
@@ -18,7 +18,7 @@
 			\includegraphics[scale=0.2241]{./images/random_backgorund}
 		}
 		\begin{center}
-			\caption{Samples of dataset images, from left to right: \textbf{Original PlantVillage}, \textbf{Segmented PlantVillage}, \textbf{Random Background Crop}, \textbf{Random Noise Background} and \textbf{Random Background Image}.}
+			\caption{\textit{Samples of dataset images, from left to right: \textbf{Original PlantVillage}, \textbf{Segmented PlantVillage}, \textbf{Random Background Crop}, \textbf{Random Noise Background} and \textbf{Random Background Image}.}}
 			\label{fig:samples}
 		\end{center}
 		\vspace{-32pt}
@@ -26,7 +26,8 @@
 \end{figure}
 Our experiments are about two main tasks: binary and multi-class classification. In this section, first we describe the dataset and the variations created to perform sensitivity analysis. Then, we go trough the experiments setup where we describe how we have conducted the experiments to accomplish the two tasks and finally we show the results.
 \subsection{Datasets}
-We analyze 18,158 images of tomato plant leaves, which are split in 10 classes, 9 diseases and 1 healthy. The scope is to predict the correct class of a leaf image. All the images are sized 256x256 pixels.*******************************
+We analyze 18,158 images of tomato plant leaves, which are split in 10 classes, 9 diseases and 1 healthy. The scope is to predict the correct class of a leaf image. All the images are RGB and sized 256x256 pixels.
+The classes are: (A) Bacterial Spot $2,127$ samples, (B) Early Blight $1,000$ samples, (C) Late Blight $1,909$ samples, (D) Leaf Mold  $952$ samples, (E) Septoria Leaf Spot $1,771$ samples, (F) Two-spotted Spider Mites $1,676$ samples, (G) Target Spot $1,404$ samples, (H) Tomato Yellow Leaf Curl Virus $5,356$ samples, (I) Tomato Mosaic Virus $373$ samples, (J) Healthy $1,590$.
 \\\indent
 Given the original dataset we conduct the training phase on different variations of the original dataset, we work on the backgrounds in order to find a way to overcome the limits highlighted in \cite{ref33, ref10} and confirmed by us. Especially, we have found out a dependence between the original backgrounds and their belonging class.
 In Figure \ref{fig:samples} we can see all the images and the different variations of the dataset we have tested.
@@ -49,7 +50,7 @@ Another key aspect of our setup is the normalization of the input images, indeed
 \\
 \textbf{Dataset Normalization.} Given the chosen variation of the dataset we compute the mean and the standard deviation of the train dataset.
 \\
-\textbf{Per-leaf Normalization.} Starting from the segmented train dataset we compute the mean and standard deviation of the non-black pixels.
+\textbf{Per-leaf Normalization.} Starting from the segmented train dataset we compute the mean and standard deviation of the non-black pixels. \vspace{-10pt}
 \subsubsection{Binary classification setup}
 \textbf{LeNet architecture.} This network, proposed in \cite{ref30}, is the first and simplest deep model available. We have adapted the first and the last convolutional layers to fit our images size and the last fully connected layer to perform our binary task.
 \\
@@ -88,26 +89,26 @@ In the case of multi-class classification we opt to proceed with cross-validatio
 \subsubsection{Binary classification}
 After a training phase using 10-fold cross-validation, we select as best hyper-parameters for our binary classification problem, the batch size equal to $32$ and the total number of epochs equal to $15$. With this configuration, after re-training the model on the whole train set, we obtain an average accuracy of $99.92\%$. As expected we obtained the healthy class accuracy lower than the infected one because, since the dataset is unbalanced, the model sees more infected samples. As a further analysis, we have to consider that for our unbalanced dataset the baseline accuracy is 90\%, therefore just looking at the accuracy is not enough in this case. The F1-score ($99.50\%$) can better assess the performance of the model, which are satisfactory.
 \subsubsection{Multi-class classification}
-As we have done for binary classification, we try several runs by using different hyper-parameters and we test our results on the validation set. As figure \ref{fig:tensorboard} shows, it is possible to understand that we have obtained the best configuration from AlexNet pre-trained, with batch size equal to 64, $\varepsilon$ equal to 0.1 for 57 epochs. We have also tried several configurations by using weight decay regularization and also by changing the initial learning rate. The resulting performances were not as good as the chosen configuration. We think that weight decay did not help to improve performances because we have a fairly large dataset and AlexNet is not enough complex to reach overfitting. Furthermore, in AlexNet there are dropout layers that limit this problem. For what concerns the learning rate, Adam optimizer \cite{ref32} automatically adapts it after some epochs. Hence, most of the job is done by the optimizer and our selected learning rates involves the first few epochs of training and not the overall training.
+As we have done for binary classification, we try several configurations by using different hyper-parameters and we test our results on the validation set. As figure \ref{fig:tensorboard} shows, the best configuration found is AlexNet pre-trained, with batch size equal to 64, $\varepsilon$ equal to 0.1 trained for 57 epochs. We have also tried some configurations using weight decay regularization and changing the initial learning rate. The resulting performances were not as good as the one on the chosen configuration. We think that weight decay did not help to improve performances because we have a fairly large dataset and AlexNet is not enough complex to reach overfitting. Furthermore, in AlexNet there are dropout layers that limit this problem. For what concerns the learning rate, Adam optimizer \cite{ref32} automatically adapts it after some epochs. Hence, most of the job is done by the optimizer and our selected learning rates involves the first few epochs of training and not the overall training.
 \\
-The results obtained from the chosen configuration are shown in the first row of Table \ref{table:sensitivity}. AlexNet pre-trained has a very good performance for all the classes and has obtained also better result than the state-of-the-art \cite{ref11}. We have expected that classes with less samples, e.g. Tomato Mosaic Virus, would have been wrongly classified compared to classes with an higher number of samples, e.g. Tomato Yellow Leaf Curl. This is not supported by the results, because our classifier wrongly classifies only some samples that are not related to the size of the predicted class.
+The results obtained in the chosen configuration are shown in the first row of Table \ref{table:sensitivity}. AlexNet pre-trained has a very good performance in all the classes and has obtained also better results than the state-of-the-art \cite{ref11}. We expected that classes with less samples, e.g. (I) Tomato Mosaic Virus, would have been wrongly classified compared to classes with an higher number of samples, e.g. (H) Tomato Yellow Leaf Curl. This is not our case, since our classifier wrongly classifies only some samples that are not related to the size of the predicted class. ===additional material conf matrix?===
 \subsubsection{Sensitivity Analysis}
-After having reached a good level of accuracy for our multi-class classification task, we move our attention to analise the robustness of our dataset by using visualization methods to analyze which parts of the leaf trigger the classifier. The table \ref{table:sensitivity} shows all the different approach we try. It is possible to see that the performances of the results obtained are very far from the what we have done in the previous task. In particular, when we have tested the model we heve obtained with the multi-class classification problem on the segmented dataset, we see that some classes have never been classified bring to $NaN$ value for Precision and F1 score. Then we try different ways, applying different normalizations and backgrounds. First of all, we use in train phase the segmented test and we test it both on segmented and normal datasets. Also in this case the trained predictor has not able to correctly identify the leaves looking at the normal dataset. We have obtained better result using Random Background Crop and Rnadom Noise Background datasets. In both case tests performed on segmented tests bring us to a better results with respect to the normal dataset. With think that the problem is related to some information that is encoded inside the table. Afterall we try to see if changing the background to one similar to the field, where photos of leaves can be taken. Using per-leaf normalization and Random Background Images we obtain the result shows in figure \ref{fig:conf_matrix}. This model is the only with an high value on precision and recall, sign of robustness. It is also possible to see in figure \ref{fig:gradcam} how the system is more robust to some background variation, activating only on the leaf surface.
+After a good level of accuracy for our multi-class classification task has been reached, we moved our attention to analyze the robustness of our classifier. We tried to test the chosen model against segmented images; inspecting performances and using visualization methods we discovered that the network somehow was learning patterns in the background. Table \ref{table:sensitivity} shows all the different approaches we tried and the related results. In particular, when we have tested the model we have obtained with the multi-class classification problem on the segmented dataset, we see that some classes have never been classified bring to $NaN$ value for Precision and F1 score. Then we try different ways, applying different normalizations and backgrounds. First of all, we use in train phase the segmented set and we test it both on segmented and normal datasets. Also in this case the trained predictor was not able to correctly identify the leaves against the normal dataset. We have obtained better results using Random Background Crop and Random Noise Background datasets. In both case tests performed on segmented tests bring us to a better results with respect to the normal dataset. With think that the problem is related to the background table. Using per-leaf normalization and Random Background Images dataset we obtain the result shown in figure \ref{fig:conf_matrix}. This model is the only with an high value on precision and recall, sign of robustness. It is also possible to see in figure \ref{fig:gradcam} how the learned model activation changed from first model to the last one.
 \begin{table}
 	\centering
 	\small
 	\begin{center}
-		\begin{tabular}{|c|p{1.5cm}|c|}
+		\begin{tabular}{|c|c|c|}
 			\hline
 			Train & Test & Performance\\ 
 			\hline
 			\multirow{4}*{Original}
 			& Original & 
 					\begin{tabular}{@{}c@{}}
-					$\textbf{Average Accuracy = 0.998560} $ \\
-					$\textbf{Precision}_\textbf{M}\textbf{ = 0.998339} $ \\
-					$\textbf{Recall}_\textbf{M}\textbf{ = 0.998173} $ \\
-					$\textbf{F}_\textbf{1}\textbf{ score}_\textbf{M}\textbf{ = 0.998254} $ \\
+					$Average Accuracy = \textbf{0.998560} $ \\
+					$Precision_{M} = \textbf{0.998339} $ \\
+					$Recall_{M} = \textbf{0.998173} $ \\
+					$F_{1} score_{M} = \textbf{0.998254} $ \\
 					\end{tabular} \\
 			\cline{2-3}
 			& Segmented &
@@ -172,46 +173,47 @@ After having reached a good level of accuracy for our multi-class classification
 			\multirow{6}*{\shortstack[1]{Random\\ Background\\ Images}}
 			& Original & 
 					\begin{tabular}{@{}c@{}}
-					$\textbf{Average Accuracy = 0.932301}$ \\
-					$\textbf{Precision}_\textbf{M}\textbf{ = 0.925955}$ \\
-					$\textbf{Recall}_\textbf{M}\textbf{ = 0.913326}$ \\
-					$\textbf{F}_\textbf{1}\textbf{ score}_\textbf{M}\textbf{ = 0.916384}$ \\
+					$Average Accuracy = \textbf{0.932301}$ \\
+					$Precision_{M} = \textbf{0.925955}$ \\
+					$Recall_{M} = \textbf{0.913326}$ \\
+					$F_{1} score_{M} = \textbf{0.916384}$ \\
 					\end{tabular} \\
 			\cline{2-3}
 			& Segmented &
 				\begin{tabular}{@{}c@{}}
-				$\textbf{Average Accuracy = 0.949766}$ \\
-				$\textbf{Precision}_\textbf{M}\textbf{ = 0.942972}$ \\
-				$\textbf{Recall}_\textbf{M}\textbf{ = 0.928461}$ \\
-				$\textbf{F}_\textbf{1}\textbf{ score}_\textbf{M}\textbf{ = 0.934499}$ \\
+				$Average Accuracy = \textbf{0.949766}$ \\
+				$Precision_{M} = \textbf{0.942972}$ \\
+				$Recall_{M} = \textbf{0.928461}$ \\
+				$F_{1} score_{M} = \textbf{0.934499}$ \\
 				\end{tabular} \\  				
 			\hline
 		\end{tabular}
 	\end{center}
-	\caption{Performance of multi-class classification with difference training and test sets. We use a NaN value for the class that are never predicted to avoid division by zero in precision, recall and F1 score.}
+	\caption{\textit{Performance of multi-class classification with difference training and test sets. We use a NaN value for the class that are never predicted to avoid division by zero in precision, recall and F1 score.}}
 	\label{table:sensitivity}
+	\vspace{-14pt}
 \end{table}
+
 \begin{figure}[t]
 	\begin{center}
-		\fbox{\includegraphics[scale=0.3]{./images/conf_matrix_norm}}
+		\fbox{\includegraphics[scale=0.55]{./images/conf_matrix_norm}}
 	\end{center}
-	\caption{Confusion matrix of AlexNet pretrained in multi-class classification problem in percentage using per-leaf normalization and random background images.}
+	\caption{\textit{Confusion matrix of AlexNet pretrained in multi-class classification problem in percentage using per-leaf normalization and random background images.}}
 	\label{fig:conf_matrix}
 	\label{fig:long}
 	\label{fig:onecol}
 \end{figure}
+
 \begin{figure}
 	\begin{center}
 		\fbox{\includegraphics[scale=0.11]{./images/Target_Spot2_orig}
 			\includegraphics[scale=0.24]{./images/Target_Spot2_cam}
 			\includegraphics[scale=0.24]{./images/Target_Spot2normal_cam}
 		}
-		\begin{center}
-				\caption{From left to right: \textbf{Original image, class: Target Spot}, \textbf{GradCAM of AlexNet pretrained on Original dataset}, \textbf{GradCAM of AlexNet pretrained on random background images}. It is possible to see the difference on the activation of GradCAM, one is distributed both on the leaf and on the background, the other is locate only on the leaf disease.}
+	\end{center}
+				\caption{\textit{From left to right: \textbf{Original image, class: Target Spot}, \textbf{GradCAM of AlexNet pretrained on Original dataset}, \textbf{GradCAM of AlexNet pretrained on random background images}. It is possible to see the difference on the activation of GradCAM, one is distributed both on the leaf and on the background, the other is locate only on the leaf disease.}}
 	\label{fig:gradcam}
 	\label{fig:long}
 	\label{fig:onecol}
-		\end{center}
-		\vspace{-32pt}
-	\end{center}
+	\vspace{-10pt}
 \end{figure}
