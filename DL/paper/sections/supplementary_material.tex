@@ -1,4 +1,22 @@
-\section{Supplementary Material}
+\section{Supplementary Material}\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|l|c|}
+			\hline
+			\textbf{Measure} & \textbf{Formula} \\ 
+			\hline
+			$Average Accuracy$ & $\dfrac{\sum_{i=1}^{C} \frac{tp_i+tn_i}{tp_i+fn_i+fp_i+tn_i}}{C}$ \\
+			$Precision_\mu$ & $\sum_{i=1}^{C} \frac{tp_i}{tp_i+fp_i}$ \\
+			$Precision_M$ & $\dfrac{\sum_{\mu=1}^{C} Precision_\mu}{C}$ \\
+			$Recall_\mu$ & $\sum_{i=1}^{C} \frac{tp_i}{tp_i+fn_i}$ \\
+			$Recall_M$ & $\dfrac{\sum_{i=1}^{C} Recall_\mu}{C}$ \\
+			$F_1 score_\mu$ & $\dfrac{2\times Precision_\mu \times Recall_\mu}{Precision_\mu+Recall_\mu}$ \\
+			$F_1 score_M$ & $\dfrac{2\times Precision_M \times Recall_M}{Precision_M+Recall_M}$ \\
+			\hline
+		\end{tabular}
+	\end{center}
+	\caption{Measures of classification performance.}
+	\label{table:1}
+\end{table}
 \begin{figure}[H]
 	\begin{center}
 		\fbox{\includegraphics[scale=0.53]{./images/conf_matrix_norm-norm}}
